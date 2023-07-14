@@ -72,6 +72,7 @@ namespace QL_NHAN_SU
             this.btn_PhongHoc = new DevExpress.XtraBars.BarButtonItem();
             this.btn_lich = new DevExpress.XtraBars.BarButtonItem();
             this.btn_KhoaHoc = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_BangCongchitiet = new DevExpress.XtraBars.BarButtonItem();
             this.HeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.NhanSu = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -142,10 +143,11 @@ namespace QL_NHAN_SU
             this.btn_lop,
             this.btn_PhongHoc,
             this.btn_lich,
-            this.btn_KhoaHoc});
+            this.btn_KhoaHoc,
+            this.btn_BangCongchitiet});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.ribbonControl1.MaxItemId = 32;
+            this.ribbonControl1.MaxItemId = 33;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.HeThong,
@@ -303,6 +305,7 @@ namespace QL_NHAN_SU
             this.btn_tangca.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_tangca.ImageOptions.SvgImage")));
             this.btn_tangca.Name = "btn_tangca";
             this.btn_tangca.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btn_tangca.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_tangca_ItemClick);
             // 
             // btn_ungluong
             // 
@@ -311,6 +314,7 @@ namespace QL_NHAN_SU
             this.btn_ungluong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_ungluong.ImageOptions.SvgImage")));
             this.btn_ungluong.Name = "btn_ungluong";
             this.btn_ungluong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btn_ungluong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_ungluong_ItemClick);
             // 
             // btn_BangCong
             // 
@@ -319,6 +323,7 @@ namespace QL_NHAN_SU
             this.btn_BangCong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_BangCong.ImageOptions.SvgImage")));
             this.btn_BangCong.Name = "btn_BangCong";
             this.btn_BangCong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btn_BangCong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_BangCong_ItemClick);
             // 
             // btn_BangLuong
             // 
@@ -329,12 +334,12 @@ namespace QL_NHAN_SU
             // 
             // btn_thoat
             // 
-            this.btn_thoat.Caption = "Thoát";
+            this.btn_thoat.Caption = "Đăng xuất";
             this.btn_thoat.Id = 21;
-            this.btn_thoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_thoat.ImageOptions.Image")));
-            this.btn_thoat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_thoat.ImageOptions.LargeImage")));
+            this.btn_thoat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_thoat.ImageOptions.SvgImage")));
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btn_thoat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_thoat_ItemClick);
             // 
             // btn_NoiLV
             // 
@@ -433,6 +438,16 @@ namespace QL_NHAN_SU
             this.btn_KhoaHoc.Name = "btn_KhoaHoc";
             this.btn_KhoaHoc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_KhoaHoc_ItemClick);
             // 
+            // btn_BangCongchitiet
+            // 
+            this.btn_BangCongchitiet.Caption = "Bảng công chi tiết";
+            this.btn_BangCongchitiet.Id = 32;
+            this.btn_BangCongchitiet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_BangCongchitiet.ImageOptions.Image")));
+            this.btn_BangCongchitiet.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_BangCongchitiet.ImageOptions.LargeImage")));
+            this.btn_BangCongchitiet.Name = "btn_BangCongchitiet";
+            this.btn_BangCongchitiet.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btn_BangCongchitiet.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_BangCongchitiet_ItemClick);
+            // 
             // HeThong
             // 
             this.HeThong.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -497,6 +512,7 @@ namespace QL_NHAN_SU
             this.ribbonPageGroup3.ItemLinks.Add(this.btn_tangca, true);
             this.ribbonPageGroup3.ItemLinks.Add(this.btn_ungluong, true);
             this.ribbonPageGroup3.ItemLinks.Add(this.btn_BangCong, true);
+            this.ribbonPageGroup3.ItemLinks.Add(this.btn_BangCongchitiet, true);
             this.ribbonPageGroup3.ItemLinks.Add(this.btn_BangLuong, true);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "Quản lý chấm công";
@@ -729,6 +745,7 @@ namespace QL_NHAN_SU
         private DevExpress.XtraBars.BarButtonItem btn_PhongHoc;
         private DevExpress.XtraBars.BarButtonItem btn_lich;
         private DevExpress.XtraBars.BarButtonItem btn_KhoaHoc;
+        private DevExpress.XtraBars.BarButtonItem btn_BangCongchitiet;
     }
 }
 

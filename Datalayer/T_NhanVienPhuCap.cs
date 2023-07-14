@@ -19,7 +19,13 @@ namespace Datalayer
         public Nullable<int> id_PhuCap { get; set; }
         public Nullable<System.DateTime> NgayPhuCap { get; set; }
         public string NoiDungPhuCap { get; set; }
-        public Nullable<double> SoTienPhuCap { get; set; }
+        public Nullable<double> SoTien { get; set; }
+        public Nullable<System.DateTime> DELETEO_DATE { get; set; }
+        public Nullable<int> CREATEO_BY { get; set; }
+        public Nullable<System.DateTime> CREATEO_DATE { get; set; }
+        public Nullable<int> UPDATEO_BY { get; set; }
+        public Nullable<System.DateTime> UPDATEO_DATE { get; set; }
+        public Nullable<int> DELETEO_BY { get; set; }
     
         public virtual T_NhanVien T_NhanVien { get; set; }
         public virtual T_PhuCap T_PhuCap { get; set; }

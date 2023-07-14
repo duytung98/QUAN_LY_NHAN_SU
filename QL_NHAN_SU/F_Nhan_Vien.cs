@@ -18,9 +18,9 @@ using System.Text.RegularExpressions;
 
 namespace QL_NHAN_SU
 {
-    public partial class F_NhanVien : DevExpress.XtraEditors.XtraForm
+    public partial class F_Nhan_Vien : DevExpress.XtraEditors.XtraForm
     {
-        public F_NhanVien()
+        public F_Nhan_Vien()
         {
             InitializeComponent();
         }
@@ -59,7 +59,7 @@ namespace QL_NHAN_SU
             txt_dienthoai.Enabled = !kt;
             txt_diachi.Enabled = !kt;
             txt_Password.Enabled = !kt;
-            
+
             btn_chonHA.Enabled = !kt;
             date_ngaySinh.Enabled = !kt;
             label1.Enabled = !kt;
@@ -86,6 +86,39 @@ namespace QL_NHAN_SU
             gcv_nhanvien.OptionsBehavior.Editable = false;
             _lstNVDTO = _NhanVien.getlistFull();
         }
+        void loadCombo()
+        {
+            cb_bophan.DataSource = _boPhan.GetList();
+            cb_bophan.DisplayMember = "Ten_BoPhan";
+            cb_bophan.ValueMember = "id_BoPhan";
+
+            cb_chucvu.DataSource = _chuvu.GetList();
+            cb_chucvu.DisplayMember = "Ten_ChucVu";
+            cb_chucvu.ValueMember = "id_ChucVu";
+
+            cb_bophan.DisplayMember = "Ten_PhongBan";
+            cb_bophan.ValueMember = "id_BoPhan";
+
+            cb_noilv.DataSource = _noilamviec.GetList();
+            cb_noilv.DisplayMember = "Ten_NoiLV";
+            cb_noilv.ValueMember = "id_NoiLV";
+
+            cb_dantoc.DataSource = _dantoc.GetList();
+            cb_dantoc.DisplayMember = "DanToc";
+            cb_dantoc.ValueMember = "id_DanToc";
+
+            cb_tongao.DataSource = _tongiao.GetList();
+            cb_tongao.DisplayMember = "TonGiao";
+            cb_tongao.ValueMember = "id_TonGiao";
+
+            cb_trinhdo.DataSource = _trinhdo.GetList();
+            cb_trinhdo.DisplayMember = "Ten_TrinhDo";
+            cb_trinhdo.ValueMember = "id_TrinhDo";
+
+            Cb_phongban.DataSource = _phongban.GetList();
+            Cb_phongban.DisplayMember = "Ten_PhongBan";
+            Cb_phongban.ValueMember = "id_PhongBan";
+        }
         void saveData()
         {
             if (_them)
@@ -101,7 +134,7 @@ namespace QL_NHAN_SU
                 pb.DiaChi = txt_diachi.Text;
                 pb.PhanQuyen = cb_phanQuyen.Text;
                 pb.Password = txt_Password.Text;
-                pb.HinhAnh = ImageBase64(pcb_hinhanh.Image,pcb_hinhanh.Image.RawFormat);
+                pb.HinhAnh = ImageBase64(pcb_hinhanh.Image, pcb_hinhanh.Image.RawFormat);
                 pb.id_BoPhan = int.Parse(cb_bophan.SelectedValue.ToString());
                 pb.id_ChucVu = int.Parse(cb_chucvu.SelectedValue.ToString());
                 pb.id_DanToc = int.Parse(cb_dantoc.SelectedValue.ToString());
@@ -145,16 +178,30 @@ namespace QL_NHAN_SU
             txt_Password.Text = string.Empty;
 
         }
-        //them
-       
+
+        private void F_Nhan_Vien_Load(object sender, EventArgs e)
+        {
+            _them = false;
+            _showHide1(true);
+            _NhanVien = new NhanVien();
+            _dantoc = new DanToc();
+            _tongiao = new TonGiao();
+            _chuvu = new ChucVu();
+            _trinhdo = new Trinhdo();
+            _phongban = new PhongBan();
+            _boPhan = new BoPhan();
+            _noilamviec = new NoiLamViec();
+            loadData();
+            loadCombo();
+            splitContainer1.Panel1Collapsed = true;
+        }
+
         private void bnt_them_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             _them = true;
             _showHide1(false);
             _reset();
             splitContainer1.Panel1Collapsed = false;
-
-
         }
 
         private void btn_sua2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -185,7 +232,7 @@ namespace QL_NHAN_SU
                 txt_dienthoai.Text = string.Empty;
                 txt_diachi.Text = string.Empty;
                 txt_Password.Text = string.Empty;
-                
+
             }
         }
         public bool checkcout(string ac)//check tk và mk
@@ -199,9 +246,9 @@ namespace QL_NHAN_SU
 
         private void btn_luu3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            double a,b;
+            double a, b;
             if (cb_noilv.Text == "" || txt_email.Text == "" || txt_dienthoai.Text == "" || txt_diachi.Text == "" || txt_hoten.Text == "" || txt_cccd.Text == ""
-                || cb_goitinh.Text == "" || cb_phanQuyen.Text == "" || cb_dantoc.Text == "" || cb_bophan.Text == "" || cb_chucvu.Text == "" || cb_tongao.Text == "" || cb_trinhdo.Text == "" || Cb_phongban.Text == ""||txt_Password.Text == "") 
+                || cb_goitinh.Text == "" || cb_phanQuyen.Text == "" || cb_dantoc.Text == "" || cb_bophan.Text == "" || cb_chucvu.Text == "" || cb_tongao.Text == "" || cb_trinhdo.Text == "" || Cb_phongban.Text == "" || txt_Password.Text == "")
             {
                 MessageBox.Show("Bạn chưa nhập đủ thông tin!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
             }
@@ -252,14 +299,14 @@ namespace QL_NHAN_SU
         {
             _them = false;
             _showHide1(true);
-           
+
             splitContainer1.Panel1Collapsed = true;
         }
 
         private void bnt_in_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             rptDanhSachNhanVien rpt = new rptDanhSachNhanVien(_lstNVDTO);
-            rpt.ShowPreview();
+            rpt.ShowRibbonPreview();
         }
 
         private void bnt_dong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -267,7 +314,7 @@ namespace QL_NHAN_SU
             this.Close();
         }
 
-        private void gcv_nhanvien_Click(object sender, EventArgs e)
+        private void gcv_conglam_Click(object sender, EventArgs e)
         {
             if (gcv_nhanvien.RowCount > 0)
             {
@@ -282,7 +329,7 @@ namespace QL_NHAN_SU
                 cb_goitinh.Text = nv.GioiTinh;
                 cb_phanQuyen.Text = nv.PhanQuyen;
                 txt_Password.Text = nv.Password;
-                
+
                 cb_tongao.SelectedValue = nv.id_TonGiao;
                 cb_trinhdo.SelectedValue = nv.id_TrinhDo;
                 Cb_phongban.SelectedValue = nv.id_PhongBan;
@@ -293,59 +340,7 @@ namespace QL_NHAN_SU
                 pcb_hinhanh.Image = Base64ToImage(nv.HinhAnh);
             }
         }
-
-        private void F_NhanVien_Load(object sender, EventArgs e)
-        {
-            _them = false;
-            _showHide1(true);
-            _NhanVien = new NhanVien();
-            _dantoc = new DanToc();
-            _tongiao = new TonGiao();
-            _chuvu = new ChucVu();
-            _trinhdo = new Trinhdo();
-           _phongban = new PhongBan();
-           _boPhan = new BoPhan();
-            _noilamviec = new NoiLamViec(); 
-            loadData();
-            loadCombo();
-            splitContainer1.Panel1Collapsed = true;
-            
-        }
-        void loadCombo()
-        {
-            cb_bophan.DataSource = _boPhan.GetList();
-            cb_bophan.DisplayMember = "Ten_BoPhan";
-            cb_bophan.ValueMember = "id_BoPhan";
-
-            cb_chucvu.DataSource = _chuvu.GetList();
-            cb_chucvu.DisplayMember = "Ten_ChucVu";
-            cb_chucvu.ValueMember = "id_ChucVu";
-
-            cb_bophan.DisplayMember = "Ten_PhongBan";
-            cb_bophan.ValueMember = "id_BoPhan";
-
-            cb_noilv.DataSource = _noilamviec.GetList();
-            cb_noilv.DisplayMember = "Ten_NoiLV";
-            cb_noilv.ValueMember = "id_NoiLV";
-
-            cb_dantoc.DataSource = _dantoc.GetList();
-            cb_dantoc.DisplayMember = "DanToc";
-            cb_dantoc.ValueMember = "id_DanToc";
-
-            cb_tongao.DataSource = _tongiao.GetList();
-            cb_tongao.DisplayMember = "TonGiao";
-            cb_tongao.ValueMember = "id_TonGiao";
-
-            cb_trinhdo.DataSource = _trinhdo.GetList();
-            cb_trinhdo.DisplayMember = "Ten_TrinhDo";
-            cb_trinhdo.ValueMember = "id_TrinhDo";
-
-            Cb_phongban.DataSource = _phongban.GetList();
-            Cb_phongban.DisplayMember = "Ten_PhongBan";
-            Cb_phongban.ValueMember = "id_PhongBan";
-        }
-        // hàm chuyển đổi hình ảnh
-        public byte[] ImageBase64(Image image,System.Drawing.Imaging.ImageFormat format)
+        public byte[] ImageBase64(Image image, System.Drawing.Imaging.ImageFormat format)
         {
             using (MemoryStream ms = new MemoryStream())
             {
@@ -353,24 +348,16 @@ namespace QL_NHAN_SU
                 Byte[] imageBytes = ms.ToArray();
                 return imageBytes;
             }
-            
+
         }
         public Image Base64ToImage(byte[] imageBytes)
         {
-            MemoryStream ms = new MemoryStream(imageBytes, 0,imageBytes.Length);
+            MemoryStream ms = new MemoryStream(imageBytes, 0, imageBytes.Length);
             ms.Write(imageBytes, 0, imageBytes.Length);
             Image image = Image.FromStream(ms, true);
             return image;
         }
-
-       
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_chonHA_Click_1(object sender, EventArgs e)
+        private void btn_chonHA_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFile = new OpenFileDialog();
             openFile.Filter = "Pictufile (.png, .jpg)|*.png;*.jpg";

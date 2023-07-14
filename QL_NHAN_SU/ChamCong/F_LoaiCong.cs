@@ -134,5 +134,15 @@ namespace QL_NHAN_SU.ChamCong
                 sp_hesocong.Text = gcv_conglam.GetFocusedRowCellValue("HeSo").ToString();
             }
         }
+
+        private void splitContainer1_SplitterMoved(object sender, SplitterEventArgs e)
+        {
+
+        }
+
+        private void gc_conglam_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

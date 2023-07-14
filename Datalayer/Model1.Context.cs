@@ -27,14 +27,18 @@ namespace Datalayer
     
         public virtual DbSet<KhenThuong_KyLuat> KhenThuong_KyLuat { get; set; }
         public virtual DbSet<T_BangCong> T_BangCong { get; set; }
+        public virtual DbSet<T_BangCong_NVien_ChiTiet> T_BangCong_NVien_ChiTiet { get; set; }
         public virtual DbSet<T_BaoHiem> T_BaoHiem { get; set; }
         public virtual DbSet<T_BoPhan> T_BoPhan { get; set; }
         public virtual DbSet<T_ChucVu> T_ChucVu { get; set; }
+        public virtual DbSet<T_confix> T_confix { get; set; }
         public virtual DbSet<T_DanToc> T_DanToc { get; set; }
         public virtual DbSet<T_DieuChuyen> T_DieuChuyen { get; set; }
         public virtual DbSet<T_HopDong> T_HopDong { get; set; }
         public virtual DbSet<T_Khoa> T_Khoa { get; set; }
         public virtual DbSet<T_KhoaDay> T_KhoaDay { get; set; }
+        public virtual DbSet<T_Ky_Cong> T_Ky_Cong { get; set; }
+        public virtual DbSet<T_KyCong_ChiTiet> T_KyCong_ChiTiet { get; set; }
         public virtual DbSet<T_LichLV> T_LichLV { get; set; }
         public virtual DbSet<T_LoaiCa> T_LoaiCa { get; set; }
         public virtual DbSet<T_LoaiCong> T_LoaiCong { get; set; }

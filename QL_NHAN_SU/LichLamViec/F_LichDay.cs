@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using Businesslayer;
 using Datalayer;
 using Businesslayer.DTO;
+using QL_NHAN_SU.Report;
+using DevExpress.XtraReports.UI;
 
 namespace QL_NHAN_SU.LichLamViec
 {
@@ -32,7 +34,7 @@ namespace QL_NHAN_SU.LichLamViec
         KhoaDay _khoaday;
         LopDay _lopday;
         CaLam _calam;
-
+        List<LichLamViecDTO> _lstLichLV_DTO;
 
         private void _showHide1(bool kt)
         {
@@ -179,6 +181,7 @@ namespace QL_NHAN_SU.LichLamViec
         {
             gv_lichday.DataSource = _LichLV.getlistFull();
             gcv_lichday.OptionsBehavior.Editable = false;
+            _lstLichLV_DTO = _LichLV.getlistFull();
 
         }
         private void F_LichDay_Load(object sender, EventArgs e)
@@ -269,7 +272,8 @@ namespace QL_NHAN_SU.LichLamViec
 
         private void btn_in_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            rptDanhSachLichDay rpt = new rptDanhSachLichDay(_lstLichLV_DTO);
+            rpt.ShowRibbonPreview();
         }
 
         private void btn_dong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

@@ -224,6 +224,7 @@ namespace QL_NHAN_SU.ChamCong
             this.splitContainer1.Size = new System.Drawing.Size(823, 362);
             this.splitContainer1.SplitterDistance = 67;
             this.splitContainer1.TabIndex = 7;
+            this.splitContainer1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitContainer1_SplitterMoved);
             // 
             // sp_hesocong
             // 
@@ -289,6 +290,7 @@ namespace QL_NHAN_SU.ChamCong
             this.gc_conglam.TabIndex = 2;
             this.gc_conglam.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gcv_conglam});
+            this.gc_conglam.Click += new System.EventHandler(this.gc_conglam_Click);
             // 
             // gcv_conglam
             // 

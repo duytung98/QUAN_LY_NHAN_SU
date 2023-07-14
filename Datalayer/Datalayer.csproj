@@ -72,6 +72,9 @@
     <Compile Include="T_BangCong.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="T_BangCong_NVien_ChiTiet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="T_BaoHiem.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -79,6 +82,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="T_ChucVu.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_confix.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="T_DanToc.cs">
@@ -94,6 +100,12 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="T_KhoaDay.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_KyCong_ChiTiet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_Ky_Cong.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="T_LichLV.cs">

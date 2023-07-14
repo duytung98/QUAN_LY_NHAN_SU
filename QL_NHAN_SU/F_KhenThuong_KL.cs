@@ -206,5 +206,10 @@ namespace QL_NHAN_SU
                 e.Handled = true;
             }
         }
+
+        private void splitContainer1_SplitterMoved(object sender, SplitterEventArgs e)
+        {
+
+        }
     }
 }

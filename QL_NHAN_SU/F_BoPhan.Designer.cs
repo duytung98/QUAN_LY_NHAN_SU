@@ -96,7 +96,6 @@ namespace QL_NHAN_SU
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_xoa, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_luu, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_huy, true),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btn_in, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_dong, true)});
             this.bar2.OptionsBar.MultiLine = true;
             this.bar2.OptionsBar.UseWholeRow = true;
@@ -224,10 +223,10 @@ namespace QL_NHAN_SU
             // 
             this.txt_bophan.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_bophan.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_bophan.Location = new System.Drawing.Point(123, 20);
+            this.txt_bophan.Location = new System.Drawing.Point(207, 18);
             this.txt_bophan.Margin = new System.Windows.Forms.Padding(1);
             this.txt_bophan.Name = "txt_bophan";
-            this.txt_bophan.Size = new System.Drawing.Size(277, 34);
+            this.txt_bophan.Size = new System.Drawing.Size(229, 34);
             this.txt_bophan.TabIndex = 3;
             // 
             // label1
@@ -235,7 +234,7 @@ namespace QL_NHAN_SU
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 23);
+            this.label1.Location = new System.Drawing.Point(88, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 27);

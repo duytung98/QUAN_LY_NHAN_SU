@@ -22,6 +22,7 @@ namespace Datalayer
     
         public int id_PhuCap { get; set; }
         public string Ten_PhuCap { get; set; }
+        public Nullable<double> Sotien { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<T_NhanVienPhuCap> T_NhanVienPhuCap { get; set; }

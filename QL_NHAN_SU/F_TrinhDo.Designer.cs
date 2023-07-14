@@ -100,7 +100,6 @@ namespace QL_NHAN_SU
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_xoa, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_luu, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_huy, true),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btn_in, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_dong, true)});
             this.bar2.OptionsBar.MultiLine = true;
             this.bar2.OptionsBar.UseWholeRow = true;

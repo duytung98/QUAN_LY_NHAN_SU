@@ -259,7 +259,7 @@ namespace QL_NHAN_SU
             // 
             this.cb_DVDen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_DVDen.FormattingEnabled = true;
-            this.cb_DVDen.Location = new System.Drawing.Point(504, 16);
+            this.cb_DVDen.Location = new System.Drawing.Point(504, 53);
             this.cb_DVDen.Name = "cb_DVDen";
             this.cb_DVDen.Size = new System.Drawing.Size(170, 30);
             this.cb_DVDen.TabIndex = 74;
@@ -268,11 +268,11 @@ namespace QL_NHAN_SU
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(383, 23);
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(381, 55);
             this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 22);
+            this.label5.Size = new System.Drawing.Size(119, 27);
             this.label5.TabIndex = 73;
             this.label5.Text = "Đơn vị đến";
             // 

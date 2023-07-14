@@ -75,11 +75,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChamCong\F_BangCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChamCong\F_BangCong.Designer.cs">
+      <DependentUpon>F_BangCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChamCong\F_BangCongChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChamCong\F_BangCongChiTiet.Designer.cs">
+      <DependentUpon>F_BangCongChiTiet.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChamCong\F_CaLam.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChamCong\F_CaLam.Designer.cs">
       <DependentUpon>F_CaLam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChamCong\F_CapNhatNgayCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChamCong\F_CapNhatNgayCong.Designer.cs">
+      <DependentUpon>F_CapNhatNgayCong.cs</DependentUpon>
     </Compile>
     <Compile Include="ChamCong\F_LoaiCong.cs">
       <SubType>Form</SubType>
@@ -87,6 +105,25 @@
     <Compile Include="ChamCong\F_LoaiCong.Designer.cs">
       <DependentUpon>F_LoaiCong.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChamCong\F_Phucap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChamCong\F_Phucap.Designer.cs">
+      <DependentUpon>F_Phucap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChamCong\F_TangCa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChamCong\F_TangCa.Designer.cs">
+      <DependentUpon>F_TangCa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChamCong\F_UngLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChamCong\F_UngLuong.Designer.cs">
+      <DependentUpon>F_UngLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChamCong_Function.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,12 +172,6 @@
     <Compile Include="F_NangLuong.Designer.cs">
       <DependentUpon>F_NangLuong.cs</DependentUpon>
     </Compile>
-    <Compile Include="F_NhanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="F_NhanVien.Designer.cs">
-      <DependentUpon>F_NhanVien.cs</DependentUpon>
-    </Compile>
     <Compile Include="F_NhanVienThoiViec.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +183,12 @@
     </Compile>
     <Compile Include="F_NhanVien_DieuChuyen.Designer.cs">
       <DependentUpon>F_NhanVien_DieuChuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Nhan_Vien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Nhan_Vien.Designer.cs">
+      <DependentUpon>F_Nhan_Vien.cs</DependentUpon>
     </Compile>
     <Compile Include="F_NoiLamViec.cs">
       <SubType>Form</SubType>
@@ -176,6 +213,12 @@
     </Compile>
     <Compile Include="F_TrinhDo.Designer.cs">
       <DependentUpon>F_TrinhDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Wartifom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Wartifom.Designer.cs">
+      <DependentUpon>F_Wartifom.cs</DependentUpon>
     </Compile>
     <Compile Include="LichLamViec\F_Khoa.cs">
       <SubType>Form</SubType>
@@ -215,6 +258,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\F_bangcongnhanvienchitiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\F_bangcongnhanvienchitiet.Designer.cs">
+      <DependentUpon>F_bangcongnhanvienchitiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptBangCongchitiet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptBangCongchitiet.Designer.cs">
+      <DependentUpon>rptBangCongchitiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptDanhSachLichDay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptDanhSachLichDay.Designer.cs">
+      <DependentUpon>rptDanhSachLichDay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Report\rptHopDongLaoDong.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -227,11 +288,35 @@
     <Compile Include="Report\rptDanhSachNhanVien.Designer.cs">
       <DependentUpon>rptDanhSachNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report\rpt_BangCong.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_BangCong.Designer.cs">
+      <DependentUpon>rpt_BangCong.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChamCong\F_BangCong.resx">
+      <DependentUpon>F_BangCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChamCong\F_BangCongChiTiet.resx">
+      <DependentUpon>F_BangCongChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChamCong\F_CaLam.resx">
       <DependentUpon>F_CaLam.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChamCong\F_CapNhatNgayCong.resx">
+      <DependentUpon>F_CapNhatNgayCong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChamCong\F_LoaiCong.resx">
       <DependentUpon>F_LoaiCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChamCong\F_Phucap.resx">
+      <DependentUpon>F_Phucap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChamCong\F_TangCa.resx">
+      <DependentUpon>F_TangCa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChamCong\F_UngLuong.resx">
+      <DependentUpon>F_UngLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -257,14 +342,14 @@
     <EmbeddedResource Include="F_NangLuong.resx">
       <DependentUpon>F_NangLuong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="F_NhanVien.resx">
-      <DependentUpon>F_NhanVien.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="F_NhanVienThoiViec.resx">
       <DependentUpon>F_NhanVienThoiViec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_NhanVien_DieuChuyen.resx">
       <DependentUpon>F_NhanVien_DieuChuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Nhan_Vien.resx">
+      <DependentUpon>F_Nhan_Vien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_NoiLamViec.resx">
       <DependentUpon>F_NoiLamViec.cs</DependentUpon>
@@ -277,6 +362,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_TrinhDo.resx">
       <DependentUpon>F_TrinhDo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Wartifom.resx">
+      <DependentUpon>F_Wartifom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LichLamViec\F_Khoa.resx">
       <DependentUpon>F_Khoa.cs</DependentUpon>
@@ -302,11 +390,23 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\F_bangcongnhanvienchitiet.resx">
+      <DependentUpon>F_bangcongnhanvienchitiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptBangCongchitiet.resx">
+      <DependentUpon>rptBangCongchitiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptDanhSachLichDay.resx">
+      <DependentUpon>rptDanhSachLichDay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\rptHopDongLaoDong.resx">
       <DependentUpon>rptHopDongLaoDong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\rptDanhSachNhanVien.resx">
       <DependentUpon>rptDanhSachNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpt_BangCong.resx">
+      <DependentUpon>rpt_BangCong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />

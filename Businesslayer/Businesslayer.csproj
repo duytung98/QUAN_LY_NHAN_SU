@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BangCong_NV_ChiTiet.cs" />
     <Compile Include="BoPhan.cs" />
     <Compile Include="CaLam.cs" />
     <Compile Include="ChucVu.cs" />
@@ -65,14 +66,20 @@
     <Compile Include="DTO\NhanVienDTO.cs" />
     <Compile Include="DTO\NhanvienThoiViecDTO.cs" />
     <Compile Include="DTO\NhanVien_NangLuongDTO.cs" />
+    <Compile Include="DTO\PhuCapDTo.cs" />
+    <Compile Include="DTO\TangCaDTO.cs" />
+    <Compile Include="DTO\UngLuongDTO.cs" />
     <Compile Include="HopDongLaoDong.cs" />
     <Compile Include="KhenThuong.cs" />
     <Compile Include="Khoa.cs" />
     <Compile Include="KhoaDay.cs" />
+    <Compile Include="KyCong.cs" />
+    <Compile Include="KyCongChiTiet.cs" />
     <Compile Include="LichLamViec1.cs" />
     <Compile Include="LoaiCong.cs" />
     <Compile Include="LopDay.cs" />
     <Compile Include="MonDay.cs" />
+    <Compile Include="MyFunction.cs" />
     <Compile Include="NhanVien.cs" />
     <Compile Include="NhanVienThoiViec.cs" />
     <Compile Include="NhanVien_DieuChuyen.cs" />
@@ -80,9 +87,13 @@
     <Compile Include="NoiLamViec.cs" />
     <Compile Include="PhongBan.cs" />
     <Compile Include="PhongHoc.cs" />
+    <Compile Include="PhuCap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SYS_Confix.cs" />
+    <Compile Include="TangCa.cs" />
     <Compile Include="TonGiao.cs" />
     <Compile Include="Trinhdo.cs" />
+    <Compile Include="UngLuong.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Datalayer\Datalayer.csproj">

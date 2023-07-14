@@ -38,12 +38,12 @@ namespace QL_NHAN_SU
             this.btn_xoa = new DevExpress.XtraBars.BarButtonItem();
             this.btn_luu = new DevExpress.XtraBars.BarButtonItem();
             this.btn_huy = new DevExpress.XtraBars.BarButtonItem();
-            this.btn_in = new DevExpress.XtraBars.BarButtonItem();
             this.btn_dong = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.btn_in = new DevExpress.XtraBars.BarButtonItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.cb_noilv = new System.Windows.Forms.TextBox();
             this.txt_diachi = new System.Windows.Forms.TextBox();
@@ -107,13 +107,13 @@ namespace QL_NHAN_SU
             this.bar2.DockCol = 0;
             this.bar2.DockRow = 0;
             this.bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.bar2.FloatLocation = new System.Drawing.Point(303, 151);
             this.bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_them),
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_sua, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_xoa, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_luu, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_huy, true),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btn_in, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_dong, true)});
             this.bar2.OptionsBar.MultiLine = true;
             this.bar2.OptionsBar.UseWholeRow = true;
@@ -164,15 +164,6 @@ namespace QL_NHAN_SU
             this.btn_huy.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btn_huy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_huy_ItemClick);
             // 
-            // btn_in
-            // 
-            this.btn_in.Caption = "IN";
-            this.btn_in.Id = 6;
-            this.btn_in.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_in.ImageOptions.SvgImage")));
-            this.btn_in.Name = "btn_in";
-            this.btn_in.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.btn_in.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_in_ItemClick);
-            // 
             // btn_dong
             // 
             this.btn_dong.Caption = "Đóng";
@@ -218,6 +209,15 @@ namespace QL_NHAN_SU
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 573);
             // 
+            // btn_in
+            // 
+            this.btn_in.Caption = "IN";
+            this.btn_in.Id = 6;
+            this.btn_in.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_in.ImageOptions.SvgImage")));
+            this.btn_in.Name = "btn_in";
+            this.btn_in.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btn_in.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_in_ItemClick);
+            // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -244,25 +244,26 @@ namespace QL_NHAN_SU
             this.splitContainer1.Size = new System.Drawing.Size(1247, 573);
             this.splitContainer1.SplitterDistance = 210;
             this.splitContainer1.TabIndex = 4;
+            this.splitContainer1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitContainer1_SplitterMoved);
             // 
             // cb_noilv
             // 
             this.cb_noilv.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.cb_noilv.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_noilv.Location = new System.Drawing.Point(256, 23);
+            this.cb_noilv.Location = new System.Drawing.Point(623, 1);
             this.cb_noilv.Margin = new System.Windows.Forms.Padding(1);
             this.cb_noilv.Name = "cb_noilv";
-            this.cb_noilv.Size = new System.Drawing.Size(407, 34);
+            this.cb_noilv.Size = new System.Drawing.Size(5, 34);
             this.cb_noilv.TabIndex = 10;
             // 
             // txt_diachi
             // 
             this.txt_diachi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_diachi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_diachi.Location = new System.Drawing.Point(256, 149);
+            this.txt_diachi.Location = new System.Drawing.Point(623, 1);
             this.txt_diachi.Margin = new System.Windows.Forms.Padding(1);
             this.txt_diachi.Name = "txt_diachi";
-            this.txt_diachi.Size = new System.Drawing.Size(407, 34);
+            this.txt_diachi.Size = new System.Drawing.Size(5, 34);
             this.txt_diachi.TabIndex = 9;
             // 
             // label4
@@ -270,7 +271,7 @@ namespace QL_NHAN_SU
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(65, 152);
+            this.label4.Location = new System.Drawing.Point(623, 1);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 27);
@@ -281,10 +282,10 @@ namespace QL_NHAN_SU
             // 
             this.txt_dienthoai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_dienthoai.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dienthoai.Location = new System.Drawing.Point(256, 107);
+            this.txt_dienthoai.Location = new System.Drawing.Point(625, 1);
             this.txt_dienthoai.Margin = new System.Windows.Forms.Padding(1);
             this.txt_dienthoai.Name = "txt_dienthoai";
-            this.txt_dienthoai.Size = new System.Drawing.Size(407, 34);
+            this.txt_dienthoai.Size = new System.Drawing.Size(5, 34);
             this.txt_dienthoai.TabIndex = 7;
             // 
             // label3
@@ -292,7 +293,7 @@ namespace QL_NHAN_SU
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(68, 110);
+            this.label3.Location = new System.Drawing.Point(625, 1);
             this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(112, 27);
@@ -303,10 +304,10 @@ namespace QL_NHAN_SU
             // 
             this.txt_email.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_email.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_email.Location = new System.Drawing.Point(256, 65);
+            this.txt_email.Location = new System.Drawing.Point(625, 1);
             this.txt_email.Margin = new System.Windows.Forms.Padding(1);
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(407, 34);
+            this.txt_email.Size = new System.Drawing.Size(5, 34);
             this.txt_email.TabIndex = 5;
             // 
             // label2
@@ -314,7 +315,7 @@ namespace QL_NHAN_SU
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(68, 68);
+            this.label2.Location = new System.Drawing.Point(625, 1);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 27);
@@ -326,7 +327,7 @@ namespace QL_NHAN_SU
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(65, 26);
+            this.label1.Location = new System.Drawing.Point(623, 1);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 27);

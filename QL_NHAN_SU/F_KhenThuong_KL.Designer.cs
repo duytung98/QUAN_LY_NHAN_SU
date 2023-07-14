@@ -45,19 +45,19 @@ namespace QL_NHAN_SU
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.txt_lido = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.sl_NhanVien = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.cl_NhanVien = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cl_TenNV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.date_Ngay = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_NoiDung = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_SQD = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.sl_NhanVien = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.cl_NhanVien = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cl_TenNV = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.txt_lido = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.gv_khenthuong = new DevExpress.XtraGrid.GridControl();
             this.gcv_khenthuong = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.DEL = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -246,74 +246,29 @@ namespace QL_NHAN_SU
             this.splitContainer1.Size = new System.Drawing.Size(945, 421);
             this.splitContainer1.SplitterDistance = 277;
             this.splitContainer1.TabIndex = 8;
+            this.splitContainer1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitContainer1_SplitterMoved);
             // 
-            // date_Ngay
+            // txt_lido
             // 
-            this.date_Ngay.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.date_Ngay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_Ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date_Ngay.Location = new System.Drawing.Point(201, 82);
-            this.date_Ngay.Margin = new System.Windows.Forms.Padding(1);
-            this.date_Ngay.Name = "date_Ngay";
-            this.date_Ngay.Size = new System.Drawing.Size(228, 30);
-            this.date_Ngay.TabIndex = 71;
+            this.txt_lido.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_lido.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_lido.Location = new System.Drawing.Point(201, 179);
+            this.txt_lido.Margin = new System.Windows.Forms.Padding(1);
+            this.txt_lido.Name = "txt_lido";
+            this.txt_lido.Size = new System.Drawing.Size(636, 30);
+            this.txt_lido.TabIndex = 84;
             // 
-            // label4
+            // label2
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(91, 88);
-            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 22);
-            this.label4.TabIndex = 72;
-            this.label4.Text = "Ngày QĐ";
-            // 
-            // txt_NoiDung
-            // 
-            this.txt_NoiDung.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_NoiDung.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NoiDung.Location = new System.Drawing.Point(201, 226);
-            this.txt_NoiDung.Margin = new System.Windows.Forms.Padding(1);
-            this.txt_NoiDung.Name = "txt_NoiDung";
-            this.txt_NoiDung.Size = new System.Drawing.Size(636, 30);
-            this.txt_NoiDung.TabIndex = 70;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(91, 229);
-            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 22);
-            this.label3.TabIndex = 69;
-            this.label3.Text = "Nội dung";
-            // 
-            // txt_SQD
-            // 
-            this.txt_SQD.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_SQD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_SQD.Location = new System.Drawing.Point(201, 38);
-            this.txt_SQD.Margin = new System.Windows.Forms.Padding(1);
-            this.txt_SQD.Name = "txt_SQD";
-            this.txt_SQD.ReadOnly = true;
-            this.txt_SQD.Size = new System.Drawing.Size(228, 30);
-            this.txt_SQD.TabIndex = 52;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(91, 41);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 22);
-            this.label1.TabIndex = 48;
-            this.label1.Text = "Số QĐ";
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(91, 182);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 22);
+            this.label2.TabIndex = 83;
+            this.label2.Text = "Lý do";
             // 
             // label7
             // 
@@ -384,27 +339,73 @@ namespace QL_NHAN_SU
             this.cl_TenNV.VisibleIndex = 1;
             this.cl_TenNV.Width = 400;
             // 
-            // txt_lido
+            // date_Ngay
             // 
-            this.txt_lido.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_lido.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_lido.Location = new System.Drawing.Point(201, 179);
-            this.txt_lido.Margin = new System.Windows.Forms.Padding(1);
-            this.txt_lido.Name = "txt_lido";
-            this.txt_lido.Size = new System.Drawing.Size(636, 30);
-            this.txt_lido.TabIndex = 84;
+            this.date_Ngay.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.date_Ngay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_Ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.date_Ngay.Location = new System.Drawing.Point(201, 82);
+            this.date_Ngay.Margin = new System.Windows.Forms.Padding(1);
+            this.date_Ngay.Name = "date_Ngay";
+            this.date_Ngay.Size = new System.Drawing.Size(228, 30);
+            this.date_Ngay.TabIndex = 71;
             // 
-            // label2
+            // label4
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(91, 182);
-            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 22);
-            this.label2.TabIndex = 83;
-            this.label2.Text = "Lý do";
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(91, 88);
+            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(84, 22);
+            this.label4.TabIndex = 72;
+            this.label4.Text = "Ngày QĐ";
+            // 
+            // txt_NoiDung
+            // 
+            this.txt_NoiDung.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_NoiDung.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_NoiDung.Location = new System.Drawing.Point(201, 226);
+            this.txt_NoiDung.Margin = new System.Windows.Forms.Padding(1);
+            this.txt_NoiDung.Name = "txt_NoiDung";
+            this.txt_NoiDung.Size = new System.Drawing.Size(636, 30);
+            this.txt_NoiDung.TabIndex = 70;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(91, 229);
+            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 22);
+            this.label3.TabIndex = 69;
+            this.label3.Text = "Nội dung";
+            // 
+            // txt_SQD
+            // 
+            this.txt_SQD.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_SQD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_SQD.Location = new System.Drawing.Point(201, 38);
+            this.txt_SQD.Margin = new System.Windows.Forms.Padding(1);
+            this.txt_SQD.Name = "txt_SQD";
+            this.txt_SQD.ReadOnly = true;
+            this.txt_SQD.Size = new System.Drawing.Size(228, 30);
+            this.txt_SQD.TabIndex = 52;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(91, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 22);
+            this.label1.TabIndex = 48;
+            this.label1.Text = "Số QĐ";
             // 
             // gv_khenthuong
             // 

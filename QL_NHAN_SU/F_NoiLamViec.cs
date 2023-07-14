@@ -170,5 +170,10 @@ namespace QL_NHAN_SU
                 txt_diachi.Text = gv_noilv.GetFocusedRowCellValue("DiaChi").ToString();
             }
         }
+
+        private void splitContainer1_SplitterMoved(object sender, SplitterEventArgs e)
+        {
+
+        }
     }
 }

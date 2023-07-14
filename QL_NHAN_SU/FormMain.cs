@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Businesslayer;
+using QL_NHAN_SU.Report;
 
 namespace QL_NHAN_SU
 {
@@ -37,7 +38,7 @@ namespace QL_NHAN_SU
 
         private void btn_phucap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            openForm(typeof(ChamCong.F_Phucap));
         }
 
         private void btn_DanToc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -103,7 +104,7 @@ namespace QL_NHAN_SU
 
         private void NhanVien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            openForm(typeof(F_NhanVien));
+            openForm(typeof(F_Nhan_Vien));
         }
 
         private void HopDong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -190,6 +191,42 @@ namespace QL_NHAN_SU
         private void btn_loaicong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             openForm(typeof(ChamCong.F_LoaiCong));
+        }
+
+        private void btn_BangCong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(ChamCong.F_BangCong));
+        }
+
+        private void btn_thoat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            F_DangNhap f_DangNhap = new F_DangNhap();
+
+            DialogResult kq = MessageBox.Show("Bạn có muốn đăng xuất", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (kq == DialogResult.Yes)
+            {
+                this.Hide();
+                f_DangNhap.ShowDialog();
+                f_DangNhap = null;
+                this.Close();
+
+            }
+        }
+
+        private void btn_BangCongchitiet_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            F_bangcongnhanvienchitiet frm = new F_bangcongnhanvienchitiet();
+            frm.ShowDialog();
+        }
+
+        private void btn_tangca_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(ChamCong.F_TangCa));
+        }
+
+        private void btn_ungluong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(ChamCong.F_UngLuong));
         }
     }
 }

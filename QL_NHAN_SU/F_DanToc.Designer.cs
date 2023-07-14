@@ -38,13 +38,13 @@ namespace QL_NHAN_SU
             this.btn_xoa = new DevExpress.XtraBars.BarButtonItem();
             this.btn_luu = new DevExpress.XtraBars.BarButtonItem();
             this.btn_huy = new DevExpress.XtraBars.BarButtonItem();
-            this.btn_in = new DevExpress.XtraBars.BarButtonItem();
             this.btn_dong = new DevExpress.XtraBars.BarButtonItem();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.btn_in = new DevExpress.XtraBars.BarButtonItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.txt_dantoc = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -99,7 +99,6 @@ namespace QL_NHAN_SU
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_xoa, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_luu, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_huy, true),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btn_in, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_dong, true)});
             this.bar2.OptionsBar.MultiLine = true;
             this.bar2.OptionsBar.UseWholeRow = true;
@@ -149,15 +148,6 @@ namespace QL_NHAN_SU
             this.btn_huy.Name = "btn_huy";
             this.btn_huy.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btn_huy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_huy_ItemClick);
-            // 
-            // btn_in
-            // 
-            this.btn_in.Caption = "IN";
-            this.btn_in.Id = 6;
-            this.btn_in.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_in.ImageOptions.SvgImage")));
-            this.btn_in.Name = "btn_in";
-            this.btn_in.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.btn_in.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_in_ItemClick);
             // 
             // btn_dong
             // 
@@ -212,6 +202,15 @@ namespace QL_NHAN_SU
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 619);
             // 
+            // btn_in
+            // 
+            this.btn_in.Caption = "IN";
+            this.btn_in.Id = 6;
+            this.btn_in.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_in.ImageOptions.SvgImage")));
+            this.btn_in.Name = "btn_in";
+            this.btn_in.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btn_in.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_in_ItemClick);
+            // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -237,10 +236,10 @@ namespace QL_NHAN_SU
             // 
             this.txt_dantoc.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_dantoc.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dantoc.Location = new System.Drawing.Point(208, 15);
+            this.txt_dantoc.Location = new System.Drawing.Point(118, 19);
             this.txt_dantoc.Margin = new System.Windows.Forms.Padding(1);
             this.txt_dantoc.Name = "txt_dantoc";
-            this.txt_dantoc.Size = new System.Drawing.Size(220, 34);
+            this.txt_dantoc.Size = new System.Drawing.Size(152, 34);
             this.txt_dantoc.TabIndex = 1;
             // 
             // label1
@@ -248,7 +247,7 @@ namespace QL_NHAN_SU
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(62, 18);
+            this.label1.Location = new System.Drawing.Point(25, 22);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 27);
