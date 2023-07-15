@@ -56,10 +56,12 @@
   <ItemGroup>
     <Compile Include="BangCong_NV_ChiTiet.cs" />
     <Compile Include="BangLuong.cs" />
+    <Compile Include="BaoHiem.cs" />
     <Compile Include="BoPhan.cs" />
     <Compile Include="CaLam.cs" />
     <Compile Include="ChucVu.cs" />
     <Compile Include="DanToc.cs" />
+    <Compile Include="DTO\BaohiemDTO.cs" />
     <Compile Include="DTO\DieuChuyenDTO.cs" />
     <Compile Include="DTO\HopDongDTO.cs" />
     <Compile Include="DTO\KhenThuongDTO.cs" />

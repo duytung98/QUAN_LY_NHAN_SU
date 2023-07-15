@@ -91,6 +91,7 @@ namespace QL_NHAN_SU
             this.list_Lenluong = new DevExpress.XtraEditors.ListBoxControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.list_SinhNhat = new DevExpress.XtraEditors.ListBoxControl();
+            this.btn_BaoHiem = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.galleryDropDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
@@ -144,10 +145,11 @@ namespace QL_NHAN_SU
             this.btn_PhongHoc,
             this.btn_lich,
             this.btn_KhoaHoc,
-            this.btn_BangCongchitiet});
+            this.btn_BangCongchitiet,
+            this.btn_BaoHiem});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.ribbonControl1.MaxItemId = 33;
+            this.ribbonControl1.MaxItemId = 34;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.HeThong,
@@ -484,6 +486,7 @@ namespace QL_NHAN_SU
             this.ribbonPageGroup2.ItemLinks.Add(this.btn_boPhan, true);
             this.ribbonPageGroup2.ItemLinks.Add(this.btn_NoiLV, true);
             this.ribbonPageGroup2.ItemLinks.Add(this.NhanVien, true);
+            this.ribbonPageGroup2.ItemLinks.Add(this.btn_BaoHiem, true);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Danh mục dùng chung";
             // 
@@ -658,6 +661,15 @@ namespace QL_NHAN_SU
             this.list_SinhNhat.SelectedIndexChanged += new System.EventHandler(this.list_SinhNhat_SelectedIndexChanged);
             this.list_SinhNhat.CustomizeItem += new DevExpress.XtraEditors.CustomizeTemplatedItemEventHandler(this.list_SinhNhat_CustomizeItem);
             // 
+            // btn_BaoHiem
+            // 
+            this.btn_BaoHiem.Caption = "Bảo hiểm";
+            this.btn_BaoHiem.Id = 33;
+            this.btn_BaoHiem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_BaoHiem.ImageOptions.SvgImage")));
+            this.btn_BaoHiem.Name = "btn_BaoHiem";
+            this.btn_BaoHiem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btn_BaoHiem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_BaoHiem_ItemClick);
+            // 
             // FormMain
             // 
             this.Appearance.Options.UseFont = true;
@@ -747,6 +759,7 @@ namespace QL_NHAN_SU
         private DevExpress.XtraBars.BarButtonItem btn_lich;
         private DevExpress.XtraBars.BarButtonItem btn_KhoaHoc;
         private DevExpress.XtraBars.BarButtonItem btn_BangCongchitiet;
+        private DevExpress.XtraBars.BarButtonItem btn_BaoHiem;
     }
 }
 

@@ -231,15 +231,16 @@ namespace QL_NHAN_SU
             this.splitContainer1.SplitterDistance = 52;
             this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 4;
+            this.splitContainer1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitContainer1_SplitterMoved);
             // 
             // txt_dantoc
             // 
             this.txt_dantoc.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_dantoc.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dantoc.Location = new System.Drawing.Point(118, 19);
+            this.txt_dantoc.Location = new System.Drawing.Point(179, 13);
             this.txt_dantoc.Margin = new System.Windows.Forms.Padding(1);
             this.txt_dantoc.Name = "txt_dantoc";
-            this.txt_dantoc.Size = new System.Drawing.Size(152, 34);
+            this.txt_dantoc.Size = new System.Drawing.Size(193, 34);
             this.txt_dantoc.TabIndex = 1;
             // 
             // label1
@@ -247,7 +248,7 @@ namespace QL_NHAN_SU
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 22);
+            this.label1.Location = new System.Drawing.Point(31, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 27);

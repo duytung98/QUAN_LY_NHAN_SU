@@ -99,6 +99,13 @@
           <Property Name="NoiCap" Type="nvarchar" MaxLength="300" />
           <Property Name="Noi_DK_Kham_Benh" Type="nvarchar" MaxLength="300" />
           <Property Name="id_NhanVien" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="300" Nullable="false" />
+          <Property Name="DELETE_BY" Type="int" />
+          <Property Name="DELETE_DATE" Type="datetime" />
+          <Property Name="UPDATE_BY" Type="int" />
+          <Property Name="UPDATE_DATE" Type="datetime" />
+          <Property Name="CREATEO_BY" Type="int" />
+          <Property Name="CREATEO_DATE" Type="datetime" />
         </EntityType>
         <EntityType Name="T_BoPhan">
           <Key>
@@ -1255,6 +1262,13 @@
           <Property Name="NoiCap" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
           <Property Name="Noi_DK_Kham_Benh" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
           <Property Name="id_NhanVien" Type="Int32" />
+          <Property Name="GhiChu" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="DELETE_BY" Type="Int32" />
+          <Property Name="DELETE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="UPDATE_BY" Type="Int32" />
+          <Property Name="UPDATE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="CREATEO_BY" Type="Int32" />
+          <Property Name="CREATEO_DATE" Type="DateTime" Precision="3" />
           <NavigationProperty Name="T_NhanVien" Relationship="QUAN_LY_NHAN_SUModel.FK_T_BaoHiem_T_NhanVien" FromRole="T_BaoHiem" ToRole="T_NhanVien" />
         </EntityType>
         <EntityType Name="T_BoPhan">
@@ -2150,6 +2164,13 @@
           <EntitySetMapping Name="T_BaoHiem">
             <EntityTypeMapping TypeName="QUAN_LY_NHAN_SUModel.T_BaoHiem">
               <MappingFragment StoreEntitySet="T_BaoHiem">
+                <ScalarProperty Name="CREATEO_DATE" ColumnName="CREATEO_DATE" />
+                <ScalarProperty Name="CREATEO_BY" ColumnName="CREATEO_BY" />
+                <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+                <ScalarProperty Name="UPDATE_BY" ColumnName="UPDATE_BY" />
+                <ScalarProperty Name="DELETE_DATE" ColumnName="DELETE_DATE" />
+                <ScalarProperty Name="DELETE_BY" ColumnName="DELETE_BY" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
                 <ScalarProperty Name="id_NhanVien" ColumnName="id_NhanVien" />
                 <ScalarProperty Name="Noi_DK_Kham_Benh" ColumnName="Noi_DK_Kham_Benh" />
                 <ScalarProperty Name="NoiCap" ColumnName="NoiCap" />

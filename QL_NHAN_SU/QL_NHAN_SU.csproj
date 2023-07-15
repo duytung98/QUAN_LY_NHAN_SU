@@ -130,6 +130,12 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_BaoHiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_BaoHiem.Designer.cs">
+      <DependentUpon>F_BaoHiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_BoPhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -332,6 +338,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_BaoHiem.resx">
+      <DependentUpon>F_BaoHiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_BoPhan.resx">
       <DependentUpon>F_BoPhan.cs</DependentUpon>

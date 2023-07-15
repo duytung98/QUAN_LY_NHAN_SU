@@ -250,20 +250,20 @@ namespace QL_NHAN_SU
             // 
             this.cb_noilv.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.cb_noilv.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_noilv.Location = new System.Drawing.Point(623, 1);
+            this.cb_noilv.Location = new System.Drawing.Point(356, 41);
             this.cb_noilv.Margin = new System.Windows.Forms.Padding(1);
             this.cb_noilv.Name = "cb_noilv";
-            this.cb_noilv.Size = new System.Drawing.Size(5, 34);
+            this.cb_noilv.Size = new System.Drawing.Size(220, 34);
             this.cb_noilv.TabIndex = 10;
             // 
             // txt_diachi
             // 
             this.txt_diachi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_diachi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_diachi.Location = new System.Drawing.Point(623, 1);
+            this.txt_diachi.Location = new System.Drawing.Point(356, 121);
             this.txt_diachi.Margin = new System.Windows.Forms.Padding(1);
             this.txt_diachi.Name = "txt_diachi";
-            this.txt_diachi.Size = new System.Drawing.Size(5, 34);
+            this.txt_diachi.Size = new System.Drawing.Size(220, 34);
             this.txt_diachi.TabIndex = 9;
             // 
             // label4
@@ -271,7 +271,7 @@ namespace QL_NHAN_SU
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(623, 1);
+            this.label4.Location = new System.Drawing.Point(189, 124);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 27);
@@ -282,10 +282,10 @@ namespace QL_NHAN_SU
             // 
             this.txt_dienthoai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_dienthoai.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dienthoai.Location = new System.Drawing.Point(625, 1);
+            this.txt_dienthoai.Location = new System.Drawing.Point(827, 121);
             this.txt_dienthoai.Margin = new System.Windows.Forms.Padding(1);
             this.txt_dienthoai.Name = "txt_dienthoai";
-            this.txt_dienthoai.Size = new System.Drawing.Size(5, 34);
+            this.txt_dienthoai.Size = new System.Drawing.Size(220, 34);
             this.txt_dienthoai.TabIndex = 7;
             // 
             // label3
@@ -293,7 +293,7 @@ namespace QL_NHAN_SU
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(625, 1);
+            this.label3.Location = new System.Drawing.Point(693, 124);
             this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(112, 27);
@@ -304,10 +304,10 @@ namespace QL_NHAN_SU
             // 
             this.txt_email.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txt_email.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_email.Location = new System.Drawing.Point(625, 1);
+            this.txt_email.Location = new System.Drawing.Point(827, 41);
             this.txt_email.Margin = new System.Windows.Forms.Padding(1);
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(5, 34);
+            this.txt_email.Size = new System.Drawing.Size(220, 34);
             this.txt_email.TabIndex = 5;
             // 
             // label2
@@ -315,7 +315,7 @@ namespace QL_NHAN_SU
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(625, 1);
+            this.label2.Location = new System.Drawing.Point(693, 45);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 27);
@@ -327,7 +327,7 @@ namespace QL_NHAN_SU
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(623, 1);
+            this.label1.Location = new System.Drawing.Point(173, 45);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 27);

@@ -148,5 +148,10 @@ namespace QL_NHAN_SU
             }
            
         }
+
+        private void splitContainer1_SplitterMoved(object sender, SplitterEventArgs e)
+        {
+
+        }
     }   
 }

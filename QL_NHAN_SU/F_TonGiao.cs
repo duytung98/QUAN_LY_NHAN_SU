@@ -132,5 +132,10 @@ namespace QL_NHAN_SU
             }
            
         }
+
+        private void txt_tongiao_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

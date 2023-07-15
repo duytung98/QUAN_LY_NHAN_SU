@@ -329,7 +329,6 @@ namespace QL_NHAN_SU
                 cb_goitinh.Text = nv.GioiTinh;
                 cb_phanQuyen.Text = nv.PhanQuyen;
                 txt_Password.Text = nv.Password;
-
                 cb_tongao.SelectedValue = nv.id_TonGiao;
                 cb_trinhdo.SelectedValue = nv.id_TrinhDo;
                 Cb_phongban.SelectedValue = nv.id_PhongBan;
