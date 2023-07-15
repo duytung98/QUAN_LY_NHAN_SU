@@ -30,6 +30,7 @@ namespace Businesslayer
                 hd.NgayKy = item.NgayKy.Value.ToString("dd/MM/yyyy");
                 hd.ThoiHan = item.ThoiHan;
                 hd.HeSoLuong = item.HeSoLuong;
+                hd.LuongCoBan = item.LuongCB;
                 hd.LanKy = item.Lanky;
                 hd.id_NhanVien = item.id_NhanVien;
                 var nv = db.T_NhanVien.FirstOrDefault(n => n.id_NhanVien == item.id_NhanVien);
@@ -69,6 +70,7 @@ namespace Businesslayer
                 hd.NgayKy = item.NgayKy.Value.ToString("dd/MM/yyyy");
                 hd.ThoiHan = item.ThoiHan;
                 hd.HeSoLuong = item.HeSoLuong;
+                hd.LuongCoBan = item.LuongCB;
                 hd.LanKy = item.Lanky;
                 hd.id_NhanVien = item.id_NhanVien;
                 var nv = db.T_NhanVien.FirstOrDefault(n => n.id_NhanVien == item.id_NhanVien);
@@ -112,6 +114,7 @@ namespace Businesslayer
                 _hd.id_NhanVien = hd.id_NhanVien;
                 _hd.NgayKy = hd.NgayKy;
                 _hd.Lanky = hd.Lanky;
+                _hd.LuongCB = hd.LuongCB;
                 _hd.HeSoLuong = hd.HeSoLuong;
                 _hd.ThoiHan = hd.ThoiHan;
                 _hd.id_NoiLV = hd.id_NoiLV;
@@ -160,6 +163,7 @@ namespace Businesslayer
                 hd.NgayKetThuc = item.NgayKetThuc.Value.ToString("dd/MM/yyyy");
                 hd.NgayKy = item.NgayKy.Value.ToString("dd/MM/yyyy");
                 hd.ThoiHan = item.ThoiHan;
+                hd.LuongCoBan = item.LuongCB;
                 hd.HeSoLuong = item.HeSoLuong;
                 hd.LanKy = item.Lanky;
                 hd.id_NhanVien = item.id_NhanVien;

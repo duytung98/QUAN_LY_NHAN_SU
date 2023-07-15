@@ -157,6 +157,7 @@
           <Property Name="NgayKy" Type="datetime" />
           <Property Name="Lanky" Type="int" />
           <Property Name="ThoiHan" Type="nvarchar" MaxLength="100" />
+          <Property Name="LuongCB" Type="int" />
           <Property Name="HeSoLuong" Type="float" />
           <Property Name="id_NhanVien" Type="int" />
           <Property Name="id_NoiLV" Type="int" />
@@ -424,7 +425,7 @@
           <Property Name="NGAYNOPDON" Type="datetime" />
           <Property Name="NGAYNGHI" Type="datetime" />
           <Property Name="LYDO" Type="nvarchar" MaxLength="200" />
-          <Property Name="GHICHU" Type="nvarchar" MaxLength="200" />
+          <Property Name="GHICHU" Type="nvarchar" MaxLength="200" Nullable="false" />
           <Property Name="id_NhanVien" Type="int" />
           <Property Name="CREATEO_BY" Type="int" />
           <Property Name="CREATEO_DATE" Type="datetime" />
@@ -1318,6 +1319,7 @@
           <Property Name="NgayKy" Type="DateTime" Precision="3" />
           <Property Name="Lanky" Type="Int32" />
           <Property Name="ThoiHan" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="LuongCB" Type="Int32" />
           <Property Name="HeSoLuong" Type="Double" />
           <Property Name="id_NhanVien" Type="Int32" />
           <Property Name="id_NoiLV" Type="Int32" />
@@ -1634,7 +1636,7 @@
           <Property Name="NGAYNOPDON" Type="DateTime" Precision="3" />
           <Property Name="NGAYNGHI" Type="DateTime" Precision="3" />
           <Property Name="LYDO" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
-          <Property Name="GHICHU" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="GHICHU" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="id_NhanVien" Type="Int32" />
           <Property Name="CREATEO_BY" Type="Int32" />
           <Property Name="CREATEO_DATE" Type="DateTime" Precision="3" />
@@ -2221,6 +2223,7 @@
                 <ScalarProperty Name="id_NoiLV" ColumnName="id_NoiLV" />
                 <ScalarProperty Name="id_NhanVien" ColumnName="id_NhanVien" />
                 <ScalarProperty Name="HeSoLuong" ColumnName="HeSoLuong" />
+                <ScalarProperty Name="LuongCB" ColumnName="LuongCB" />
                 <ScalarProperty Name="ThoiHan" ColumnName="ThoiHan" />
                 <ScalarProperty Name="Lanky" ColumnName="Lanky" />
                 <ScalarProperty Name="NgayKy" ColumnName="NgayKy" />

@@ -16,6 +16,7 @@ namespace Businesslayer.DTO
         public string NoiDung { get; set; }
         public Nullable<int> LanKy { get; set; }
         public string ThoiHan { get; set; }
+        public int? LuongCoBan { get; set; }
         public Nullable<double> HeSoLuong { get; set; }
         public Nullable<int> id_NhanVien { get; set; }
         public string HoTen { get; set; }

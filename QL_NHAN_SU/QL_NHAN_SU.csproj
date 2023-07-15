@@ -270,6 +270,12 @@
     <Compile Include="Report\rptBangCongchitiet.Designer.cs">
       <DependentUpon>rptBangCongchitiet.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report\rptBangLuong.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptBangLuong.Designer.cs">
+      <DependentUpon>rptBangLuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Report\rptDanhSachLichDay.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -402,6 +408,9 @@
     <EmbeddedResource Include="Report\rptBangCongchitiet.resx">
       <DependentUpon>rptBangCongchitiet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptBangLuong.resx">
+      <DependentUpon>rptBangLuong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\rptDanhSachLichDay.resx">
       <DependentUpon>rptDanhSachLichDay.cs</DependentUpon>
     </EmbeddedResource>
@@ -491,6 +500,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

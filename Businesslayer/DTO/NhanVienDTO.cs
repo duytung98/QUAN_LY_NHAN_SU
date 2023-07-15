@@ -35,5 +35,6 @@ namespace Businesslayer.DTO
         public Nullable<int> id_TonGiao { get; set; }
         public string TonGiao { get; set; }
         public string Password { get; set; }
+        
     }
 }

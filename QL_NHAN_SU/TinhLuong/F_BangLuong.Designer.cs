@@ -49,7 +49,6 @@ namespace QL_NHAN_SU.TinhLuong
             this.label1 = new System.Windows.Forms.Label();
             this.gc_bangluong = new DevExpress.XtraGrid.GridControl();
             this.gcv_bangluong = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.DEl = new DevExpress.XtraGrid.Columns.GridColumn();
             this.kycong = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MaNV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.HoTen = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -114,6 +113,7 @@ namespace QL_NHAN_SU.TinhLuong
             this.bnt_tinhluong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bnt_tinhluong.ImageOptions.SvgImage")));
             this.bnt_tinhluong.Name = "bnt_tinhluong";
             this.bnt_tinhluong.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.bnt_tinhluong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bnt_tinhluong_ItemClick);
             // 
             // bnt_in
             // 
@@ -122,6 +122,7 @@ namespace QL_NHAN_SU.TinhLuong
             this.bnt_in.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bnt_in.ImageOptions.SvgImage")));
             this.bnt_in.Name = "bnt_in";
             this.bnt_in.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.bnt_in.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bnt_in_ItemClick);
             // 
             // bnt_dong
             // 
@@ -130,6 +131,7 @@ namespace QL_NHAN_SU.TinhLuong
             this.bnt_dong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bnt_dong.ImageOptions.SvgImage")));
             this.bnt_dong.Name = "bnt_dong";
             this.bnt_dong.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.bnt_dong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bnt_dong_ItemClick);
             // 
             // barDockControlTop
             // 
@@ -209,6 +211,7 @@ namespace QL_NHAN_SU.TinhLuong
             this.btb_xembangluong.Size = new System.Drawing.Size(183, 43);
             this.btb_xembangluong.TabIndex = 8;
             this.btb_xembangluong.Text = "Xem bảng lương";
+            this.btb_xembangluong.Click += new System.EventHandler(this.btb_xembangluong_Click);
             // 
             // cb_Thang
             // 
@@ -247,7 +250,44 @@ namespace QL_NHAN_SU.TinhLuong
             "2030",
             "2031",
             "2032",
-            "2033"});
+            "2033",
+            "2034",
+            "2035",
+            "2036",
+            "2037",
+            "2038",
+            "2039",
+            "2040",
+            "2041",
+            "2042",
+            "2043",
+            "2044",
+            "2045",
+            "2046",
+            "2047",
+            "2048",
+            "2049",
+            "2040",
+            "2051",
+            "2052",
+            "2053",
+            "2054",
+            "2055",
+            "2056",
+            "2057",
+            "2058",
+            "2059",
+            "2060",
+            "2061",
+            "2062",
+            "2063",
+            "2064",
+            "2065",
+            "2066",
+            "2067",
+            "2068",
+            "2069",
+            "2070"});
             this.cb_Nam.Location = new System.Drawing.Point(224, 36);
             this.cb_Nam.Name = "cb_Nam";
             this.cb_Nam.Size = new System.Drawing.Size(121, 30);
@@ -298,7 +338,6 @@ namespace QL_NHAN_SU.TinhLuong
             this.gcv_bangluong.AppearancePrint.EvenRow.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gcv_bangluong.AppearancePrint.EvenRow.Options.UseFont = true;
             this.gcv_bangluong.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.DEl,
             this.kycong,
             this.MaNV,
             this.HoTen,
@@ -318,18 +357,6 @@ namespace QL_NHAN_SU.TinhLuong
             this.gcv_bangluong.OptionsView.ShowFooter = true;
             this.gcv_bangluong.OptionsView.ShowGroupPanel = false;
             // 
-            // DEl
-            // 
-            this.DEl.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DEl.AppearanceHeader.Options.UseFont = true;
-            this.DEl.Caption = "DEL";
-            this.DEl.MaxWidth = 50;
-            this.DEl.MinWidth = 50;
-            this.DEl.Name = "DEl";
-            this.DEl.Visible = true;
-            this.DEl.VisibleIndex = 0;
-            this.DEl.Width = 50;
-            // 
             // kycong
             // 
             this.kycong.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -340,7 +367,7 @@ namespace QL_NHAN_SU.TinhLuong
             this.kycong.MinWidth = 130;
             this.kycong.Name = "kycong";
             this.kycong.Visible = true;
-            this.kycong.VisibleIndex = 1;
+            this.kycong.VisibleIndex = 0;
             this.kycong.Width = 130;
             // 
             // MaNV
@@ -353,7 +380,7 @@ namespace QL_NHAN_SU.TinhLuong
             this.MaNV.MinWidth = 150;
             this.MaNV.Name = "MaNV";
             this.MaNV.Visible = true;
-            this.MaNV.VisibleIndex = 2;
+            this.MaNV.VisibleIndex = 1;
             this.MaNV.Width = 150;
             // 
             // HoTen
@@ -366,7 +393,7 @@ namespace QL_NHAN_SU.TinhLuong
             this.HoTen.MinWidth = 250;
             this.HoTen.Name = "HoTen";
             this.HoTen.Visible = true;
-            this.HoTen.VisibleIndex = 3;
+            this.HoTen.VisibleIndex = 2;
             this.HoTen.Width = 250;
             // 
             // NCTrongThang
@@ -379,7 +406,7 @@ namespace QL_NHAN_SU.TinhLuong
             this.NCTrongThang.MinWidth = 150;
             this.NCTrongThang.Name = "NCTrongThang";
             this.NCTrongThang.Visible = true;
-            this.NCTrongThang.VisibleIndex = 4;
+            this.NCTrongThang.VisibleIndex = 3;
             this.NCTrongThang.Width = 150;
             // 
             // phep
@@ -387,12 +414,14 @@ namespace QL_NHAN_SU.TinhLuong
             this.phep.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phep.AppearanceHeader.Options.UseFont = true;
             this.phep.Caption = "Ngày phép";
+            this.phep.DisplayFormat.FormatString = "n0";
+            this.phep.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.phep.FieldName = "NgayPhep";
             this.phep.MaxWidth = 120;
             this.phep.MinWidth = 120;
             this.phep.Name = "phep";
             this.phep.Visible = true;
-            this.phep.VisibleIndex = 5;
+            this.phep.VisibleIndex = 4;
             this.phep.Width = 120;
             // 
             // NgayLe
@@ -400,12 +429,14 @@ namespace QL_NHAN_SU.TinhLuong
             this.NgayLe.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NgayLe.AppearanceHeader.Options.UseFont = true;
             this.NgayLe.Caption = "Ngày lễ";
+            this.NgayLe.DisplayFormat.FormatString = "n0";
+            this.NgayLe.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.NgayLe.FieldName = "NgayLe";
             this.NgayLe.MaxWidth = 120;
             this.NgayLe.MinWidth = 120;
             this.NgayLe.Name = "NgayLe";
             this.NgayLe.Visible = true;
-            this.NgayLe.VisibleIndex = 6;
+            this.NgayLe.VisibleIndex = 5;
             this.NgayLe.Width = 120;
             // 
             // Ngaychunhat
@@ -413,12 +444,14 @@ namespace QL_NHAN_SU.TinhLuong
             this.Ngaychunhat.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ngaychunhat.AppearanceHeader.Options.UseFont = true;
             this.Ngaychunhat.Caption = "Ngày chủ nhật";
+            this.Ngaychunhat.DisplayFormat.FormatString = "n0";
+            this.Ngaychunhat.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.Ngaychunhat.FieldName = "NgayChuNhat";
             this.Ngaychunhat.MaxWidth = 200;
             this.Ngaychunhat.MinWidth = 200;
             this.Ngaychunhat.Name = "Ngaychunhat";
             this.Ngaychunhat.Visible = true;
-            this.Ngaychunhat.VisibleIndex = 7;
+            this.Ngaychunhat.VisibleIndex = 6;
             this.Ngaychunhat.Width = 200;
             // 
             // NgayThuong
@@ -426,12 +459,14 @@ namespace QL_NHAN_SU.TinhLuong
             this.NgayThuong.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NgayThuong.AppearanceHeader.Options.UseFont = true;
             this.NgayThuong.Caption = "Ngày thường";
+            this.NgayThuong.DisplayFormat.FormatString = "n0";
+            this.NgayThuong.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.NgayThuong.FieldName = "NgayThuong";
             this.NgayThuong.MaxWidth = 150;
             this.NgayThuong.MinWidth = 150;
             this.NgayThuong.Name = "NgayThuong";
             this.NgayThuong.Visible = true;
-            this.NgayThuong.VisibleIndex = 8;
+            this.NgayThuong.VisibleIndex = 7;
             this.NgayThuong.Width = 150;
             // 
             // PhuCap
@@ -439,12 +474,14 @@ namespace QL_NHAN_SU.TinhLuong
             this.PhuCap.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PhuCap.AppearanceHeader.Options.UseFont = true;
             this.PhuCap.Caption = "Phụ cấp";
+            this.PhuCap.DisplayFormat.FormatString = "n0";
+            this.PhuCap.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.PhuCap.FieldName = "PhuCap";
             this.PhuCap.MaxWidth = 200;
             this.PhuCap.MinWidth = 200;
             this.PhuCap.Name = "PhuCap";
             this.PhuCap.Visible = true;
-            this.PhuCap.VisibleIndex = 9;
+            this.PhuCap.VisibleIndex = 8;
             this.PhuCap.Width = 200;
             // 
             // UngLuong
@@ -452,12 +489,14 @@ namespace QL_NHAN_SU.TinhLuong
             this.UngLuong.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UngLuong.AppearanceHeader.Options.UseFont = true;
             this.UngLuong.Caption = "Ứng lương";
+            this.UngLuong.DisplayFormat.FormatString = "n0";
+            this.UngLuong.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.UngLuong.FieldName = "UngLuong";
             this.UngLuong.MaxWidth = 150;
             this.UngLuong.MinWidth = 150;
             this.UngLuong.Name = "UngLuong";
             this.UngLuong.Visible = true;
-            this.UngLuong.VisibleIndex = 10;
+            this.UngLuong.VisibleIndex = 9;
             this.UngLuong.Width = 150;
             // 
             // ThucLanh
@@ -465,12 +504,14 @@ namespace QL_NHAN_SU.TinhLuong
             this.ThucLanh.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ThucLanh.AppearanceHeader.Options.UseFont = true;
             this.ThucLanh.Caption = "Thực lãnh";
+            this.ThucLanh.DisplayFormat.FormatString = "n0";
+            this.ThucLanh.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.ThucLanh.FieldName = "ThucLanh";
             this.ThucLanh.MaxWidth = 200;
             this.ThucLanh.MinWidth = 200;
             this.ThucLanh.Name = "ThucLanh";
             this.ThucLanh.Visible = true;
-            this.ThucLanh.VisibleIndex = 11;
+            this.ThucLanh.VisibleIndex = 10;
             this.ThucLanh.Width = 200;
             // 
             // F_BangLuong
@@ -485,6 +526,7 @@ namespace QL_NHAN_SU.TinhLuong
             this.Controls.Add(this.barDockControlTop);
             this.Name = "F_BangLuong";
             this.Text = "Bảng lương";
+            this.Load += new System.EventHandler(this.F_BangLuong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
@@ -524,7 +566,6 @@ namespace QL_NHAN_SU.TinhLuong
         private DevExpress.XtraGrid.Columns.GridColumn NgayThuong;
         private DevExpress.XtraGrid.Columns.GridColumn PhuCap;
         private DevExpress.XtraEditors.SimpleButton btb_xembangluong;
-        private DevExpress.XtraGrid.Columns.GridColumn DEl;
         private DevExpress.XtraGrid.Columns.GridColumn kycong;
         private DevExpress.XtraGrid.Columns.GridColumn MaNV;
         private DevExpress.XtraGrid.Columns.GridColumn HoTen;

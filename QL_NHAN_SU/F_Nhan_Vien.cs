@@ -371,12 +371,18 @@ namespace QL_NHAN_SU
 
         private void gcv_nhanvien_CustomDrawCell(object sender, DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs e)
         {
-            //if (e.Column.Name == "DEL" && e.CellValue != null)
-            //{
-            //    Image img = Properties.Resources.delete1;
-            //    e.Graphics.DrawImage(img, e.Bounds.X, e.Bounds.Y);
-            //    e.Handled = true;
-            //}
+            if (e.Column.Name == "DEL" && e.CellValue != null)
+            {
+                Image img = Properties.Resources.delete2;
+                e.Graphics.DrawImage(img, e.Bounds.X, e.Bounds.Y);
+                e.Handled = true;
+            }
+            else if(e.Column.Name == "DEL" && e.CellValue == null)
+            {
+                Image img = Properties.Resources.good;
+                e.Graphics.DrawImage(img, e.Bounds.X, e.Bounds.Y);
+                e.Handled = true;
+            }
         }
     }
     }

@@ -39,7 +39,7 @@ namespace QL_NHAN_SU
             btn_dong.Enabled = kt;
             btn_in.Enabled = kt;
             txt_SHD.Enabled = !kt;
-            
+            sp_luongcoban.Enabled = !kt;
             date_NBD.Enabled = !kt;
             date_NKT.Enabled = !kt;
             date_NKy.Enabled = !kt;
@@ -53,6 +53,8 @@ namespace QL_NHAN_SU
             label5.Enabled = !kt;
             label6.Enabled = !kt;
             label7.Enabled = !kt;
+            label8.Enabled = !kt;
+            label9.Enabled = !kt;
             
 
         }
@@ -64,6 +66,7 @@ namespace QL_NHAN_SU
             date_NKy.Value = DateTime.Now;
             sp_lanky.Text = "1";
             sp_hesoluong.Text = "1";
+            sp_luongcoban.Text = "1000000";
         }
         private void saveData()
         {
@@ -73,11 +76,13 @@ namespace QL_NHAN_SU
                 var maxSoHD = _hdld.MaxSoHopDong();
                 T_HopDong hd = new T_HopDong();
                 int so = int.Parse(maxSoHD.Substring(0, 5)) + 1;
-                hd.So_HopDong = so.ToString("00000")+ @"/2023/HĐLĐ";
+                //so.ToString("00000") + @"/"+DateTime.Now.Year.ToString()+@"/QĐĐC"
+                hd.So_HopDong = so.ToString("00000") + @"/" + DateTime.Now.Year.ToString() + @"/HĐLĐ";
                 hd.NgayBatDau = date_NBD.Value;
                 hd.NgayKetThuc = date_NKT.Value;
                 hd.ThoiHan = cb_thoihan.Text;
                 hd.NgayKy = date_NKy.Value;
+                hd.LuongCB = int.Parse(sp_luongcoban.EditValue.ToString());
                 hd.HeSoLuong = double.Parse(sp_hesoluong.EditValue.ToString());
                 hd.Lanky = int.Parse(sp_lanky.EditValue.ToString());
                 hd.id_NhanVien = int.Parse(sl_NhanVien.EditValue.ToString());
@@ -94,6 +99,7 @@ namespace QL_NHAN_SU
                 hd1.NgayKy = date_NKy.Value;
                 hd1.ThoiHan = cb_thoihan.Text;
                 hd1.HeSoLuong = double.Parse(sp_hesoluong.EditValue.ToString());
+                hd1.LuongCB = int.Parse(sp_luongcoban.EditValue.ToString());
                 hd1.Lanky = int.Parse(sp_lanky.EditValue.ToString());
                 hd1.id_NhanVien = int.Parse(sl_NhanVien.EditValue.ToString());
                 hd1.id_NoiLV = 1;
@@ -152,6 +158,7 @@ namespace QL_NHAN_SU
                 sl_NhanVien.Text = string.Empty;
                 sp_hesoluong.Text = string.Empty;
                 sp_lanky.Text = string.Empty;
+                sp_luongcoban.Text = string.Empty;
 
 
             }
@@ -208,7 +215,8 @@ namespace QL_NHAN_SU
                 date_NKT.Value = hd.NgayKetThuc.Value;
                 date_NKy.Value = hd.NgayKy.Value;
                 cb_thoihan.Text = hd.ThoiHan;
-                sp_hesoluong.Text = hd.HeSoLuong.ToString();
+                sp_luongcoban.EditValue = hd.LuongCB;
+                sp_hesoluong.EditValue = hd.HeSoLuong;
                 sp_lanky.Text = hd.Lanky.ToString();
                 sl_NhanVien.EditValue = hd.id_NhanVien;
                 _lstHopDong = _hdld.getItemFull(_soHD);

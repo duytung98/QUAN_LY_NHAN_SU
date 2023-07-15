@@ -45,6 +45,8 @@ namespace QL_NHAN_SU
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.sp_luongcoban = new DevExpress.XtraEditors.SpinEdit();
+            this.label9 = new System.Windows.Forms.Label();
             this.sp_hesoluong = new DevExpress.XtraEditors.SpinEdit();
             this.cb_thoihan = new System.Windows.Forms.ComboBox();
             this.date_NKy = new System.Windows.Forms.DateTimePicker();
@@ -72,6 +74,7 @@ namespace QL_NHAN_SU
             this.NgayKetThuc = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NgayKy = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ThoiHan = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.LuongCB = new DevExpress.XtraGrid.Columns.GridColumn();
             this.HesoLuong = new DevExpress.XtraGrid.Columns.GridColumn();
             this.LanKy = new DevExpress.XtraGrid.Columns.GridColumn();
             this.id_NhanVien = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -81,6 +84,7 @@ namespace QL_NHAN_SU
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sp_luongcoban.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sp_hesoluong.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sp_lanky.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sl_NhanVien.Properties)).BeginInit();
@@ -201,7 +205,7 @@ namespace QL_NHAN_SU
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(969, 36);
+            this.barDockControlTop.Size = new System.Drawing.Size(1358, 36);
             // 
             // barDockControlBottom
             // 
@@ -210,7 +214,7 @@ namespace QL_NHAN_SU
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 457);
             this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(969, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1358, 0);
             // 
             // barDockControlLeft
             // 
@@ -225,7 +229,7 @@ namespace QL_NHAN_SU
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(969, 36);
+            this.barDockControlRight.Location = new System.Drawing.Point(1358, 36);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 421);
@@ -240,6 +244,8 @@ namespace QL_NHAN_SU
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.sp_luongcoban);
+            this.splitContainer1.Panel1.Controls.Add(this.label9);
             this.splitContainer1.Panel1.Controls.Add(this.sp_hesoluong);
             this.splitContainer1.Panel1.Controls.Add(this.cb_thoihan);
             this.splitContainer1.Panel1.Controls.Add(this.date_NKy);
@@ -260,9 +266,38 @@ namespace QL_NHAN_SU
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gv_hopdong);
-            this.splitContainer1.Size = new System.Drawing.Size(969, 421);
+            this.splitContainer1.Size = new System.Drawing.Size(1358, 421);
             this.splitContainer1.SplitterDistance = 236;
             this.splitContainer1.TabIndex = 7;
+            // 
+            // sp_luongcoban
+            // 
+            this.sp_luongcoban.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.sp_luongcoban.Location = new System.Drawing.Point(232, 97);
+            this.sp_luongcoban.MenuManager = this.barManager1;
+            this.sp_luongcoban.Name = "sp_luongcoban";
+            this.sp_luongcoban.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sp_luongcoban.Properties.Appearance.Options.UseFont = true;
+            this.sp_luongcoban.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.sp_luongcoban.Size = new System.Drawing.Size(228, 28);
+            this.sp_luongcoban.TabIndex = 87;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(88, 100);
+            this.label9.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(119, 22);
+            this.label9.TabIndex = 86;
+            this.label9.Text = "Lương cơ bản";
             // 
             // sp_hesoluong
             // 
@@ -271,7 +306,7 @@ namespace QL_NHAN_SU
             0,
             0,
             0});
-            this.sp_hesoluong.Location = new System.Drawing.Point(218, 71);
+            this.sp_hesoluong.Location = new System.Drawing.Point(1090, 22);
             this.sp_hesoluong.MenuManager = this.barManager1;
             this.sp_hesoluong.Name = "sp_hesoluong";
             this.sp_hesoluong.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -289,7 +324,7 @@ namespace QL_NHAN_SU
             "3 tháng",
             "6 tháng",
             "12 tháng"});
-            this.cb_thoihan.Location = new System.Drawing.Point(627, 71);
+            this.cb_thoihan.Location = new System.Drawing.Point(627, 97);
             this.cb_thoihan.Name = "cb_thoihan";
             this.cb_thoihan.Size = new System.Drawing.Size(228, 30);
             this.cb_thoihan.TabIndex = 84;
@@ -299,7 +334,7 @@ namespace QL_NHAN_SU
             this.date_NKy.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.date_NKy.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_NKy.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date_NKy.Location = new System.Drawing.Point(218, 173);
+            this.date_NKy.Location = new System.Drawing.Point(627, 169);
             this.date_NKy.Margin = new System.Windows.Forms.Padding(1);
             this.date_NKy.Name = "date_NKy";
             this.date_NKy.Size = new System.Drawing.Size(228, 30);
@@ -310,7 +345,7 @@ namespace QL_NHAN_SU
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(111, 179);
+            this.label8.Location = new System.Drawing.Point(520, 175);
             this.label8.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(75, 22);
@@ -341,7 +376,7 @@ namespace QL_NHAN_SU
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(542, 25);
+            this.label5.Location = new System.Drawing.Point(532, 25);
             this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 22);
@@ -353,7 +388,7 @@ namespace QL_NHAN_SU
             this.date_NKT.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.date_NKT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_NKT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date_NKT.Location = new System.Drawing.Point(627, 121);
+            this.date_NKT.Location = new System.Drawing.Point(232, 169);
             this.date_NKT.Margin = new System.Windows.Forms.Padding(1);
             this.date_NKT.Name = "date_NKT";
             this.date_NKT.Size = new System.Drawing.Size(228, 30);
@@ -364,7 +399,7 @@ namespace QL_NHAN_SU
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(488, 127);
+            this.label6.Location = new System.Drawing.Point(79, 175);
             this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(117, 22);
@@ -376,7 +411,7 @@ namespace QL_NHAN_SU
             this.date_NBD.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.date_NBD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_NBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date_NBD.Location = new System.Drawing.Point(218, 121);
+            this.date_NBD.Location = new System.Drawing.Point(1090, 92);
             this.date_NBD.Margin = new System.Windows.Forms.Padding(1);
             this.date_NBD.Name = "date_NBD";
             this.date_NBD.Size = new System.Drawing.Size(228, 30);
@@ -387,7 +422,7 @@ namespace QL_NHAN_SU
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(73, 127);
+            this.label4.Location = new System.Drawing.Point(945, 100);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 22);
@@ -399,7 +434,7 @@ namespace QL_NHAN_SU
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(88, 75);
+            this.label3.Location = new System.Drawing.Point(951, 25);
             this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 22);
@@ -411,7 +446,7 @@ namespace QL_NHAN_SU
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(525, 75);
+            this.label2.Location = new System.Drawing.Point(515, 100);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 22);
@@ -423,7 +458,7 @@ namespace QL_NHAN_SU
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(515, 179);
+            this.label7.Location = new System.Drawing.Point(968, 175);
             this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 22);
@@ -433,7 +468,7 @@ namespace QL_NHAN_SU
             // sl_NhanVien
             // 
             this.sl_NhanVien.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.sl_NhanVien.Location = new System.Drawing.Point(627, 176);
+            this.sl_NhanVien.Location = new System.Drawing.Point(1090, 172);
             this.sl_NhanVien.Margin = new System.Windows.Forms.Padding(0);
             this.sl_NhanVien.MenuManager = this.barManager1;
             this.sl_NhanVien.Name = "sl_NhanVien";
@@ -491,7 +526,7 @@ namespace QL_NHAN_SU
             // 
             this.txt_SHD.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_SHD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_SHD.Location = new System.Drawing.Point(218, 19);
+            this.txt_SHD.Location = new System.Drawing.Point(232, 22);
             this.txt_SHD.Margin = new System.Windows.Forms.Padding(1);
             this.txt_SHD.Name = "txt_SHD";
             this.txt_SHD.ReadOnly = true;
@@ -518,7 +553,7 @@ namespace QL_NHAN_SU
             this.gv_hopdong.MainView = this.gcv_hopdong;
             this.gv_hopdong.Margin = new System.Windows.Forms.Padding(1);
             this.gv_hopdong.Name = "gv_hopdong";
-            this.gv_hopdong.Size = new System.Drawing.Size(969, 181);
+            this.gv_hopdong.Size = new System.Drawing.Size(1358, 181);
             this.gv_hopdong.TabIndex = 1;
             this.gv_hopdong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gcv_hopdong});
@@ -532,6 +567,7 @@ namespace QL_NHAN_SU
             this.NgayKetThuc,
             this.NgayKy,
             this.ThoiHan,
+            this.LuongCB,
             this.HesoLuong,
             this.LanKy,
             this.id_NhanVien,
@@ -617,6 +653,19 @@ namespace QL_NHAN_SU
             this.ThoiHan.VisibleIndex = 5;
             this.ThoiHan.Width = 94;
             // 
+            // LuongCB
+            // 
+            this.LuongCB.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LuongCB.AppearanceHeader.Options.UseFont = true;
+            this.LuongCB.Caption = "Lương cơ bản";
+            this.LuongCB.FieldName = "LuongCoBan";
+            this.LuongCB.MaxWidth = 200;
+            this.LuongCB.MinWidth = 200;
+            this.LuongCB.Name = "LuongCB";
+            this.LuongCB.Visible = true;
+            this.LuongCB.VisibleIndex = 6;
+            this.LuongCB.Width = 200;
+            // 
             // HesoLuong
             // 
             this.HesoLuong.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -626,7 +675,7 @@ namespace QL_NHAN_SU
             this.HesoLuong.MinWidth = 25;
             this.HesoLuong.Name = "HesoLuong";
             this.HesoLuong.Visible = true;
-            this.HesoLuong.VisibleIndex = 6;
+            this.HesoLuong.VisibleIndex = 7;
             this.HesoLuong.Width = 94;
             // 
             // LanKy
@@ -638,7 +687,7 @@ namespace QL_NHAN_SU
             this.LanKy.MinWidth = 25;
             this.LanKy.Name = "LanKy";
             this.LanKy.Visible = true;
-            this.LanKy.VisibleIndex = 7;
+            this.LanKy.VisibleIndex = 8;
             this.LanKy.Width = 94;
             // 
             // id_NhanVien
@@ -650,7 +699,7 @@ namespace QL_NHAN_SU
             this.id_NhanVien.MinWidth = 25;
             this.id_NhanVien.Name = "id_NhanVien";
             this.id_NhanVien.Visible = true;
-            this.id_NhanVien.VisibleIndex = 8;
+            this.id_NhanVien.VisibleIndex = 9;
             this.id_NhanVien.Width = 94;
             // 
             // HoTen
@@ -662,14 +711,14 @@ namespace QL_NHAN_SU
             this.HoTen.MinWidth = 25;
             this.HoTen.Name = "HoTen";
             this.HoTen.Visible = true;
-            this.HoTen.VisibleIndex = 9;
+            this.HoTen.VisibleIndex = 10;
             this.HoTen.Width = 94;
             // 
             // F_HopDongLD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(969, 457);
+            this.ClientSize = new System.Drawing.Size(1358, 457);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
@@ -684,6 +733,7 @@ namespace QL_NHAN_SU
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.sp_luongcoban.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sp_hesoluong.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sp_lanky.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sl_NhanVien.Properties)).EndInit();
@@ -742,5 +792,8 @@ namespace QL_NHAN_SU
         private DevExpress.XtraGrid.Columns.GridColumn LanKy;
         private DevExpress.XtraGrid.Columns.GridColumn id_NhanVien;
         private DevExpress.XtraGrid.Columns.GridColumn HoTen;
+        private DevExpress.XtraEditors.SpinEdit sp_luongcoban;
+        private System.Windows.Forms.Label label9;
+        private DevExpress.XtraGrid.Columns.GridColumn LuongCB;
     }
 }

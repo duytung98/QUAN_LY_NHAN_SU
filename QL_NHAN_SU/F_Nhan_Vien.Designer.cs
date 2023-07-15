@@ -81,6 +81,7 @@ namespace QL_NHAN_SU
             this.label1 = new System.Windows.Forms.Label();
             this.gc_nhanvien = new DevExpress.XtraGrid.GridControl();
             this.gcv_nhanvien = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.DEL = new DevExpress.XtraGrid.Columns.GridColumn();
             this.id_NhanVien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.HoTen = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GioiTinh = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -218,7 +219,8 @@ namespace QL_NHAN_SU
             // 
             this.bnt_dong.Caption = "Đóng";
             this.bnt_dong.Id = 5;
-            this.bnt_dong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("bnt_dong.ImageOptions.SvgImage")));
+            this.bnt_dong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bnt_dong.ImageOptions.Image")));
+            this.bnt_dong.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("bnt_dong.ImageOptions.LargeImage")));
             this.bnt_dong.Name = "bnt_dong";
             this.bnt_dong.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.bnt_dong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bnt_dong_ItemClick);
@@ -725,6 +727,7 @@ namespace QL_NHAN_SU
             this.gcv_nhanvien.AppearancePrint.EvenRow.Font = new System.Drawing.Font("Times New Roman", 16.2F);
             this.gcv_nhanvien.AppearancePrint.EvenRow.Options.UseFont = true;
             this.gcv_nhanvien.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.DEL,
             this.id_NhanVien,
             this.HoTen,
             this.GioiTinh,
@@ -761,6 +764,19 @@ namespace QL_NHAN_SU
             this.gcv_nhanvien.CustomDrawCell += new DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventHandler(this.gcv_nhanvien_CustomDrawCell);
             this.gcv_nhanvien.Click += new System.EventHandler(this.gcv_conglam_Click);
             // 
+            // DEL
+            // 
+            this.DEL.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DEL.AppearanceHeader.Options.UseFont = true;
+            this.DEL.Caption = "DEL";
+            this.DEL.FieldName = "THOIVIEC";
+            this.DEL.MaxWidth = 40;
+            this.DEL.MinWidth = 40;
+            this.DEL.Name = "DEL";
+            this.DEL.Visible = true;
+            this.DEL.VisibleIndex = 0;
+            this.DEL.Width = 40;
+            // 
             // id_NhanVien
             // 
             this.id_NhanVien.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
@@ -770,7 +786,7 @@ namespace QL_NHAN_SU
             this.id_NhanVien.MinWidth = 46;
             this.id_NhanVien.Name = "id_NhanVien";
             this.id_NhanVien.Visible = true;
-            this.id_NhanVien.VisibleIndex = 0;
+            this.id_NhanVien.VisibleIndex = 1;
             this.id_NhanVien.Width = 175;
             // 
             // HoTen
@@ -782,7 +798,7 @@ namespace QL_NHAN_SU
             this.HoTen.MinWidth = 46;
             this.HoTen.Name = "HoTen";
             this.HoTen.Visible = true;
-            this.HoTen.VisibleIndex = 1;
+            this.HoTen.VisibleIndex = 2;
             this.HoTen.Width = 175;
             // 
             // GioiTinh
@@ -794,7 +810,7 @@ namespace QL_NHAN_SU
             this.GioiTinh.MinWidth = 46;
             this.GioiTinh.Name = "GioiTinh";
             this.GioiTinh.Visible = true;
-            this.GioiTinh.VisibleIndex = 2;
+            this.GioiTinh.VisibleIndex = 3;
             this.GioiTinh.Width = 175;
             // 
             // NgaySinh
@@ -808,7 +824,7 @@ namespace QL_NHAN_SU
             this.NgaySinh.MinWidth = 46;
             this.NgaySinh.Name = "NgaySinh";
             this.NgaySinh.Visible = true;
-            this.NgaySinh.VisibleIndex = 3;
+            this.NgaySinh.VisibleIndex = 4;
             this.NgaySinh.Width = 175;
             // 
             // DienThoai
@@ -820,7 +836,7 @@ namespace QL_NHAN_SU
             this.DienThoai.MinWidth = 46;
             this.DienThoai.Name = "DienThoai";
             this.DienThoai.Visible = true;
-            this.DienThoai.VisibleIndex = 4;
+            this.DienThoai.VisibleIndex = 5;
             this.DienThoai.Width = 175;
             // 
             // Email
@@ -832,7 +848,7 @@ namespace QL_NHAN_SU
             this.Email.MinWidth = 46;
             this.Email.Name = "Email";
             this.Email.Visible = true;
-            this.Email.VisibleIndex = 5;
+            this.Email.VisibleIndex = 6;
             this.Email.Width = 175;
             // 
             // CCCD
@@ -844,7 +860,7 @@ namespace QL_NHAN_SU
             this.CCCD.MinWidth = 46;
             this.CCCD.Name = "CCCD";
             this.CCCD.Visible = true;
-            this.CCCD.VisibleIndex = 6;
+            this.CCCD.VisibleIndex = 7;
             this.CCCD.Width = 175;
             // 
             // DiaChi
@@ -856,7 +872,7 @@ namespace QL_NHAN_SU
             this.DiaChi.MinWidth = 46;
             this.DiaChi.Name = "DiaChi";
             this.DiaChi.Visible = true;
-            this.DiaChi.VisibleIndex = 7;
+            this.DiaChi.VisibleIndex = 8;
             this.DiaChi.Width = 175;
             // 
             // HinhAnh
@@ -868,7 +884,7 @@ namespace QL_NHAN_SU
             this.HinhAnh.MinWidth = 46;
             this.HinhAnh.Name = "HinhAnh";
             this.HinhAnh.Visible = true;
-            this.HinhAnh.VisibleIndex = 8;
+            this.HinhAnh.VisibleIndex = 9;
             this.HinhAnh.Width = 175;
             // 
             // PhanQuyen
@@ -880,7 +896,7 @@ namespace QL_NHAN_SU
             this.PhanQuyen.MinWidth = 46;
             this.PhanQuyen.Name = "PhanQuyen";
             this.PhanQuyen.Visible = true;
-            this.PhanQuyen.VisibleIndex = 9;
+            this.PhanQuyen.VisibleIndex = 10;
             this.PhanQuyen.Width = 175;
             // 
             // id_NoiLV
@@ -899,7 +915,7 @@ namespace QL_NHAN_SU
             this.Ten_NoiLV.MinWidth = 46;
             this.Ten_NoiLV.Name = "Ten_NoiLV";
             this.Ten_NoiLV.Visible = true;
-            this.Ten_NoiLV.VisibleIndex = 10;
+            this.Ten_NoiLV.VisibleIndex = 11;
             this.Ten_NoiLV.Width = 175;
             // 
             // id_PhongBan
@@ -918,7 +934,7 @@ namespace QL_NHAN_SU
             this.Ten_PhongBan.MinWidth = 46;
             this.Ten_PhongBan.Name = "Ten_PhongBan";
             this.Ten_PhongBan.Visible = true;
-            this.Ten_PhongBan.VisibleIndex = 11;
+            this.Ten_PhongBan.VisibleIndex = 12;
             this.Ten_PhongBan.Width = 175;
             // 
             // id_BoPhan
@@ -937,7 +953,7 @@ namespace QL_NHAN_SU
             this.Ten_BoPhan.MinWidth = 46;
             this.Ten_BoPhan.Name = "Ten_BoPhan";
             this.Ten_BoPhan.Visible = true;
-            this.Ten_BoPhan.VisibleIndex = 12;
+            this.Ten_BoPhan.VisibleIndex = 13;
             this.Ten_BoPhan.Width = 175;
             // 
             // id_ChucVu
@@ -956,7 +972,7 @@ namespace QL_NHAN_SU
             this.Ten_ChucVu.MinWidth = 46;
             this.Ten_ChucVu.Name = "Ten_ChucVu";
             this.Ten_ChucVu.Visible = true;
-            this.Ten_ChucVu.VisibleIndex = 13;
+            this.Ten_ChucVu.VisibleIndex = 14;
             this.Ten_ChucVu.Width = 175;
             // 
             // id_TrinhDo
@@ -975,7 +991,7 @@ namespace QL_NHAN_SU
             this.Ten_TrinhDo.MinWidth = 46;
             this.Ten_TrinhDo.Name = "Ten_TrinhDo";
             this.Ten_TrinhDo.Visible = true;
-            this.Ten_TrinhDo.VisibleIndex = 14;
+            this.Ten_TrinhDo.VisibleIndex = 15;
             this.Ten_TrinhDo.Width = 175;
             // 
             // id_DanToc
@@ -994,7 +1010,7 @@ namespace QL_NHAN_SU
             this.DanToc.MinWidth = 46;
             this.DanToc.Name = "DanToc";
             this.DanToc.Visible = true;
-            this.DanToc.VisibleIndex = 15;
+            this.DanToc.VisibleIndex = 16;
             this.DanToc.Width = 175;
             // 
             // id_TonGiao
@@ -1015,7 +1031,7 @@ namespace QL_NHAN_SU
             this.Ten_TonGiao.MinWidth = 46;
             this.Ten_TonGiao.Name = "Ten_TonGiao";
             this.Ten_TonGiao.Visible = true;
-            this.Ten_TonGiao.VisibleIndex = 16;
+            this.Ten_TonGiao.VisibleIndex = 17;
             this.Ten_TonGiao.Width = 175;
             // 
             // Password
@@ -1027,7 +1043,7 @@ namespace QL_NHAN_SU
             this.Password.MinWidth = 46;
             this.Password.Name = "Password";
             this.Password.Visible = true;
-            this.Password.VisibleIndex = 17;
+            this.Password.VisibleIndex = 18;
             this.Password.Width = 175;
             // 
             // F_Nhan_Vien
@@ -1134,5 +1150,6 @@ namespace QL_NHAN_SU
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pcb_hinhanh;
         private DevExpress.XtraEditors.SimpleButton btn_chonHA;
+        private DevExpress.XtraGrid.Columns.GridColumn DEL;
     }
 }
