@@ -331,6 +331,7 @@ namespace QL_NHAN_SU
             this.btn_BangLuong.Id = 20;
             this.btn_BangLuong.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_BangLuong.ImageOptions.SvgImage")));
             this.btn_BangLuong.Name = "btn_BangLuong";
+            this.btn_BangLuong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_BangLuong_ItemClick);
             // 
             // btn_thoat
             // 

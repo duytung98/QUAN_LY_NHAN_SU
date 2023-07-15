@@ -368,5 +368,15 @@ namespace QL_NHAN_SU
                 pcb_hinhanh.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
+
+        private void gcv_nhanvien_CustomDrawCell(object sender, DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs e)
+        {
+            //if (e.Column.Name == "DEL" && e.CellValue != null)
+            //{
+            //    Image img = Properties.Resources.delete1;
+            //    e.Graphics.DrawImage(img, e.Bounds.X, e.Bounds.Y);
+            //    e.Handled = true;
+            //}
+        }
     }
-}
+    }

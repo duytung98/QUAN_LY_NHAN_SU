@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BangCong_NV_ChiTiet.cs" />
+    <Compile Include="BangLuong.cs" />
     <Compile Include="BoPhan.cs" />
     <Compile Include="CaLam.cs" />
     <Compile Include="ChucVu.cs" />

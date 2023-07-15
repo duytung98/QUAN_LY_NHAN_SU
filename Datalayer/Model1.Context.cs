@@ -26,6 +26,7 @@ namespace Datalayer
         }
     
         public virtual DbSet<KhenThuong_KyLuat> KhenThuong_KyLuat { get; set; }
+        public virtual DbSet<T_Bang_Luong> T_Bang_Luong { get; set; }
         public virtual DbSet<T_BangCong> T_BangCong { get; set; }
         public virtual DbSet<T_BangCong_NVien_ChiTiet> T_BangCong_NVien_ChiTiet { get; set; }
         public virtual DbSet<T_BaoHiem> T_BaoHiem { get; set; }

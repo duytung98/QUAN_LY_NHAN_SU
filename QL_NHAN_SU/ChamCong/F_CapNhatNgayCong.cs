@@ -63,100 +63,126 @@ namespace QL_NHAN_SU.ChamCong
             ChamCong_Function.exeQuery("Update T_KyCong_ChiTiet set " + fleName + " = '" + _valulchamcong + "' where MaKyCong = " + _makycong + " and id_NhanVien = "+_manv+" ");
             T_BangCong_NVien_ChiTiet bcctnv = _Bcct_nhanVien.getitem(_makycong, _manv, cdr_ngaycong.SelectionStart.Day);
             bcctnv.KyHieu = _valulchamcong;
-            
-            switch (_valulchamcong)
+            if(cdr_ngaycong.SelectionStart.DayOfWeek == DayOfWeek.Sunday)
             {
-                case "P":
-                    
-                    if (_valungaynghi == "NN")
-                    {
-                        bcctnv.NgayPhep = 1;
-                        bcctnv.NgayCong = 0;
-                        bcctnv.CongChuNhat = 0;
-                        bcctnv.CongNgayLe = 0;
-                        bcctnv.NghiKhongPhep = 0;
-                        
-                    }
-                    else
-                    {
-                        bcctnv.NgayPhep = 0.5;
-                        bcctnv.NgayCong = 0.5;
-                        bcctnv.CongChuNhat = 0;
-                        bcctnv.CongNgayLe = 0;
-                        bcctnv.NghiKhongPhep = 0;
+                if (_valungaynghi == "NN")
+                {
+                    bcctnv.NgayPhep = 0;
+                    bcctnv.NgayCong = 0;
+                    bcctnv.CongChuNhat = 1;
+                    bcctnv.CongNgayLe = 0;
+                    bcctnv.NghiKhongPhep = 0;
 
-                    }
-                    break;
-                case "CT":
-                    
-                    if (_valungaynghi == "NN")
-                    {
-                        bcctnv.NgayCong = 1;
-                        bcctnv.NgayPhep = 0;
-                        bcctnv.CongChuNhat = 0;
-                        bcctnv.CongNgayLe = 0;
-                        bcctnv.NghiKhongPhep = 0;
-                    }
-                    else
-                    {
-                        bcctnv.NgayPhep = 0.5;
-                        bcctnv.NgayCong = 0.5;
-                        bcctnv.CongChuNhat = 0;
-                        bcctnv.CongNgayLe = 0;
-                        bcctnv.NghiKhongPhep = 0;
+                }
+                else
+                {
+                    bcctnv.NgayPhep = 0;
+                    bcctnv.NgayCong = 0;
+                    bcctnv.CongChuNhat = 0.5;
+                    bcctnv.CongNgayLe = 0;
+                    bcctnv.NghiKhongPhep = 0;
 
-                    }
-                    break;
-                case "V":
-                    if (_valungaynghi == "NN")
-                    {
-                        bcctnv.NgayCong = 0;
-                        bcctnv.NgayPhep = 0;
-                        bcctnv.CongChuNhat = 0;
-                        bcctnv.CongNgayLe = 0;
-                        bcctnv.NghiKhongPhep = 1;
-                    }
-                    else
-                    {
-                        bcctnv.NgayPhep = 0;
-                        bcctnv.NgayCong = 0.5;
-                        bcctnv.CongChuNhat = 0;
-                        bcctnv.CongNgayLe = 0;
-                        bcctnv.NghiKhongPhep = 0;
-
-                    }
-                    break;
-                case "NL":
-                    
-                    if (_valungaynghi == "NN")
-                    {
-                        bcctnv.NgayCong = 1;
-                        bcctnv.NgayPhep = 0;
-                        bcctnv.CongChuNhat = 0;
-                        bcctnv.CongNgayLe = 0;
-                        bcctnv.NghiKhongPhep = 0;
-                    }
-                    else
-                    {
-                        bcctnv.NgayPhep = 0;
-                        bcctnv.NgayCong = 0;
-                        bcctnv.CongChuNhat = 0;
-                        bcctnv.CongNgayLe = 0.5;
-                        bcctnv.NghiKhongPhep = 0;
-
-                    }
-                    break;
-
-                default:
-                    break;
+                }
             }
+            else
+            {
+                bcctnv.KyHieu = _valulchamcong;
+                switch (_valulchamcong)
+                {
+                    case "P":
+
+                        if (_valungaynghi == "NN")
+                        {
+                            bcctnv.NgayPhep = 1;
+                            bcctnv.NgayCong = 0;
+                            bcctnv.CongChuNhat = 0;
+                            bcctnv.CongNgayLe = 0;
+                            bcctnv.NghiKhongPhep = 0;
+
+                        }
+                        else
+                        {
+                            bcctnv.NgayPhep = 0.5;
+                            bcctnv.NgayCong = 0.5;
+                            bcctnv.CongChuNhat = 0;
+                            bcctnv.CongNgayLe = 0;
+                            bcctnv.NghiKhongPhep = 0;
+
+                        }
+                        break;
+                    case "CT":
+
+                        if (_valungaynghi == "NN")
+                        {
+                            bcctnv.NgayCong = 1;
+                            bcctnv.NgayPhep = 0;
+                            bcctnv.CongChuNhat = 0;
+                            bcctnv.CongNgayLe = 0;
+                            bcctnv.NghiKhongPhep = 0;
+                        }
+                        else
+                        {
+                            bcctnv.NgayPhep = 0.5;
+                            bcctnv.NgayCong = 0.5;
+                            bcctnv.CongChuNhat = 0;
+                            bcctnv.CongNgayLe = 0;
+                            bcctnv.NghiKhongPhep = 0;
+
+                        }
+                        break;
+                    case "V":
+                        if (_valungaynghi == "NN")
+                        {
+                            bcctnv.NgayCong = 0;
+                            bcctnv.NgayPhep = 0;
+                            bcctnv.CongChuNhat = 0;
+                            bcctnv.CongNgayLe = 0;
+                            bcctnv.NghiKhongPhep = 1;
+                        }
+                        else
+                        {
+                            bcctnv.NgayPhep = 0;
+                            bcctnv.NgayCong = 0.5;
+                            bcctnv.CongChuNhat = 0;
+                            bcctnv.CongNgayLe = 0;
+                            bcctnv.NghiKhongPhep = 0;
+
+                        }
+                        break;
+                    case "NL":
+
+                        if (_valungaynghi == "NN")
+                        {
+                            bcctnv.NgayCong = 1;
+                            bcctnv.NgayPhep = 0;
+                            bcctnv.CongChuNhat = 0;
+                            bcctnv.CongNgayLe = 0;
+                            bcctnv.NghiKhongPhep = 0;
+                        }
+                        else
+                        {
+                            bcctnv.NgayPhep = 0;
+                            bcctnv.NgayCong = 0;
+                            bcctnv.CongChuNhat = 0;
+                            bcctnv.CongNgayLe = 0.5;
+                            bcctnv.NghiKhongPhep = 0;
+
+                        }
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+            
 
             _Bcct_nhanVien.Update(bcctnv);
             double tongngayphep = _Bcct_nhanVien.tongngayphep(_makycong, _manv);
-            double tongngaycong = _Bcct_nhanVien.tongngaycong(_makycong, _manv);
+            
             double tongngayle = _Bcct_nhanVien.tongngaynghile(_makycong, _manv);
             double tongngaykophep = _Bcct_nhanVien.tongngaycongvang(_makycong, _manv);
             double tongcongchunhat = _Bcct_nhanVien.tongcongchunhat(_makycong, _manv);
+            double tongngaycong = _Bcct_nhanVien.tongngaycong(_makycong, _manv);
 
             kcct.NgayPhep = tongngayphep;
             kcct.TongNgayCong = tongngaycong;

@@ -294,6 +294,12 @@
     <Compile Include="Report\rpt_BangCong.Designer.cs">
       <DependentUpon>rpt_BangCong.cs</DependentUpon>
     </Compile>
+    <Compile Include="TinhLuong\F_BangLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TinhLuong\F_BangLuong.Designer.cs">
+      <DependentUpon>F_BangLuong.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ChamCong\F_BangCong.resx">
       <DependentUpon>F_BangCong.cs</DependentUpon>
     </EmbeddedResource>
@@ -407,6 +413,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report\rpt_BangCong.resx">
       <DependentUpon>rpt_BangCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TinhLuong\F_BangLuong.resx">
+      <DependentUpon>F_BangLuong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />

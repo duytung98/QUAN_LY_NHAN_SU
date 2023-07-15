@@ -24,6 +24,31 @@
           <Property Name="DELETEO_BY" Type="int" />
           <Property Name="DELETEO_DATE" Type="datetime" />
         </EntityType>
+        <EntityType Name="T_Bang_Luong">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MakyCong" Type="int" />
+          <Property Name="id_NhanVien" Type="int" />
+          <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgayCongTrongThang" Type="int" />
+          <Property Name="NgayPhep" Type="float" />
+          <Property Name="KhongPhep" Type="float" />
+          <Property Name="NgayLe" Type="float" />
+          <Property Name="NgayChuNhat" Type="float" />
+          <Property Name="TangCa" Type="float" />
+          <Property Name="PhuCap" Type="float" />
+          <Property Name="NgayThuong" Type="float" />
+          <Property Name="UngLuong" Type="float" />
+          <Property Name="ThucLanh" Type="float" />
+          <Property Name="CREATEO_BY" Type="int" />
+          <Property Name="CREATEO_DATE" Type="datetime" />
+          <Property Name="UPDATEO_BY" Type="int" />
+          <Property Name="UPDATEO_DATE" Type="datetime" />
+          <Property Name="DELETEO_BY" Type="int" />
+          <Property Name="DELETEO_DATE" Type="datetime" />
+        </EntityType>
         <EntityType Name="T_BangCong">
           <Key>
             <PropertyRef Name="id_BangCong" />
@@ -814,6 +839,7 @@
         </Association>
         <EntityContainer Name="QUAN_LY_NHAN_SUModelStoreContainer">
           <EntitySet Name="KhenThuong_KyLuat" EntityType="Self.KhenThuong_KyLuat" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="T_Bang_Luong" EntityType="Self.T_Bang_Luong" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="T_BangCong" EntityType="Self.T_BangCong" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="T_BangCong_NVien_ChiTiet" EntityType="Self.T_BangCong_NVien_ChiTiet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="T_BaoHiem" EntityType="Self.T_BaoHiem" Schema="dbo" store:Type="Tables" />
@@ -975,6 +1001,7 @@
       <Schema Namespace="QUAN_LY_NHAN_SUModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="QUAN_LY_NHAN_SUEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="KhenThuong_KyLuat" EntityType="QUAN_LY_NHAN_SUModel.KhenThuong_KyLuat" />
+          <EntitySet Name="T_Bang_Luong" EntityType="QUAN_LY_NHAN_SUModel.T_Bang_Luong" />
           <EntitySet Name="T_BangCong" EntityType="QUAN_LY_NHAN_SUModel.T_BangCong" />
           <EntitySet Name="T_BangCong_NVien_ChiTiet" EntityType="QUAN_LY_NHAN_SUModel.T_BangCong_NVien_ChiTiet" />
           <EntitySet Name="T_BaoHiem" EntityType="QUAN_LY_NHAN_SUModel.T_BaoHiem" />
@@ -1149,6 +1176,31 @@
           <Property Name="DELETEO_BY" Type="Int32" />
           <Property Name="DELETEO_DATE" Type="DateTime" Precision="3" />
           <NavigationProperty Name="T_NhanVien" Relationship="QUAN_LY_NHAN_SUModel.FK_KhenThuong_KyLuat_T_NhanVien" FromRole="KhenThuong_KyLuat" ToRole="T_NhanVien" />
+        </EntityType>
+        <EntityType Name="T_Bang_Luong">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MakyCong" Type="Int32" />
+          <Property Name="id_NhanVien" Type="Int32" />
+          <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NgayCongTrongThang" Type="Int32" />
+          <Property Name="NgayPhep" Type="Double" />
+          <Property Name="KhongPhep" Type="Double" />
+          <Property Name="NgayLe" Type="Double" />
+          <Property Name="NgayChuNhat" Type="Double" />
+          <Property Name="TangCa" Type="Double" />
+          <Property Name="PhuCap" Type="Double" />
+          <Property Name="NgayThuong" Type="Double" />
+          <Property Name="UngLuong" Type="Double" />
+          <Property Name="ThucLanh" Type="Double" />
+          <Property Name="CREATEO_BY" Type="Int32" />
+          <Property Name="CREATEO_DATE" Type="DateTime" Precision="3" />
+          <Property Name="UPDATEO_BY" Type="Int32" />
+          <Property Name="UPDATEO_DATE" Type="DateTime" Precision="3" />
+          <Property Name="DELETEO_BY" Type="Int32" />
+          <Property Name="DELETEO_DATE" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="T_BangCong">
           <Key>
@@ -2022,6 +2074,32 @@
                 <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
                 <ScalarProperty Name="LyDo" ColumnName="LyDo" />
                 <ScalarProperty Name="SoQuyetDinh" ColumnName="SoQuyetDinh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_Bang_Luong">
+            <EntityTypeMapping TypeName="QUAN_LY_NHAN_SUModel.T_Bang_Luong">
+              <MappingFragment StoreEntitySet="T_Bang_Luong">
+                <ScalarProperty Name="DELETEO_DATE" ColumnName="DELETEO_DATE" />
+                <ScalarProperty Name="DELETEO_BY" ColumnName="DELETEO_BY" />
+                <ScalarProperty Name="UPDATEO_DATE" ColumnName="UPDATEO_DATE" />
+                <ScalarProperty Name="UPDATEO_BY" ColumnName="UPDATEO_BY" />
+                <ScalarProperty Name="CREATEO_DATE" ColumnName="CREATEO_DATE" />
+                <ScalarProperty Name="CREATEO_BY" ColumnName="CREATEO_BY" />
+                <ScalarProperty Name="ThucLanh" ColumnName="ThucLanh" />
+                <ScalarProperty Name="UngLuong" ColumnName="UngLuong" />
+                <ScalarProperty Name="NgayThuong" ColumnName="NgayThuong" />
+                <ScalarProperty Name="PhuCap" ColumnName="PhuCap" />
+                <ScalarProperty Name="TangCa" ColumnName="TangCa" />
+                <ScalarProperty Name="NgayChuNhat" ColumnName="NgayChuNhat" />
+                <ScalarProperty Name="NgayLe" ColumnName="NgayLe" />
+                <ScalarProperty Name="KhongPhep" ColumnName="KhongPhep" />
+                <ScalarProperty Name="NgayPhep" ColumnName="NgayPhep" />
+                <ScalarProperty Name="NgayCongTrongThang" ColumnName="NgayCongTrongThang" />
+                <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+                <ScalarProperty Name="id_NhanVien" ColumnName="id_NhanVien" />
+                <ScalarProperty Name="MakyCong" ColumnName="MakyCong" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

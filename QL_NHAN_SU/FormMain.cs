@@ -228,5 +228,10 @@ namespace QL_NHAN_SU
         {
             openForm(typeof(ChamCong.F_UngLuong));
         }
+
+        private void btn_BangLuong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(TinhLuong.F_BangLuong));
+        }
     }
 }
