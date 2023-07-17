@@ -53,7 +53,7 @@ namespace QL_NHAN_SU
 
         private void ribbonControl1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -205,9 +205,9 @@ namespace QL_NHAN_SU
             DialogResult kq = MessageBox.Show("Bạn có muốn đăng xuất", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (kq == DialogResult.Yes)
             {
-                this.Hide();
-                f_DangNhap.ShowDialog();
-                f_DangNhap = null;
+                //this.Hide();
+                //f_DangNhap.ShowDialog();
+                //f_DangNhap = null;
                 this.Close();
 
             }
@@ -237,6 +237,12 @@ namespace QL_NHAN_SU
         private void btn_BaoHiem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             openForm(typeof(F_BaoHiem));
+        }
+
+        private void DoiMatKhau_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            F_DoiMat_Khau f_DoiMatKhau = new F_DoiMat_Khau();
+            f_DoiMatKhau.ShowDialog();
         }
     }
 }

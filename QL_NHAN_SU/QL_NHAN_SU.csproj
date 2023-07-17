@@ -124,11 +124,18 @@
       <DependentUpon>F_UngLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="ChamCong_Function.cs" />
+    <Compile Include="ConnecDaTa.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain_NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain_NhanVien.Designer.cs">
+      <DependentUpon>FormMain_NhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="F_BaoHiem.cs">
       <SubType>Form</SubType>
@@ -159,6 +166,12 @@
     </Compile>
     <Compile Include="F_DanToc.Designer.cs">
       <DependentUpon>F_DanToc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_DoiMat_Khau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DoiMat_Khau.Designer.cs">
+      <DependentUpon>F_DoiMat_Khau.cs</DependentUpon>
     </Compile>
     <Compile Include="F_HopDongLD.cs">
       <SubType>Form</SubType>
@@ -243,6 +256,12 @@
     </Compile>
     <Compile Include="LichLamViec\F_LichDay.Designer.cs">
       <DependentUpon>F_LichDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LichLamViec\F_LichLamVicChoTungNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LichLamViec\F_LichLamVicChoTungNV.Designer.cs">
+      <DependentUpon>F_LichLamVicChoTungNV.cs</DependentUpon>
     </Compile>
     <Compile Include="LichLamViec\F_LopDay.cs">
       <SubType>Form</SubType>
@@ -339,6 +358,9 @@
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMain_NhanVien.resx">
+      <DependentUpon>FormMain_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_BaoHiem.resx">
       <DependentUpon>F_BaoHiem.cs</DependentUpon>
     </EmbeddedResource>
@@ -353,6 +375,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_DanToc.resx">
       <DependentUpon>F_DanToc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DoiMat_Khau.resx">
+      <DependentUpon>F_DoiMat_Khau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_HopDongLD.resx">
       <DependentUpon>F_HopDongLD.cs</DependentUpon>
@@ -395,6 +420,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LichLamViec\F_LichDay.resx">
       <DependentUpon>F_LichDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LichLamViec\F_LichLamVicChoTungNV.resx">
+      <DependentUpon>F_LichLamVicChoTungNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LichLamViec\F_LopDay.resx">
       <DependentUpon>F_LopDay.cs</DependentUpon>
@@ -515,6 +543,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -59,7 +59,6 @@ namespace QL_NHAN_SU
             txt_dienthoai.Enabled = !kt;
             txt_diachi.Enabled = !kt;
             txt_Password.Enabled = !kt;
-
             btn_chonHA.Enabled = !kt;
             date_ngaySinh.Enabled = !kt;
             label1.Enabled = !kt;
@@ -276,21 +275,6 @@ namespace QL_NHAN_SU
                 loadData();
                 _them = false;
                 _showHide1(true);
-                txt_hoten.Text = string.Empty;
-                txt_cccd.Text = string.Empty;
-                cb_bophan.Text = string.Empty;
-                cb_chucvu.Text = string.Empty;
-                cb_dantoc.Text = string.Empty;
-                cb_goitinh.Text = string.Empty;
-                cb_phanQuyen.Text = string.Empty;
-                cb_tongao.Text = string.Empty;
-                cb_trinhdo.Text = string.Empty;
-                Cb_phongban.Text = string.Empty;
-                cb_noilv.Text = string.Empty;
-                txt_email.Text = string.Empty;
-                txt_dienthoai.Text = string.Empty;
-                txt_diachi.Text = string.Empty;
-                txt_Password.Text = string.Empty;
                 splitContainer1.Panel1Collapsed = true;
             }
         }
@@ -383,5 +367,9 @@ namespace QL_NHAN_SU
                 e.Handled = true;
             }
         }
+
+        
+
+        
     }
-    }
+}

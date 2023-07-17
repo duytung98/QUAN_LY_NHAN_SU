@@ -305,6 +305,7 @@ namespace QL_NHAN_SU
             this.splitContainer1.Panel1.Controls.Add(this.label3);
             this.splitContainer1.Panel1.Controls.Add(this.label2);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
+            //this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // splitContainer1.Panel2
             // 
@@ -341,9 +342,10 @@ namespace QL_NHAN_SU
             // 
             this.txt_Password.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_Password.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Password.Location = new System.Drawing.Point(1490, 140);
+            this.txt_Password.Location = new System.Drawing.Point(1490, 99);
             this.txt_Password.Margin = new System.Windows.Forms.Padding(1);
             this.txt_Password.Name = "txt_Password";
+            this.txt_Password.PasswordChar = '*';
             this.txt_Password.Size = new System.Drawing.Size(156, 30);
             this.txt_Password.TabIndex = 60;
             // 
@@ -352,7 +354,7 @@ namespace QL_NHAN_SU
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(1376, 143);
+            this.label16.Location = new System.Drawing.Point(1376, 102);
             this.label16.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(88, 22);
@@ -364,7 +366,7 @@ namespace QL_NHAN_SU
             this.cb_tongao.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cb_tongao.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_tongao.FormattingEnabled = true;
-            this.cb_tongao.Location = new System.Drawing.Point(1490, 99);
+            this.cb_tongao.Location = new System.Drawing.Point(1490, 58);
             this.cb_tongao.Margin = new System.Windows.Forms.Padding(1);
             this.cb_tongao.Name = "cb_tongao";
             this.cb_tongao.Size = new System.Drawing.Size(156, 30);
@@ -375,7 +377,7 @@ namespace QL_NHAN_SU
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(1384, 102);
+            this.label15.Location = new System.Drawing.Point(1384, 61);
             this.label15.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(80, 22);
@@ -448,7 +450,7 @@ namespace QL_NHAN_SU
             this.cb_phanQuyen.Location = new System.Drawing.Point(1163, 58);
             this.cb_phanQuyen.Margin = new System.Windows.Forms.Padding(1);
             this.cb_phanQuyen.Name = "cb_phanQuyen";
-            this.cb_phanQuyen.Size = new System.Drawing.Size(483, 30);
+            this.cb_phanQuyen.Size = new System.Drawing.Size(189, 30);
             this.cb_phanQuyen.TabIndex = 69;
             // 
             // cb_noilv
@@ -1039,11 +1041,11 @@ namespace QL_NHAN_SU
             this.Password.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
             this.Password.AppearanceHeader.Options.UseFont = true;
             this.Password.Caption = "Password";
+            this.Password.DisplayFormat.FormatString = "*";
+            this.Password.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.Password.FieldName = "Password";
             this.Password.MinWidth = 46;
             this.Password.Name = "Password";
-            this.Password.Visible = true;
-            this.Password.VisibleIndex = 18;
             this.Password.Width = 175;
             // 
             // F_Nhan_Vien

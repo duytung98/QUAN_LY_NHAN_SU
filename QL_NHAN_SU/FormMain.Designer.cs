@@ -73,6 +73,7 @@ namespace QL_NHAN_SU
             this.btn_lich = new DevExpress.XtraBars.BarButtonItem();
             this.btn_KhoaHoc = new DevExpress.XtraBars.BarButtonItem();
             this.btn_BangCongchitiet = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_BaoHiem = new DevExpress.XtraBars.BarButtonItem();
             this.HeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.NhanSu = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -91,7 +92,6 @@ namespace QL_NHAN_SU
             this.list_Lenluong = new DevExpress.XtraEditors.ListBoxControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.list_SinhNhat = new DevExpress.XtraEditors.ListBoxControl();
-            this.btn_BaoHiem = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.galleryDropDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
@@ -175,6 +175,7 @@ namespace QL_NHAN_SU
             this.DoiMatKhau.ImageOptions.Image = global::QL_NHAN_SU.Properties.Resources.padlock;
             this.DoiMatKhau.Name = "DoiMatKhau";
             this.DoiMatKhau.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.DoiMatKhau.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.DoiMatKhau_ItemClick);
             // 
             // btn_DanToc
             // 
@@ -451,6 +452,15 @@ namespace QL_NHAN_SU
             this.btn_BangCongchitiet.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btn_BangCongchitiet.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_BangCongchitiet_ItemClick);
             // 
+            // btn_BaoHiem
+            // 
+            this.btn_BaoHiem.Caption = "Bảo hiểm";
+            this.btn_BaoHiem.Id = 33;
+            this.btn_BaoHiem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_BaoHiem.ImageOptions.SvgImage")));
+            this.btn_BaoHiem.Name = "btn_BaoHiem";
+            this.btn_BaoHiem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btn_BaoHiem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_BaoHiem_ItemClick);
+            // 
             // HeThong
             // 
             this.HeThong.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -660,15 +670,6 @@ namespace QL_NHAN_SU
             this.list_SinhNhat.Templates.Add(itemTemplateBase2);
             this.list_SinhNhat.SelectedIndexChanged += new System.EventHandler(this.list_SinhNhat_SelectedIndexChanged);
             this.list_SinhNhat.CustomizeItem += new DevExpress.XtraEditors.CustomizeTemplatedItemEventHandler(this.list_SinhNhat_CustomizeItem);
-            // 
-            // btn_BaoHiem
-            // 
-            this.btn_BaoHiem.Caption = "Bảo hiểm";
-            this.btn_BaoHiem.Id = 33;
-            this.btn_BaoHiem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_BaoHiem.ImageOptions.SvgImage")));
-            this.btn_BaoHiem.Name = "btn_BaoHiem";
-            this.btn_BaoHiem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btn_BaoHiem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_BaoHiem_ItemClick);
             // 
             // FormMain
             // 

@@ -31,19 +31,19 @@ namespace QL_NHAN_SU
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_DangNhap));
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btn_dangnhap = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.cb_hienthimk = new System.Windows.Forms.CheckBox();
             this.cb_phanquyen = new System.Windows.Forms.ComboBox();
             this.txt_matkhau = new System.Windows.Forms.TextBox();
             this.txt_taikhoan = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_dangnhap = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -68,20 +68,6 @@ namespace QL_NHAN_SU
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(633, 344);
             this.panel4.TabIndex = 0;
-            // 
-            // btn_dangnhap
-            // 
-            this.btn_dangnhap.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_dangnhap.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_dangnhap.Image = global::QL_NHAN_SU.Properties.Resources._240_F_321761124_bRFRmBvlVyC2G8U4Lvst7kwOfpFqe5S5;
-            this.btn_dangnhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_dangnhap.Location = new System.Drawing.Point(283, 264);
-            this.btn_dangnhap.Name = "btn_dangnhap";
-            this.btn_dangnhap.Size = new System.Drawing.Size(147, 36);
-            this.btn_dangnhap.TabIndex = 9;
-            this.btn_dangnhap.Text = "Đăng nhập";
-            this.btn_dangnhap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_dangnhap.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -119,7 +105,7 @@ namespace QL_NHAN_SU
             this.cb_phanquyen.Location = new System.Drawing.Point(214, 90);
             this.cb_phanquyen.Name = "cb_phanquyen";
             this.cb_phanquyen.Size = new System.Drawing.Size(288, 30);
-            this.cb_phanquyen.TabIndex = 5;
+            this.cb_phanquyen.TabIndex = 2;
             // 
             // txt_matkhau
             // 
@@ -141,6 +127,63 @@ namespace QL_NHAN_SU
             this.txt_taikhoan.Name = "txt_taikhoan";
             this.txt_taikhoan.Size = new System.Drawing.Size(288, 30);
             this.txt_taikhoan.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel6);
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.panel2);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1515, 802);
+            this.panel3.TabIndex = 2;
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = global::QL_NHAN_SU.Properties.Resources._2;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(0, 717);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1515, 85);
+            this.panel6.TabIndex = 3;
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.BackgroundImage = global::QL_NHAN_SU.Properties.Resources.header_hpc_20;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.Location = new System.Drawing.Point(0, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1515, 201);
+            this.panel5.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.BackgroundImage = global::QL_NHAN_SU.Properties.Resources.san_truong;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(41, 213);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(771, 495);
+            this.panel2.TabIndex = 1;
+            // 
+            // btn_dangnhap
+            // 
+            this.btn_dangnhap.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_dangnhap.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_dangnhap.Image = global::QL_NHAN_SU.Properties.Resources.enter;
+            this.btn_dangnhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_dangnhap.Location = new System.Drawing.Point(283, 261);
+            this.btn_dangnhap.Name = "btn_dangnhap";
+            this.btn_dangnhap.Size = new System.Drawing.Size(142, 39);
+            this.btn_dangnhap.TabIndex = 5;
+            this.btn_dangnhap.Text = "Đăng nhập";
+            this.btn_dangnhap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_dangnhap.UseVisualStyleBackColor = false;
+            this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
             // 
             // label3
             // 
@@ -188,48 +231,6 @@ namespace QL_NHAN_SU
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel2);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1515, 802);
-            this.panel3.TabIndex = 2;
-            // 
-            // panel6
-            // 
-            this.panel6.BackgroundImage = global::QL_NHAN_SU.Properties.Resources._2;
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 717);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1515, 85);
-            this.panel6.TabIndex = 3;
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackgroundImage = global::QL_NHAN_SU.Properties.Resources.header_hpc_20;
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Location = new System.Drawing.Point(0, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1515, 201);
-            this.panel5.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.BackgroundImage = global::QL_NHAN_SU.Properties.Resources.san_truong;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(41, 213);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(771, 495);
-            this.panel2.TabIndex = 1;
-            // 
             // panel1
             // 
             this.panel1.BackgroundImage = global::QL_NHAN_SU.Properties.Resources.header_logo_hpc_9_3;
@@ -265,9 +266,6 @@ namespace QL_NHAN_SU
         private System.Windows.Forms.Button btn_dangnhap;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox cb_hienthimk;
-        private System.Windows.Forms.ComboBox cb_phanquyen;
-        private System.Windows.Forms.TextBox txt_matkhau;
-        private System.Windows.Forms.TextBox txt_taikhoan;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
@@ -275,5 +273,8 @@ namespace QL_NHAN_SU
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.ComboBox cb_phanquyen;
+        public System.Windows.Forms.TextBox txt_matkhau;
+        public System.Windows.Forms.TextBox txt_taikhoan;
     }
 }

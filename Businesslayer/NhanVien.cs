@@ -86,6 +86,20 @@ namespace Businesslayer
                 throw new Exception("Lỗi : " + ex.Message);
             }
         }
+        public T_NhanVien updateMK(T_NhanVien nv)
+        {
+            try
+            {
+                var _tg = db.T_NhanVien.FirstOrDefault(x => x.id_NhanVien == nv.id_NhanVien);
+                _tg.Password = nv.Password;
+                db.SaveChanges();
+                return _tg;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("lỗi : " + ex.Message);
+            }
+        }
         public T_NhanVien update(T_NhanVien dt)
         {
             try
@@ -117,6 +131,7 @@ namespace Businesslayer
                 throw new Exception("lỗi : " + ex.Message);
             }
         }
+        
         public void delete(int id)
         {
             try
