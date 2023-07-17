@@ -221,6 +221,12 @@
     <Compile Include="F_PhongBan.Designer.cs">
       <DependentUpon>F_PhongBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_ThongTincaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ThongTincaNhan.Designer.cs">
+      <DependentUpon>F_ThongTincaNhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_TonGiao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -257,11 +263,11 @@
     <Compile Include="LichLamViec\F_LichDay.Designer.cs">
       <DependentUpon>F_LichDay.cs</DependentUpon>
     </Compile>
-    <Compile Include="LichLamViec\F_LichLamVicChoTungNV.cs">
+    <Compile Include="LichLamViec\F_LichLamviecChoNV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LichLamViec\F_LichLamVicChoTungNV.Designer.cs">
-      <DependentUpon>F_LichLamVicChoTungNV.cs</DependentUpon>
+    <Compile Include="LichLamViec\F_LichLamviecChoNV.Designer.cs">
+      <DependentUpon>F_LichLamviecChoNV.cs</DependentUpon>
     </Compile>
     <Compile Include="LichLamViec\F_LopDay.cs">
       <SubType>Form</SubType>
@@ -403,6 +409,9 @@
     <EmbeddedResource Include="F_PhongBan.resx">
       <DependentUpon>F_PhongBan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F_ThongTincaNhan.resx">
+      <DependentUpon>F_ThongTincaNhan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_TonGiao.resx">
       <DependentUpon>F_TonGiao.cs</DependentUpon>
     </EmbeddedResource>
@@ -421,8 +430,8 @@
     <EmbeddedResource Include="LichLamViec\F_LichDay.resx">
       <DependentUpon>F_LichDay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LichLamViec\F_LichLamVicChoTungNV.resx">
-      <DependentUpon>F_LichLamVicChoTungNV.cs</DependentUpon>
+    <EmbeddedResource Include="LichLamViec\F_LichLamviecChoNV.resx">
+      <DependentUpon>F_LichLamviecChoNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LichLamViec\F_LopDay.resx">
       <DependentUpon>F_LopDay.cs</DependentUpon>

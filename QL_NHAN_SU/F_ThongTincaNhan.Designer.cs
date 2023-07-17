@@ -1,7 +1,7 @@
 ﻿
-namespace QL_NHAN_SU.LichLamViec
+namespace QL_NHAN_SU
 {
-    partial class F_LichLamVicChoTungNV
+    partial class F_ThongTincaNhan
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +31,14 @@ namespace QL_NHAN_SU.LichLamViec
         {
             this.SuspendLayout();
             // 
-            // F_LichLamVicChoTungNV
+            // F_ThongTincaNhan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(986, 468);
-            this.Name = "F_LichLamVicChoTungNV";
-            this.Text = "Lịch làm việc";
+            this.ClientSize = new System.Drawing.Size(800, 478);
+            this.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "F_ThongTincaNhan";
+            this.Text = "Thông tin cá nhân";
             this.ResumeLayout(false);
 
         }

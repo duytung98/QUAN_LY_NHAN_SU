@@ -13,11 +13,15 @@ using System.Data.SqlClient;
 
 namespace QL_NHAN_SU
 {
+
     public partial class F_DangNhap : Form
     {
+        public static int tk;
+
         public F_DangNhap()
         {
             InitializeComponent();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -47,7 +51,7 @@ namespace QL_NHAN_SU
                 txt_matkhau.PasswordChar = '*';
             }
         }
-
+        
         private void btn_dangnhap_Click(object sender, EventArgs e)
         {
             ConnecDaTa c = new ConnecDaTa();
@@ -70,15 +74,19 @@ namespace QL_NHAN_SU
                     f_Main = null;
                     txt_matkhau.Text = "";
                     this.Show();
+                    tk = int.Parse(txt_taikhoan.Text);
+                    
                 }
                 else if (cb_phanquyen.Text == "Nhân viên")
                 {
                     this.Hide();
-                    FormMain_NhanVien f_Main = new FormMain_NhanVien();
+                    LichLamViec.F_LichLamviecChoNV f_LichLamviecChoNV = new LichLamViec.F_LichLamviecChoNV(txt_taikhoan.Text);
+                    FormMain_NhanVien f_Main = new FormMain_NhanVien(txt_taikhoan.Text);
                     f_Main.ShowDialog();
                     f_Main = null;
                     txt_matkhau.Text = "";
                     this.Show();
+                    tk = int.Parse(txt_taikhoan.Text);
 
                 }
             }

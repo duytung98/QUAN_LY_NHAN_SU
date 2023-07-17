@@ -1,5 +1,4 @@
-﻿using DevExpress.XtraEditors;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QL_NHAN_SU.LichLamViec
+namespace QL_NHAN_SU
 {
-    public partial class F_LichLamVicChoTungNV : DevExpress.XtraEditors.XtraForm
+    public partial class F_ThongTincaNhan : Form
     {
-        public F_LichLamVicChoTungNV()
+        public F_ThongTincaNhan()
         {
             InitializeComponent();
         }

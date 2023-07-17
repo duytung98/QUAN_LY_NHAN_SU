@@ -41,6 +41,7 @@ namespace QL_NHAN_SU
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.lbl_nhanvien = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,12 +57,12 @@ namespace QL_NHAN_SU
             this.btn_lichlamviec});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.ribbon.MaxItemId = 5;
+            this.ribbon.MaxItemId = 9;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.HeThong,
             this.btbThongTin});
-            this.ribbon.Size = new System.Drawing.Size(1036, 217);
+            this.ribbon.Size = new System.Drawing.Size(1833, 217);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // btn_thongtinnv
@@ -76,6 +77,7 @@ namespace QL_NHAN_SU
             this.btn_thongtinnv.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_thongtinnv.Name = "btn_thongtinnv";
             this.btn_thongtinnv.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btn_thongtinnv.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_thongtinnv_ItemClick);
             // 
             // btn_DoiMK
             // 
@@ -83,8 +85,7 @@ namespace QL_NHAN_SU
             this.btn_DoiMK.Id = 2;
             this.btn_DoiMK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_DoiMK.ImageOptions.Image")));
             this.btn_DoiMK.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_DoiMK.ImageOptions.LargeImage")));
-            this.btn_DoiMK.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_DoiMK.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btn_DoiMK.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DoiMK.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DoiMK.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_DoiMK.Name = "btn_DoiMK";
@@ -96,8 +97,7 @@ namespace QL_NHAN_SU
             this.btn_DangXuat.Caption = "Đăng xuất";
             this.btn_DangXuat.Id = 3;
             this.btn_DangXuat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_DangXuat.ImageOptions.SvgImage")));
-            this.btn_DangXuat.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_DangXuat.ItemAppearance.Hovered.Options.UseFont = true;
+            this.btn_DangXuat.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DangXuat.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DangXuat.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_DangXuat.Name = "btn_DangXuat";
@@ -110,12 +110,13 @@ namespace QL_NHAN_SU
             this.btn_lichlamviec.Id = 4;
             this.btn_lichlamviec.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_lichlamviec.ImageOptions.Image")));
             this.btn_lichlamviec.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_lichlamviec.ImageOptions.LargeImage")));
-            this.btn_lichlamviec.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_lichlamviec.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_lichlamviec.ItemAppearance.Hovered.Options.UseFont = true;
             this.btn_lichlamviec.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_lichlamviec.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_lichlamviec.Name = "btn_lichlamviec";
             this.btn_lichlamviec.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btn_lichlamviec.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_lichlamviec_ItemClick);
             // 
             // HeThong
             // 
@@ -156,19 +157,34 @@ namespace QL_NHAN_SU
             this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1036, 30);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1833, 30);
             // 
             // ribbonPage4
             // 
             this.ribbonPage4.Name = "ribbonPage4";
             this.ribbonPage4.Text = "ribbonPage4";
             // 
+            // lbl_nhanvien
+            // 
+            this.lbl_nhanvien.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lbl_nhanvien.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nhanvien.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lbl_nhanvien.Appearance.Options.UseBackColor = true;
+            this.lbl_nhanvien.Appearance.Options.UseFont = true;
+            this.lbl_nhanvien.Appearance.Options.UseForeColor = true;
+            this.lbl_nhanvien.Location = new System.Drawing.Point(1699, 57);
+            this.lbl_nhanvien.Name = "lbl_nhanvien";
+            this.lbl_nhanvien.Size = new System.Drawing.Size(96, 26);
+            this.lbl_nhanvien.TabIndex = 8;
+            this.lbl_nhanvien.Text = "Nhân viên";
+            // 
             // FormMain_NhanVien
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1036, 527);
+            this.ClientSize = new System.Drawing.Size(1833, 527);
+            this.Controls.Add(this.lbl_nhanvien);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -178,6 +194,7 @@ namespace QL_NHAN_SU
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "Thông tin nhân viên";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormMain_NhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -197,5 +214,6 @@ namespace QL_NHAN_SU
         private DevExpress.XtraBars.BarButtonItem btn_DoiMK;
         private DevExpress.XtraBars.BarButtonItem btn_DangXuat;
         private DevExpress.XtraBars.BarButtonItem btn_lichlamviec;
+        private DevExpress.XtraEditors.LabelControl lbl_nhanvien;
     }
 }

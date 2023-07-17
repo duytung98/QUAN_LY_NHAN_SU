@@ -13,9 +13,28 @@ namespace QL_NHAN_SU
 {
     public partial class FormMain_NhanVien : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public FormMain_NhanVien()
+        
+
+        public FormMain_NhanVien(string tk)
         {
             InitializeComponent();
+            lbl_nhanvien.Text = tk;
+        }
+
+        void openForm(Type typeForm)
+        {
+            foreach (var frm in MdiChildren)
+            {
+                if (frm.GetType() == typeForm)
+                {
+                    frm.Activate();
+                    return;
+                }
+            }
+            Form f = (Form)Activator.CreateInstance(typeForm);
+            f.MdiParent = this;
+            f.Show();
+
         }
 
         private void btn_DangXuat_ItemClick(object sender, ItemClickEventArgs e)
@@ -35,6 +54,27 @@ namespace QL_NHAN_SU
         {
             F_DoiMat_Khau f_DoiMatKhau = new F_DoiMat_Khau();
             f_DoiMatKhau.ShowDialog();
+        }
+
+        private void btn_lichlamviec_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            LichLamViec.F_LichLamviecChoNV f_LichLamVicChoTungNV = new LichLamViec.F_LichLamviecChoNV(lbl_nhanvien.Text);
+            f_LichLamVicChoTungNV.ShowDialog();
+        }
+
+        private void FormMain_NhanVien_Load(object sender, EventArgs e)
+        {
+            ribbon.SelectedPage = btbThongTin;
+        }
+
+        private void txt_manv_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_thongtinnv_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
         }
     }
 }
