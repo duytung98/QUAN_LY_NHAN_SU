@@ -40,6 +40,7 @@ namespace QL_NHAN_SU
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_dangnhap = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,6 +55,7 @@ namespace QL_NHAN_SU
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.LightGray;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.btn_dangnhap);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.cb_hienthimk);
@@ -170,15 +172,30 @@ namespace QL_NHAN_SU
             this.panel2.Size = new System.Drawing.Size(771, 495);
             this.panel2.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.Image = global::QL_NHAN_SU.Properties.Resources.cancel;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(415, 266);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(107, 45);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Thoát";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btn_dangnhap
             // 
             this.btn_dangnhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_dangnhap.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_dangnhap.Image = global::QL_NHAN_SU.Properties.Resources.enter;
             this.btn_dangnhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_dangnhap.Location = new System.Drawing.Point(283, 261);
+            this.btn_dangnhap.Location = new System.Drawing.Point(213, 266);
             this.btn_dangnhap.Name = "btn_dangnhap";
-            this.btn_dangnhap.Size = new System.Drawing.Size(142, 39);
+            this.btn_dangnhap.Size = new System.Drawing.Size(142, 45);
             this.btn_dangnhap.TabIndex = 5;
             this.btn_dangnhap.Text = "Đăng nhập";
             this.btn_dangnhap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -276,5 +293,6 @@ namespace QL_NHAN_SU
         public System.Windows.Forms.ComboBox cb_phanquyen;
         public System.Windows.Forms.TextBox txt_matkhau;
         public System.Windows.Forms.TextBox txt_taikhoan;
+        private System.Windows.Forms.Button button1;
     }
 }

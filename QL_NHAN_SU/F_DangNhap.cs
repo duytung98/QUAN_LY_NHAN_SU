@@ -64,12 +64,18 @@ namespace QL_NHAN_SU
             {
                 MessageBox.Show("Vui lòng nhập đủ thông tin đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            else if (txt_taikhoan.Text.Length > 10)
+            {
+                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng? Vui lòng nhập lại tài khoản hoặc mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                txt_matkhau.Text = "";
+            }
             else if(reader.Read() == true)
             {
                 if (cb_phanquyen.Text == "Quản lý")
                 {
+                    F_ThongTincaNhan f_ThongTincaNhan = new F_ThongTincaNhan(txt_taikhoan.Text);
                     this.Hide();
-                    FormMain f_Main = new FormMain();
+                    FormMain f_Main = new FormMain(txt_taikhoan.Text);
                     f_Main.ShowDialog();
                     f_Main = null;
                     txt_matkhau.Text = "";
@@ -80,6 +86,7 @@ namespace QL_NHAN_SU
                 else if (cb_phanquyen.Text == "Nhân viên")
                 {
                     this.Hide();
+                    F_ThongTincaNhan f_ThongTincaNhan = new F_ThongTincaNhan(txt_taikhoan.Text);
                     LichLamViec.F_LichLamviecChoNV f_LichLamviecChoNV = new LichLamViec.F_LichLamviecChoNV(txt_taikhoan.Text);
                     FormMain_NhanVien f_Main = new FormMain_NhanVien(txt_taikhoan.Text);
                     f_Main.ShowDialog();
@@ -98,6 +105,15 @@ namespace QL_NHAN_SU
             }
             c.disconnect();  
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult kq = MessageBox.Show("Bạn chắc chắn muốn thoát??", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if(kq == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

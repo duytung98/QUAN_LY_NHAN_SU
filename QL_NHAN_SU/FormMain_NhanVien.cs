@@ -74,7 +74,8 @@ namespace QL_NHAN_SU
 
         private void btn_thongtinnv_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            F_ThongTincaNhan f_ThongTincaNhan = new F_ThongTincaNhan(lbl_nhanvien.Text);
+            f_ThongTincaNhan.ShowDialog();
         }
     }
 }

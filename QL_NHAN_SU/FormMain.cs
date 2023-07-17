@@ -17,6 +17,11 @@ namespace QL_NHAN_SU
         {
             InitializeComponent();
         }
+        public FormMain(string tk)
+        {
+            InitializeComponent();
+            label1.Text = tk;
+        }
         void openForm(Type typeForm)
         {
             foreach (var frm in MdiChildren) 
@@ -243,6 +248,12 @@ namespace QL_NHAN_SU
         {
             F_DoiMat_Khau f_DoiMatKhau = new F_DoiMat_Khau();
             f_DoiMatKhau.ShowDialog();
+        }
+
+        private void ThongTin_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            F_ThongTincaNhan f_ThongTincaNhan = new F_ThongTincaNhan(label1.Text);
+            f_ThongTincaNhan.ShowDialog();
         }
     }
 }
