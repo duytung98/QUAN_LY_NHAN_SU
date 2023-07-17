@@ -58,5 +58,10 @@ namespace QL_NHAN_SU.LichLamViec
         {
             loaddata();
         }
+
+        private void F_LichLamviecChoNV_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            c.disconnect();
+        }
     }
 }

@@ -56,7 +56,7 @@ namespace QL_NHAN_SU
         {
             ConnecDaTa c = new ConnecDaTa();
             c.connect();
-            string sql = "select * from T_NhanVien where id_NhanVien = '" + txt_taikhoan.Text + "' and Password = N'" + txt_matkhau.Text + "' and  PhanQuyen = N'" + cb_phanquyen.Text + "'";
+            string sql = "select * from T_NhanVien where id_NhanVien = '" + txt_taikhoan.Text + "' and Password = N'" + txt_matkhau.Text + "' and  PhanQuyen = N'" + cb_phanquyen.Text + "' and DATHOIVIEC is null";
             SqlCommand command = new SqlCommand(sql, c.conn);
             SqlDataReader reader = command.ExecuteReader();
 
