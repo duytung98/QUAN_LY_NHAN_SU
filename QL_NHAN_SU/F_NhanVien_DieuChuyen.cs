@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Datalayer;
 using Businesslayer;
+using Businesslayer.DTO;
+using QL_NHAN_SU.Report;
+using DevExpress.XtraReports.UI;
 
 namespace QL_NHAN_SU
 {
@@ -24,6 +27,7 @@ namespace QL_NHAN_SU
         string _soQD;
         NhanVien _nhanvien;
         PhongBan _PhongBan;
+        List<DieuChuyenDTO> _listDC;
 
 
         private void _showHide1(bool kt)
@@ -196,7 +200,9 @@ namespace QL_NHAN_SU
 
         private void btn_in_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            _listDC = _NVDC.getitemFull(_soQD);
+            rptDieuChuyen rptdieuchuye = new rptDieuChuyen(_listDC);
+            rptdieuchuye.ShowPreviewDialog();
         }
 
         private void btn_dong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -216,7 +222,7 @@ namespace QL_NHAN_SU
                 txt_lido.Text = kt.LiDo;
                 cb_DVDen.SelectedValue = kt.id_PhongBan2;
                 date_Ngay.Value = kt.Ngay.Value;
-                //_lstHopDong = _hdld.getItemFull(_soHD);
+                _listDC = _NVDC.getitemFull(_soQD);
 
             }
         }

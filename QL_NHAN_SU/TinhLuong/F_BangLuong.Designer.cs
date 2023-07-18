@@ -447,12 +447,12 @@ namespace QL_NHAN_SU.TinhLuong
             this.Ngaychunhat.DisplayFormat.FormatString = "n0";
             this.Ngaychunhat.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.Ngaychunhat.FieldName = "NgayChuNhat";
-            this.Ngaychunhat.MaxWidth = 200;
-            this.Ngaychunhat.MinWidth = 200;
+            this.Ngaychunhat.MaxWidth = 150;
+            this.Ngaychunhat.MinWidth = 150;
             this.Ngaychunhat.Name = "Ngaychunhat";
             this.Ngaychunhat.Visible = true;
             this.Ngaychunhat.VisibleIndex = 6;
-            this.Ngaychunhat.Width = 200;
+            this.Ngaychunhat.Width = 150;
             // 
             // NgayThuong
             // 

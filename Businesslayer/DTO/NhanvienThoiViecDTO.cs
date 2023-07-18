@@ -9,8 +9,8 @@ namespace Businesslayer.DTO
     public class NhanvienThoiViecDTO
     {
         public string SOQDTV { get; set; }
-        public Nullable<System.DateTime> NGAYNOPDON { get; set; }
-        public Nullable<System.DateTime> NGAYNGHI { get; set; }
+        public string NGAYNOPDON { get; set; }
+        public string NGAYNGHI { get; set; }
         public string LYDO { get; set; }
         public string GHICHU { get; set; }
         public Nullable<int> id_NhanVien { get; set; }

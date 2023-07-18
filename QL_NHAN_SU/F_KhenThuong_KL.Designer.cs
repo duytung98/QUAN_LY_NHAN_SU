@@ -342,6 +342,7 @@ namespace QL_NHAN_SU
             // date_Ngay
             // 
             this.date_Ngay.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.date_Ngay.CustomFormat = "dd/MM/yyyy";
             this.date_Ngay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_Ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_Ngay.Location = new System.Drawing.Point(201, 82);
@@ -467,6 +468,8 @@ namespace QL_NHAN_SU
             this.NgayTao.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NgayTao.AppearanceHeader.Options.UseFont = true;
             this.NgayTao.Caption = "Ngày quyết định";
+            this.NgayTao.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.NgayTao.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.NgayTao.FieldName = "NgayTao";
             this.NgayTao.MaxWidth = 170;
             this.NgayTao.MinWidth = 170;

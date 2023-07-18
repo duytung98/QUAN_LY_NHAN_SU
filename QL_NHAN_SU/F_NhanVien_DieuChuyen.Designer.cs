@@ -279,6 +279,7 @@ namespace QL_NHAN_SU
             // date_Ngay
             // 
             this.date_Ngay.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.date_Ngay.CustomFormat = "dd/MM/yyyy";
             this.date_Ngay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_Ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_Ngay.Location = new System.Drawing.Point(142, 50);
@@ -499,6 +500,8 @@ namespace QL_NHAN_SU
             this.NgayTao.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NgayTao.AppearanceHeader.Options.UseFont = true;
             this.NgayTao.Caption = "Ngày điều chuyển";
+            this.NgayTao.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.NgayTao.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.NgayTao.FieldName = "Ngay";
             this.NgayTao.MaxWidth = 170;
             this.NgayTao.MinWidth = 170;
@@ -517,6 +520,8 @@ namespace QL_NHAN_SU
             // 
             // Donvi
             // 
+            this.Donvi.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Donvi.AppearanceHeader.Options.UseFont = true;
             this.Donvi.Caption = "Đơn vị hiện tại";
             this.Donvi.FieldName = "Ten_PhongBan";
             this.Donvi.MaxWidth = 200;
@@ -536,6 +541,8 @@ namespace QL_NHAN_SU
             // 
             // Dvchuyenden
             // 
+            this.Dvchuyenden.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dvchuyenden.AppearanceHeader.Options.UseFont = true;
             this.Dvchuyenden.Caption = "Đơn vị chuyển đến";
             this.Dvchuyenden.FieldName = "Ten_PhongBan2";
             this.Dvchuyenden.MaxWidth = 200;
@@ -573,6 +580,8 @@ namespace QL_NHAN_SU
             // 
             // LiDo
             // 
+            this.LiDo.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LiDo.AppearanceHeader.Options.UseFont = true;
             this.LiDo.Caption = "Lý do";
             this.LiDo.FieldName = "LiDo";
             this.LiDo.MaxWidth = 300;
@@ -584,6 +593,8 @@ namespace QL_NHAN_SU
             // 
             // Ghichu
             // 
+            this.Ghichu.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ghichu.AppearanceHeader.Options.UseFont = true;
             this.Ghichu.Caption = "Ghi chú";
             this.Ghichu.FieldName = "Ghichu";
             this.Ghichu.MinWidth = 25;

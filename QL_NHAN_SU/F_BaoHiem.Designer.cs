@@ -67,6 +67,7 @@ namespace QL_NHAN_SU
             this.HoTen = new DevExpress.XtraGrid.Columns.GridColumn();
             this.so_BH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NoiCap = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NgayCap = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Noi_DK_KamBenh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GhiChu = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
@@ -323,6 +324,7 @@ namespace QL_NHAN_SU
             // date_cap
             // 
             this.date_cap.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.date_cap.CustomFormat = "dd/MM/yyyy";
             this.date_cap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_cap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_cap.Location = new System.Drawing.Point(729, 80);
@@ -434,6 +436,7 @@ namespace QL_NHAN_SU
             this.HoTen,
             this.so_BH,
             this.NoiCap,
+            this.NgayCap,
             this.Noi_DK_KamBenh,
             this.GhiChu});
             this.gcv_baohiem.GridControl = this.gv_baohiem;
@@ -520,6 +523,21 @@ namespace QL_NHAN_SU
             this.NoiCap.VisibleIndex = 5;
             this.NoiCap.Width = 300;
             // 
+            // NgayCap
+            // 
+            this.NgayCap.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NgayCap.AppearanceHeader.Options.UseFont = true;
+            this.NgayCap.Caption = "Ngày cấp";
+            this.NgayCap.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.NgayCap.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
+            this.NgayCap.FieldName = "NgayCap";
+            this.NgayCap.MaxWidth = 100;
+            this.NgayCap.MinWidth = 100;
+            this.NgayCap.Name = "NgayCap";
+            this.NgayCap.Visible = true;
+            this.NgayCap.VisibleIndex = 6;
+            this.NgayCap.Width = 100;
+            // 
             // Noi_DK_KamBenh
             // 
             this.Noi_DK_KamBenh.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -530,7 +548,7 @@ namespace QL_NHAN_SU
             this.Noi_DK_KamBenh.MinWidth = 400;
             this.Noi_DK_KamBenh.Name = "Noi_DK_KamBenh";
             this.Noi_DK_KamBenh.Visible = true;
-            this.Noi_DK_KamBenh.VisibleIndex = 6;
+            this.Noi_DK_KamBenh.VisibleIndex = 7;
             this.Noi_DK_KamBenh.Width = 400;
             // 
             // GhiChu
@@ -542,7 +560,7 @@ namespace QL_NHAN_SU
             this.GhiChu.MinWidth = 25;
             this.GhiChu.Name = "GhiChu";
             this.GhiChu.Visible = true;
-            this.GhiChu.VisibleIndex = 7;
+            this.GhiChu.VisibleIndex = 8;
             this.GhiChu.Width = 25;
             // 
             // F_BaoHiem
@@ -613,5 +631,6 @@ namespace QL_NHAN_SU
         private System.Windows.Forms.Label label5;
         private DevExpress.XtraGrid.Columns.GridColumn GhiChu;
         private DevExpress.XtraGrid.Columns.GridColumn DEL;
+        private DevExpress.XtraGrid.Columns.GridColumn NgayCap;
     }
 }

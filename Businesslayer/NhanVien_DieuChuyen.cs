@@ -15,7 +15,39 @@ namespace Businesslayer
         {
             return db.T_DieuChuyen.FirstOrDefault(x => x.SoDieuChuyen == sodc);
         }
+        public List<DieuChuyenDTO> getitemFull(string sodc)
+        {
+            var lisNL = db.T_DieuChuyen.Where(x => x.SoDieuChuyen == sodc).ToList();
+            List<DieuChuyenDTO> lssDTO = new List<DieuChuyenDTO>();
+            DieuChuyenDTO dcDTO;
+            foreach (var item in lisNL)
+            {
+                dcDTO = new DieuChuyenDTO();
+                dcDTO.SoDieuChuyen = item.SoDieuChuyen;
+                dcDTO.id_NhanVien = item.id_NhanVien;
+                var nv = db.T_NhanVien.FirstOrDefault(n => n.id_NhanVien == item.id_NhanVien);
+                dcDTO.HoTen = nv.HoTen;
+                dcDTO.id_PhongBan = item.id_PhongBan;
+                var pb = db.T_PhongBan.FirstOrDefault(p => p.id_PhongBan == item.id_PhongBan);
+                dcDTO.Ten_PhongBan = pb.Ten_PhongBan;
+                dcDTO.id_PhongBan2 = item.id_PhongBan2;
+                var pb2 = db.T_PhongBan.FirstOrDefault(p1 => p1.id_PhongBan == item.id_PhongBan2);
+                dcDTO.Ten_PhongBan2 = pb2.Ten_PhongBan;
+                dcDTO.LiDo = item.LiDo;
+                dcDTO.Ghichu = item.Ghichu;
+                dcDTO.CREATEO_BY = item.CREATEO_BY;
+                dcDTO.Ngay = item.Ngay.Value.ToString("dd/MM/yyyy");
+                dcDTO.CREATEO_DATE = item.CREATEO_DATE;
+                dcDTO.UPDATEO_BY = item.UPDATEO_BY;
+                dcDTO.UPDATEO_DATE = item.UPDATEO_DATE;
+                dcDTO.DELETEO_BY = item.DELETEO_BY;
+                dcDTO.DELETEO_DATE = item.DELETEO_DATE;
+                lssDTO.Add(dcDTO);
 
+            }
+            return lssDTO;
+
+        }
         public List<T_DieuChuyen> getlist()
         {
             return db.T_DieuChuyen.ToList();
@@ -41,7 +73,7 @@ namespace Businesslayer
                 dcDTO.LiDo = item.LiDo;
                 dcDTO.Ghichu = item.Ghichu;
                 dcDTO.CREATEO_BY = item.CREATEO_BY;
-                dcDTO.Ngay = item.Ngay;
+                dcDTO.Ngay = item.Ngay.Value.ToString("dd/MM/yyyy");
                 dcDTO.CREATEO_DATE = item.CREATEO_DATE;
                 dcDTO.UPDATEO_BY = item.UPDATEO_BY;
                 dcDTO.UPDATEO_DATE = item.UPDATEO_DATE;

@@ -255,6 +255,7 @@ namespace QL_NHAN_SU
             // date_NgayNghi
             // 
             this.date_NgayNghi.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.date_NgayNghi.CustomFormat = "dd/MM/yyyy";
             this.date_NgayNghi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_NgayNghi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_NgayNghi.Location = new System.Drawing.Point(521, 50);
@@ -278,6 +279,7 @@ namespace QL_NHAN_SU
             // date_NgayND
             // 
             this.date_NgayND.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.date_NgayND.CustomFormat = "dd/MM/yyyy";
             this.date_NgayND.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_NgayND.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_NgayND.Location = new System.Drawing.Point(142, 50);
@@ -497,6 +499,8 @@ namespace QL_NHAN_SU
             this.NgayNd.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NgayNd.AppearanceHeader.Options.UseFont = true;
             this.NgayNd.Caption = "Ngày nộp đơn";
+            this.NgayNd.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.NgayNd.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.NgayNd.FieldName = "NGAYNOPDON";
             this.NgayNd.MaxWidth = 170;
             this.NgayNd.MinWidth = 170;
@@ -510,6 +514,8 @@ namespace QL_NHAN_SU
             this.NGAYNGH.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NGAYNGH.AppearanceHeader.Options.UseFont = true;
             this.NGAYNGH.Caption = "Ngày nghỉ";
+            this.NGAYNGH.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.NGAYNGH.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.NGAYNGH.FieldName = "NGAYNGHI";
             this.NGAYNGH.MaxWidth = 100;
             this.NGAYNGH.MinWidth = 100;

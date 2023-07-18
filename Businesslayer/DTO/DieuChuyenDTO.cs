@@ -9,7 +9,7 @@ namespace Businesslayer.DTO
     public class DieuChuyenDTO
     {
         public string SoDieuChuyen { get; set; }
-        public Nullable<System.DateTime> Ngay { get; set; }
+        public string Ngay { get; set; }
         public Nullable<int> id_NhanVien { get; set; }
         public string HoTen { get; set; }
         public Nullable<int> id_PhongBan { get; set; }

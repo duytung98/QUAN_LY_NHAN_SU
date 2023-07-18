@@ -31,12 +31,12 @@ namespace QL_NHAN_SU.Report
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_bangcongnhanvienchitiet));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.cb_kycong = new System.Windows.Forms.ComboBox();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.cb_nhanvien = new System.Windows.Forms.ComboBox();
-            this.btn_in = new DevExpress.XtraEditors.SimpleButton();
             this.btn_dong = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_in = new DevExpress.XtraEditors.SimpleButton();
+            this.cb_nhanvien = new System.Windows.Forms.ComboBox();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.cb_kycong = new System.Windows.Forms.ComboBox();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             this.SuspendLayout();
@@ -54,15 +54,48 @@ namespace QL_NHAN_SU.Report
             this.panelControl1.Size = new System.Drawing.Size(436, 129);
             this.panelControl1.TabIndex = 0;
             // 
-            // labelControl1
+            // btn_dong
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(53, 13);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(65, 22);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "Kỳ công";
+            this.btn_dong.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dong.Appearance.Options.UseFont = true;
+            this.btn_dong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_dong.ImageOptions.Image")));
+            this.btn_dong.Location = new System.Drawing.Point(291, 96);
+            this.btn_dong.Name = "btn_dong";
+            this.btn_dong.Size = new System.Drawing.Size(86, 28);
+            this.btn_dong.TabIndex = 5;
+            this.btn_dong.Text = "Đóng";
+            this.btn_dong.Click += new System.EventHandler(this.btn_dong_Click);
+            // 
+            // btn_in
+            // 
+            this.btn_in.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_in.Appearance.Options.UseFont = true;
+            this.btn_in.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_in.ImageOptions.Image")));
+            this.btn_in.Location = new System.Drawing.Point(141, 96);
+            this.btn_in.Name = "btn_in";
+            this.btn_in.Size = new System.Drawing.Size(86, 28);
+            this.btn_in.TabIndex = 4;
+            this.btn_in.Text = "In";
+            this.btn_in.Click += new System.EventHandler(this.btn_in_Click);
+            // 
+            // cb_nhanvien
+            // 
+            this.cb_nhanvien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_nhanvien.FormattingEnabled = true;
+            this.cb_nhanvien.Location = new System.Drawing.Point(158, 47);
+            this.cb_nhanvien.Name = "cb_nhanvien";
+            this.cb_nhanvien.Size = new System.Drawing.Size(195, 30);
+            this.cb_nhanvien.TabIndex = 3;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(50, 50);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(80, 22);
+            this.labelControl2.TabIndex = 2;
+            this.labelControl2.Text = "Nhân viên";
             // 
             // cb_kycong
             // 
@@ -86,48 +119,15 @@ namespace QL_NHAN_SU.Report
             this.cb_kycong.Size = new System.Drawing.Size(195, 30);
             this.cb_kycong.TabIndex = 1;
             // 
-            // labelControl2
+            // labelControl1
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(50, 50);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(80, 22);
-            this.labelControl2.TabIndex = 2;
-            this.labelControl2.Text = "Nhân viên";
-            // 
-            // cb_nhanvien
-            // 
-            this.cb_nhanvien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_nhanvien.FormattingEnabled = true;
-            this.cb_nhanvien.Location = new System.Drawing.Point(158, 47);
-            this.cb_nhanvien.Name = "cb_nhanvien";
-            this.cb_nhanvien.Size = new System.Drawing.Size(195, 30);
-            this.cb_nhanvien.TabIndex = 3;
-            // 
-            // btn_in
-            // 
-            this.btn_in.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_in.Appearance.Options.UseFont = true;
-            this.btn_in.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_in.ImageOptions.Image")));
-            this.btn_in.Location = new System.Drawing.Point(141, 96);
-            this.btn_in.Name = "btn_in";
-            this.btn_in.Size = new System.Drawing.Size(86, 28);
-            this.btn_in.TabIndex = 4;
-            this.btn_in.Text = "In";
-            this.btn_in.Click += new System.EventHandler(this.btn_in_Click);
-            // 
-            // btn_dong
-            // 
-            this.btn_dong.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_dong.Appearance.Options.UseFont = true;
-            this.btn_dong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.btn_dong.Location = new System.Drawing.Point(291, 96);
-            this.btn_dong.Name = "btn_dong";
-            this.btn_dong.Size = new System.Drawing.Size(86, 28);
-            this.btn_dong.TabIndex = 5;
-            this.btn_dong.Text = "Đóng";
-            this.btn_dong.Click += new System.EventHandler(this.btn_dong_Click);
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(53, 13);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(65, 22);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "Kỳ công";
             // 
             // F_bangcongnhanvienchitiet
             // 
@@ -135,6 +135,7 @@ namespace QL_NHAN_SU.Report
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 143);
             this.Controls.Add(this.panelControl1);
+            this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("F_bangcongnhanvienchitiet.IconOptions.SvgImage")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "F_bangcongnhanvienchitiet";

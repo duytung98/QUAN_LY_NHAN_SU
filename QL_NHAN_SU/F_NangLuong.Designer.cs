@@ -328,6 +328,7 @@ namespace QL_NHAN_SU
             // date_NgaylenLuong
             // 
             this.date_NgaylenLuong.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.date_NgaylenLuong.CustomFormat = "dd/MM/yyyy";
             this.date_NgaylenLuong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_NgaylenLuong.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_NgaylenLuong.Location = new System.Drawing.Point(609, 69);
@@ -351,6 +352,7 @@ namespace QL_NHAN_SU
             // date_Ngayky
             // 
             this.date_Ngayky.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.date_Ngayky.CustomFormat = "dd/MM/yyyy";
             this.date_Ngayky.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_Ngayky.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_Ngayky.Location = new System.Drawing.Point(201, 69);
@@ -636,6 +638,8 @@ namespace QL_NHAN_SU
             this.Ngayky.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ngayky.AppearanceHeader.Options.UseFont = true;
             this.Ngayky.Caption = "Ngày ký";
+            this.Ngayky.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.Ngayky.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.Ngayky.FieldName = "NgayKy";
             this.Ngayky.MaxWidth = 170;
             this.Ngayky.MinWidth = 170;
@@ -649,6 +653,8 @@ namespace QL_NHAN_SU
             this.NgayLenLuong.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NgayLenLuong.AppearanceHeader.Options.UseFont = true;
             this.NgayLenLuong.Caption = "Ngày lên lương";
+            this.NgayLenLuong.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.NgayLenLuong.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.NgayLenLuong.FieldName = "NgayLenLuong";
             this.NgayLenLuong.MaxWidth = 200;
             this.NgayLenLuong.MinWidth = 200;

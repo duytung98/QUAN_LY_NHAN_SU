@@ -332,6 +332,7 @@ namespace QL_NHAN_SU
             // date_NKy
             // 
             this.date_NKy.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.date_NKy.CustomFormat = "dd/MM/yyyy";
             this.date_NKy.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_NKy.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_NKy.Location = new System.Drawing.Point(627, 169);
@@ -386,6 +387,7 @@ namespace QL_NHAN_SU
             // date_NKT
             // 
             this.date_NKT.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.date_NKT.CustomFormat = "dd/MM/yyyy";
             this.date_NKT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_NKT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_NKT.Location = new System.Drawing.Point(232, 169);
@@ -409,6 +411,7 @@ namespace QL_NHAN_SU
             // date_NBD
             // 
             this.date_NBD.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.date_NBD.CustomFormat = "dd/MM/yyyy";
             this.date_NBD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_NBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_NBD.Location = new System.Drawing.Point(1090, 92);
@@ -610,6 +613,8 @@ namespace QL_NHAN_SU
             this.NgayBatDau.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NgayBatDau.AppearanceHeader.Options.UseFont = true;
             this.NgayBatDau.Caption = "Ngày bắt đầu";
+            this.NgayBatDau.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.NgayBatDau.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.NgayBatDau.FieldName = "NgayBatDau";
             this.NgayBatDau.MinWidth = 25;
             this.NgayBatDau.Name = "NgayBatDau";
@@ -622,6 +627,8 @@ namespace QL_NHAN_SU
             this.NgayKetThuc.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NgayKetThuc.AppearanceHeader.Options.UseFont = true;
             this.NgayKetThuc.Caption = "Ngày kết thúc";
+            this.NgayKetThuc.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.NgayKetThuc.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.NgayKetThuc.FieldName = "NgayKetThuc";
             this.NgayKetThuc.MinWidth = 25;
             this.NgayKetThuc.Name = "NgayKetThuc";
@@ -634,6 +641,8 @@ namespace QL_NHAN_SU
             this.NgayKy.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NgayKy.AppearanceHeader.Options.UseFont = true;
             this.NgayKy.Caption = "Ngày ký";
+            this.NgayKy.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.NgayKy.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.NgayKy.FieldName = "NgayKy";
             this.NgayKy.MinWidth = 25;
             this.NgayKy.Name = "NgayKy";

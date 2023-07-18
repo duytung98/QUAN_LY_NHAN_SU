@@ -255,5 +255,14 @@ namespace QL_NHAN_SU
             F_ThongTincaNhan f_ThongTincaNhan = new F_ThongTincaNhan(label1.Text);
             f_ThongTincaNhan.ShowDialog();
         }
+
+        private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            DialogResult kq = MessageBox.Show("Bạn có chắc chắn muốn thoát??", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if(kq == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

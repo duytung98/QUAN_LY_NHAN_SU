@@ -64,6 +64,15 @@ namespace QL_NHAN_SU
             {
                 MessageBox.Show("Vui lòng nhập đủ thông tin đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            //else if(txt_taikhoan.Text== "Admin" && txt_matkhau.Text == "duytung98" && cb_phanquyen.Text == "Quản lý")
+            //{
+            //    this.Hide();
+            //    FormMain f_Main = new FormMain(txt_taikhoan.Text);
+            //    f_Main.ShowDialog();
+            //    f_Main = null;
+            //    txt_matkhau.Text = "";
+            //    this.Show();
+            //}
             else if (txt_taikhoan.Text.Length > 10)
             {
                 MessageBox.Show("Tài khoản hoặc mật khẩu không đúng? Vui lòng nhập lại tài khoản hoặc mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);

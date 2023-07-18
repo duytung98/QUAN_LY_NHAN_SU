@@ -324,6 +324,7 @@ namespace QL_NHAN_SU.LichLamViec
             // date_ketthuc
             // 
             this.date_ketthuc.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.date_ketthuc.CustomFormat = "dd/MM/yyyy";
             this.date_ketthuc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_ketthuc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_ketthuc.Location = new System.Drawing.Point(241, 202);
@@ -335,6 +336,7 @@ namespace QL_NHAN_SU.LichLamViec
             // date_BatDau
             // 
             this.date_BatDau.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.date_BatDau.CustomFormat = "dd/MM/yyyy";
             this.date_BatDau.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_BatDau.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_BatDau.Location = new System.Drawing.Point(1330, 138);
@@ -1187,6 +1189,8 @@ namespace QL_NHAN_SU.LichLamViec
             this.ThoiGianBD.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ThoiGianBD.AppearanceHeader.Options.UseFont = true;
             this.ThoiGianBD.Caption = "Thời gian BĐ";
+            this.ThoiGianBD.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.ThoiGianBD.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.ThoiGianBD.FieldName = "ThoiGianBD";
             this.ThoiGianBD.MaxWidth = 150;
             this.ThoiGianBD.MinWidth = 150;
@@ -1200,6 +1204,8 @@ namespace QL_NHAN_SU.LichLamViec
             this.ThoiGianKT.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ThoiGianKT.AppearanceHeader.Options.UseFont = true;
             this.ThoiGianKT.Caption = "Thời gian KT";
+            this.ThoiGianKT.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.ThoiGianKT.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.ThoiGianKT.FieldName = "ThoiGianKT";
             this.ThoiGianKT.MaxWidth = 150;
             this.ThoiGianKT.MinWidth = 150;

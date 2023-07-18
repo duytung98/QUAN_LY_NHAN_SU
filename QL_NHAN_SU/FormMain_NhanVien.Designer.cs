@@ -86,6 +86,7 @@ namespace QL_NHAN_SU
             this.btn_DoiMK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_DoiMK.ImageOptions.Image")));
             this.btn_DoiMK.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_DoiMK.ImageOptions.LargeImage")));
             this.btn_DoiMK.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DoiMK.ItemAppearance.Hovered.Options.UseFont = true;
             this.btn_DoiMK.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DoiMK.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_DoiMK.Name = "btn_DoiMK";
@@ -98,6 +99,7 @@ namespace QL_NHAN_SU
             this.btn_DangXuat.Id = 3;
             this.btn_DangXuat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_DangXuat.ImageOptions.SvgImage")));
             this.btn_DangXuat.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DangXuat.ItemAppearance.Hovered.Options.UseFont = true;
             this.btn_DangXuat.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DangXuat.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_DangXuat.Name = "btn_DangXuat";
@@ -194,6 +196,7 @@ namespace QL_NHAN_SU
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "Thông tin nhân viên";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMain_NhanVien_FormClosed);
             this.Load += new System.EventHandler(this.FormMain_NhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             this.ResumeLayout(false);

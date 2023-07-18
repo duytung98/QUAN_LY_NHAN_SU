@@ -305,7 +305,6 @@ namespace QL_NHAN_SU
             this.splitContainer1.Panel1.Controls.Add(this.label3);
             this.splitContainer1.Panel1.Controls.Add(this.label2);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
-            //this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // splitContainer1.Panel2
             // 
@@ -345,7 +344,6 @@ namespace QL_NHAN_SU
             this.txt_Password.Location = new System.Drawing.Point(1490, 99);
             this.txt_Password.Margin = new System.Windows.Forms.Padding(1);
             this.txt_Password.Name = "txt_Password";
-            this.txt_Password.PasswordChar = '*';
             this.txt_Password.Size = new System.Drawing.Size(156, 30);
             this.txt_Password.TabIndex = 60;
             // 
@@ -566,6 +564,7 @@ namespace QL_NHAN_SU
             // date_ngaySinh
             // 
             this.date_ngaySinh.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.date_ngaySinh.CustomFormat = "dd/MM/yyyy";
             this.date_ngaySinh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_ngaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_ngaySinh.Location = new System.Drawing.Point(511, 137);

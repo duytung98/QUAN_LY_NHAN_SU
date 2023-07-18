@@ -15,6 +15,33 @@ namespace Businesslayer
         {
             return db.T_THOIVIEC.FirstOrDefault(x => x.SOQDTV == soqd);
         }
+        public List<NhanvienThoiViecDTO> getitemFull(string soqd)
+        {
+            var lisNL = db.T_THOIVIEC.Where(x => x.SOQDTV == soqd).ToList();
+            List<NhanvienThoiViecDTO> lssDTO = new List<NhanvienThoiViecDTO>();
+            NhanvienThoiViecDTO tvDTO;
+            foreach (var item in lisNL)
+            {
+                tvDTO = new NhanvienThoiViecDTO();
+                tvDTO.SOQDTV = item.SOQDTV;
+                tvDTO.id_NhanVien = item.id_NhanVien;
+                var nv = db.T_NhanVien.FirstOrDefault(n => n.id_NhanVien == item.id_NhanVien);
+                tvDTO.HoTen = nv.HoTen;
+                tvDTO.LYDO = item.LYDO;
+                tvDTO.GHICHU = item.GHICHU;
+                tvDTO.CREATEO_BY = item.CREATEO_BY;
+                tvDTO.NGAYNGHI = item.NGAYNGHI.Value.ToString("dd/MM/yyyy");
+                tvDTO.NGAYNOPDON = item.NGAYNOPDON.Value.ToString("dd/MM/yyyy");
+                tvDTO.CREATEO_DATE = item.CREATEO_DATE;
+                tvDTO.UPDATEO_BY = item.UPDATEO_BY;
+                tvDTO.UPDATEO_DATE = item.UPDATEO_DATE;
+                tvDTO.DELETEO_BY = item.DELETEO_BY;
+                tvDTO.DELETEO_DATE = item.DELETEO_DATE;
+                lssDTO.Add(tvDTO);
+
+            }
+            return lssDTO;
+        }
         public List<T_THOIVIEC> getlist()
         {
             return db.T_THOIVIEC.ToList();
@@ -34,8 +61,8 @@ namespace Businesslayer
                 tvDTO.LYDO = item.LYDO;
                 tvDTO.GHICHU = item.GHICHU;
                 tvDTO.CREATEO_BY = item.CREATEO_BY;
-                tvDTO.NGAYNGHI = item.NGAYNGHI;
-                tvDTO.NGAYNOPDON = item.NGAYNOPDON;
+                tvDTO.NGAYNGHI = item.NGAYNGHI.Value.ToString("dd/MM/yyyy");
+                tvDTO.NGAYNOPDON = item.NGAYNOPDON.Value.ToString("dd/MM/yyyy");
                 tvDTO.CREATEO_DATE = item.CREATEO_DATE;
                 tvDTO.UPDATEO_BY = item.UPDATEO_BY;
                 tvDTO.UPDATEO_DATE = item.UPDATEO_DATE;
