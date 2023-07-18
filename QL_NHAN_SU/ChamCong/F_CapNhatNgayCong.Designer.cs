@@ -38,10 +38,10 @@ namespace QL_NHAN_SU.ChamCong
             this.rdg_ngaynghi = new DevExpress.XtraEditors.RadioGroup();
             this.btn_thoat = new DevExpress.XtraEditors.SimpleButton();
             this.bnt_thongtin = new DevExpress.XtraEditors.GroupControl();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbl_nv = new System.Windows.Forms.Label();
             this.lbl_hoten = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lbl_nv = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.radio_chamcong)).BeginInit();
             this.radio_chamcong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rdg_ChamCong.Properties)).BeginInit();
@@ -142,28 +142,6 @@ namespace QL_NHAN_SU.ChamCong
             this.bnt_thongtin.TabIndex = 5;
             this.bnt_thongtin.Text = "Thông tin";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(17, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 17);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Mã NV: ";
-            // 
-            // lbl_nv
-            // 
-            this.lbl_nv.AutoSize = true;
-            this.lbl_nv.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nv.ForeColor = System.Drawing.Color.Red;
-            this.lbl_nv.Location = new System.Drawing.Point(91, 42);
-            this.lbl_nv.Name = "lbl_nv";
-            this.lbl_nv.Size = new System.Drawing.Size(65, 17);
-            this.lbl_nv.TabIndex = 7;
-            this.lbl_nv.Text = "Mã NV: ";
-            // 
             // lbl_hoten
             // 
             this.lbl_hoten.AutoSize = true;
@@ -185,6 +163,28 @@ namespace QL_NHAN_SU.ChamCong
             this.label3.Size = new System.Drawing.Size(71, 17);
             this.label3.TabIndex = 8;
             this.label3.Text = "Họ Tên: ";
+            // 
+            // lbl_nv
+            // 
+            this.lbl_nv.AutoSize = true;
+            this.lbl_nv.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nv.ForeColor = System.Drawing.Color.Red;
+            this.lbl_nv.Location = new System.Drawing.Point(91, 42);
+            this.lbl_nv.Name = "lbl_nv";
+            this.lbl_nv.Size = new System.Drawing.Size(65, 17);
+            this.lbl_nv.TabIndex = 7;
+            this.lbl_nv.Text = "Mã NV: ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(17, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 17);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Mã NV: ";
             // 
             // F_CapNhatNgayCong
             // 
