@@ -175,5 +175,10 @@ namespace QL_NHAN_SU
         {
 
         }
+
+        private void txt_diachi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

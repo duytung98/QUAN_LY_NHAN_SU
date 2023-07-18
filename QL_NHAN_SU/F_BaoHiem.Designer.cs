@@ -238,23 +238,24 @@ namespace QL_NHAN_SU
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gv_baohiem);
             this.splitContainer1.Size = new System.Drawing.Size(1026, 352);
-            this.splitContainer1.SplitterDistance = 198;
+            this.splitContainer1.SplitterDistance = 215;
             this.splitContainer1.TabIndex = 8;
             // 
             // txt_ghichu
             // 
+            this.txt_ghichu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_ghichu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ghichu.Location = new System.Drawing.Point(729, 134);
+            this.txt_ghichu.Location = new System.Drawing.Point(729, 142);
             this.txt_ghichu.Name = "txt_ghichu";
             this.txt_ghichu.Size = new System.Drawing.Size(228, 30);
             this.txt_ghichu.TabIndex = 80;
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(615, 134);
+            this.label5.Location = new System.Drawing.Point(615, 142);
             this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 22);
@@ -263,34 +264,37 @@ namespace QL_NHAN_SU
             // 
             // txt_noikham
             // 
+            this.txt_noikham.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_noikham.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_noikham.Location = new System.Drawing.Point(270, 134);
+            this.txt_noikham.Location = new System.Drawing.Point(270, 142);
             this.txt_noikham.Name = "txt_noikham";
             this.txt_noikham.Size = new System.Drawing.Size(228, 30);
             this.txt_noikham.TabIndex = 78;
             // 
             // txt_noicap
             // 
+            this.txt_noicap.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_noicap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_noicap.Location = new System.Drawing.Point(729, 36);
+            this.txt_noicap.Location = new System.Drawing.Point(729, 44);
             this.txt_noicap.Name = "txt_noicap";
             this.txt_noicap.Size = new System.Drawing.Size(228, 30);
             this.txt_noicap.TabIndex = 77;
             // 
             // txt_baohiem
             // 
+            this.txt_baohiem.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_baohiem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_baohiem.Location = new System.Drawing.Point(270, 85);
+            this.txt_baohiem.Location = new System.Drawing.Point(270, 93);
             this.txt_baohiem.Name = "txt_baohiem";
             this.txt_baohiem.Size = new System.Drawing.Size(228, 30);
             this.txt_baohiem.TabIndex = 76;
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(109, 137);
+            this.label3.Location = new System.Drawing.Point(109, 145);
             this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(129, 22);
@@ -299,10 +303,10 @@ namespace QL_NHAN_SU
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(613, 39);
+            this.label2.Location = new System.Drawing.Point(613, 47);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 22);
@@ -311,10 +315,10 @@ namespace QL_NHAN_SU
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(130, 88);
+            this.label1.Location = new System.Drawing.Point(130, 96);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 22);
@@ -323,11 +327,11 @@ namespace QL_NHAN_SU
             // 
             // date_cap
             // 
-            this.date_cap.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.date_cap.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.date_cap.CustomFormat = "dd/MM/yyyy";
             this.date_cap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_cap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date_cap.Location = new System.Drawing.Point(729, 80);
+            this.date_cap.Location = new System.Drawing.Point(729, 90);
             this.date_cap.Margin = new System.Windows.Forms.Padding(1);
             this.date_cap.Name = "date_cap";
             this.date_cap.Size = new System.Drawing.Size(228, 30);
@@ -335,10 +339,10 @@ namespace QL_NHAN_SU
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(613, 86);
+            this.label4.Location = new System.Drawing.Point(613, 94);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 22);
@@ -347,10 +351,10 @@ namespace QL_NHAN_SU
             // 
             // label7
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(148, 39);
+            this.label7.Location = new System.Drawing.Point(148, 47);
             this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 22);
@@ -359,8 +363,8 @@ namespace QL_NHAN_SU
             // 
             // sl_NhanVien
             // 
-            this.sl_NhanVien.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.sl_NhanVien.Location = new System.Drawing.Point(270, 36);
+            this.sl_NhanVien.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.sl_NhanVien.Location = new System.Drawing.Point(270, 44);
             this.sl_NhanVien.Margin = new System.Windows.Forms.Padding(0);
             this.sl_NhanVien.MenuManager = this.barManager1;
             this.sl_NhanVien.Name = "sl_NhanVien";
@@ -422,7 +426,7 @@ namespace QL_NHAN_SU
             this.gv_baohiem.MainView = this.gcv_baohiem;
             this.gv_baohiem.Margin = new System.Windows.Forms.Padding(1);
             this.gv_baohiem.Name = "gv_baohiem";
-            this.gv_baohiem.Size = new System.Drawing.Size(1026, 150);
+            this.gv_baohiem.Size = new System.Drawing.Size(1026, 133);
             this.gv_baohiem.TabIndex = 1;
             this.gv_baohiem.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gcv_baohiem});

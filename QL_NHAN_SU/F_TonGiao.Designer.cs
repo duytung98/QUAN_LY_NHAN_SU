@@ -70,7 +70,7 @@ namespace QL_NHAN_SU
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 34);
+            this.label1.Location = new System.Drawing.Point(62, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 27);
@@ -117,10 +117,10 @@ namespace QL_NHAN_SU
             // 
             this.txt_tongiao.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_tongiao.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tongiao.Location = new System.Drawing.Point(158, 31);
+            this.txt_tongiao.Location = new System.Drawing.Point(213, 28);
             this.txt_tongiao.Margin = new System.Windows.Forms.Padding(1);
             this.txt_tongiao.Name = "txt_tongiao";
-            this.txt_tongiao.Size = new System.Drawing.Size(248, 34);
+            this.txt_tongiao.Size = new System.Drawing.Size(265, 34);
             this.txt_tongiao.TabIndex = 1;
             this.txt_tongiao.TextChanged += new System.EventHandler(this.txt_tongiao_TextChanged);
             // 

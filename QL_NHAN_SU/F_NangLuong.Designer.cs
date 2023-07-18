@@ -268,6 +268,7 @@ namespace QL_NHAN_SU
             // 
             // sp_HSLMoi
             // 
+            this.sp_HSLMoi.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.sp_HSLMoi.EditValue = new decimal(new int[] {
             0,
             0,
@@ -285,7 +286,7 @@ namespace QL_NHAN_SU
             // 
             // label8
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(386, 192);
@@ -297,6 +298,7 @@ namespace QL_NHAN_SU
             // 
             // sp_HSLCU
             // 
+            this.sp_HSLCU.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.sp_HSLCU.EditValue = new decimal(new int[] {
             0,
             0,
@@ -315,7 +317,7 @@ namespace QL_NHAN_SU
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(33, 193);
@@ -327,7 +329,7 @@ namespace QL_NHAN_SU
             // 
             // date_NgaylenLuong
             // 
-            this.date_NgaylenLuong.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.date_NgaylenLuong.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.date_NgaylenLuong.CustomFormat = "dd/MM/yyyy";
             this.date_NgaylenLuong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_NgaylenLuong.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -339,7 +341,7 @@ namespace QL_NHAN_SU
             // 
             // label6
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(460, 77);
@@ -351,7 +353,7 @@ namespace QL_NHAN_SU
             // 
             // date_Ngayky
             // 
-            this.date_Ngayky.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.date_Ngayky.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.date_Ngayky.CustomFormat = "dd/MM/yyyy";
             this.date_Ngayky.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_Ngayky.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -363,7 +365,7 @@ namespace QL_NHAN_SU
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(88, 79);
@@ -375,7 +377,7 @@ namespace QL_NHAN_SU
             // 
             // txt_ghichu
             // 
-            this.txt_ghichu.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_ghichu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_ghichu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ghichu.Location = new System.Drawing.Point(201, 230);
             this.txt_ghichu.Margin = new System.Windows.Forms.Padding(1);
@@ -385,7 +387,7 @@ namespace QL_NHAN_SU
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(91, 231);
@@ -397,7 +399,7 @@ namespace QL_NHAN_SU
             // 
             // txt_nhanvien
             // 
-            this.txt_nhanvien.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_nhanvien.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_nhanvien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nhanvien.Location = new System.Drawing.Point(201, 151);
             this.txt_nhanvien.Margin = new System.Windows.Forms.Padding(1);
@@ -408,7 +410,7 @@ namespace QL_NHAN_SU
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(73, 155);
@@ -420,7 +422,7 @@ namespace QL_NHAN_SU
             // 
             // label7
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(75, 117);
@@ -432,7 +434,7 @@ namespace QL_NHAN_SU
             // 
             // sl_HopDong
             // 
-            this.sl_HopDong.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.sl_HopDong.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.sl_HopDong.Location = new System.Drawing.Point(201, 114);
             this.sl_HopDong.Margin = new System.Windows.Forms.Padding(0);
             this.sl_HopDong.MenuManager = this.barManager1;
@@ -518,7 +520,7 @@ namespace QL_NHAN_SU
             // 
             // txt_SQD
             // 
-            this.txt_SQD.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_SQD.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_SQD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_SQD.Location = new System.Drawing.Point(201, 35);
             this.txt_SQD.Margin = new System.Windows.Forms.Padding(1);
@@ -529,7 +531,7 @@ namespace QL_NHAN_SU
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(74, 41);
