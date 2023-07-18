@@ -389,12 +389,12 @@ namespace QL_NHAN_SU.TinhLuong
             this.HoTen.AppearanceHeader.Options.UseFont = true;
             this.HoTen.Caption = "Họ tên";
             this.HoTen.FieldName = "HoTen";
-            this.HoTen.MaxWidth = 250;
-            this.HoTen.MinWidth = 250;
+            this.HoTen.MaxWidth = 200;
+            this.HoTen.MinWidth = 200;
             this.HoTen.Name = "HoTen";
             this.HoTen.Visible = true;
             this.HoTen.VisibleIndex = 2;
-            this.HoTen.Width = 250;
+            this.HoTen.Width = 200;
             // 
             // NCTrongThang
             // 
@@ -417,12 +417,12 @@ namespace QL_NHAN_SU.TinhLuong
             this.phep.DisplayFormat.FormatString = "n0";
             this.phep.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.phep.FieldName = "NgayPhep";
-            this.phep.MaxWidth = 120;
-            this.phep.MinWidth = 120;
+            this.phep.MaxWidth = 150;
+            this.phep.MinWidth = 150;
             this.phep.Name = "phep";
             this.phep.Visible = true;
             this.phep.VisibleIndex = 4;
-            this.phep.Width = 120;
+            this.phep.Width = 150;
             // 
             // NgayLe
             // 

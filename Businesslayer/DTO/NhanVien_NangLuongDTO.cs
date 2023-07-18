@@ -14,8 +14,8 @@ namespace Businesslayer.DTO
         public string So_HopDong { get; set; }
         public Nullable<double> HeSoLuongHT { get; set; }
         public Nullable<double> HSLuongMoi { get; set; }
-        public Nullable<System.DateTime> NgayLenLuong { get; set; }
-        public Nullable<System.DateTime> NgayKy { get; set; }
+        public string NgayLenLuong { get; set; }
+        public string NgayKy { get; set; }
         public string GhiChu { get; set; }
         public Nullable<int> CREATEO_BY { get; set; }
         public Nullable<System.DateTime> CREATEO_DATE { get; set; }

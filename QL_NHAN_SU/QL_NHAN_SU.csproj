@@ -325,11 +325,23 @@
     <Compile Include="Report\rptDanhSachNhanVien.Designer.cs">
       <DependentUpon>rptDanhSachNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report\rptNangLuong.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rptNangLuong.Designer.cs">
+      <DependentUpon>rptNangLuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Report\rpt_BangCong.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Report\rpt_BangCong.Designer.cs">
       <DependentUpon>rpt_BangCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rpt_khenthuong.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_khenthuong.Designer.cs">
+      <DependentUpon>rpt_khenthuong.cs</DependentUpon>
     </Compile>
     <Compile Include="TinhLuong\F_BangLuong.cs">
       <SubType>Form</SubType>
@@ -466,8 +478,14 @@
     <EmbeddedResource Include="Report\rptDanhSachNhanVien.resx">
       <DependentUpon>rptDanhSachNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptNangLuong.resx">
+      <DependentUpon>rptNangLuong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\rpt_BangCong.resx">
       <DependentUpon>rpt_BangCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpt_khenthuong.resx">
+      <DependentUpon>rpt_khenthuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TinhLuong\F_BangLuong.resx">
       <DependentUpon>F_BangLuong.cs</DependentUpon>

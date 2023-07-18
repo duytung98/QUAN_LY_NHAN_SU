@@ -15,6 +15,34 @@ namespace Businesslayer
         {
             return db.T_NhanVien_NangLuong.FirstOrDefault(x => x.SQDNL == sqdnl);
         }
+        public List<NhanVien_NangLuongDTO> getItemFull(string sqdnl)
+        {
+            var lisNL = db.T_NhanVien_NangLuong.Where(x=>x.SQDNL == sqdnl).ToList();
+            List<NhanVien_NangLuongDTO> listDTO = new List<NhanVien_NangLuongDTO>();
+            NhanVien_NangLuongDTO nlDTO;
+            foreach (var item in lisNL)
+            {
+                nlDTO = new NhanVien_NangLuongDTO();
+                nlDTO.So_HopDong = item.So_HopDong;
+                nlDTO.SQDNL = item.SQDNL;
+                nlDTO.id_NhanVien = item.id_NhanVien;
+                var nv = db.T_NhanVien.FirstOrDefault(x => x.id_NhanVien == item.id_NhanVien);
+                nlDTO.HoTen = nv.HoTen;
+                nlDTO.GhiChu = item.GhiChu;
+                nlDTO.HSLuongMoi = item.HSLuongMoi;
+                nlDTO.HeSoLuongHT = item.HeSoLuongHT;
+                nlDTO.NgayKy = item.NgayKy.Value.ToString("dd/MM/yyyy");
+                nlDTO.NgayLenLuong = item.NgayLenLuong.Value.ToString("dd/MM/yyyy");
+                nlDTO.CREATEO_BY = item.CREATEO_BY;
+                nlDTO.CREATEO_DATE = item.CREATEO_DATE;
+                nlDTO.DELETEO_BY = item.DELETEO_BY;
+                nlDTO.DELETEO_DATE = item.DELETEO_DATE;
+                nlDTO.UPDATEO_BY = item.UPDATEO_BY;
+                nlDTO.UPDATEO_DATE = item.UPDATEO_DATE;
+                listDTO.Add(nlDTO);
+            }
+            return listDTO;
+        }
         public List<T_NhanVien_NangLuong>  getlist()
         {
             return db.T_NhanVien_NangLuong.ToList();
@@ -35,8 +63,8 @@ namespace Businesslayer
                 nlDTO.GhiChu = item.GhiChu;
                 nlDTO.HSLuongMoi = item.HSLuongMoi;
                 nlDTO.HeSoLuongHT = item.HeSoLuongHT;
-                nlDTO.NgayKy = item.NgayKy;
-                nlDTO.NgayLenLuong = item.NgayLenLuong;
+                nlDTO.NgayKy = item.NgayKy.Value.ToString("dd/MM/yyyy");
+                nlDTO.NgayLenLuong = item.NgayLenLuong.Value.ToString("dd/MM/yyyy");
                 nlDTO.CREATEO_BY = item.CREATEO_BY;
                 nlDTO.CREATEO_DATE = item.CREATEO_DATE;
                 nlDTO.DELETEO_BY = item.DELETEO_BY;

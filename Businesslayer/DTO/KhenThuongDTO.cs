@@ -11,7 +11,7 @@ namespace Businesslayer.DTO
     {
         public string SoQuyetDinh { get; set; }
         public string LyDo { get; set; }
-        public Nullable<System.DateTime> NgayTao { get; set; }
+        public string NgayTao { get; set; }
         public Nullable<int> id_NhanVien { get; set; }
         public string HoTen { get; set; }
         public string NoiDung { get; set; }

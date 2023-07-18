@@ -15,10 +15,42 @@ namespace Businesslayer
         {
             return db.KhenThuong_KyLuat.FirstOrDefault(x => x.SoQuyetDinh == SoQD);
         }
+        public List<KhenThuongDTO> getItemFull(string SoQD)
+        {
+            var listkt = db.KhenThuong_KyLuat.Where(x => x.SoQuyetDinh == SoQD).ToList();
+            List<KhenThuongDTO> lstDTO = new List<KhenThuongDTO>();
+            KhenThuongDTO kt;
+            foreach (var item in listkt)
+            {
+                kt = new KhenThuongDTO();
+                kt.SoQuyetDinh = item.SoQuyetDinh;
+                kt.TuNgay = item.TuNgay;
+                kt.DenNgay = item.DenNgay;
+                kt.NgayTao = item.NgayTao.Value.ToString("dd/MM/yyyy");
+                kt.Loai = item.Loai;
+                kt.NoiDung = item.NoiDung;
+                kt.LyDo = item.LyDo;
+                kt.id_NhanVien = item.id_NhanVien;
+                var nv = db.T_NhanVien.FirstOrDefault(n => n.id_NhanVien == item.id_NhanVien);
+                kt.HoTen = nv.HoTen;
+
+                kt.CREATE0_BY = item.CREATE0_BY;
+                kt.CREATE0_DATE = item.CREATE0_DATE;
+                kt.UPDATEO_BY = item.UPDATEO_BY;
+                kt.UPDATEO_DATE = item.UPDATEO_DATE;
+                kt.DELETEO_BY = item.DELETEO_BY;
+                kt.DELETEO_DATE = item.DELETEO_DATE;
+
+                lstDTO.Add(kt);
+            }
+
+            return lstDTO;
+        }
         public List<KhenThuong_KyLuat> getlist(int loai)
         {
             return db.KhenThuong_KyLuat.Where(x=>x.Loai == loai).ToList();
         }
+
         public List<KhenThuongDTO> getlistFull(int loai)
         {
             List<KhenThuong_KyLuat> listkt = db.KhenThuong_KyLuat.Where(x => x.Loai == loai).ToList();
@@ -30,7 +62,7 @@ namespace Businesslayer
                 kt.SoQuyetDinh = item.SoQuyetDinh;
                 kt.TuNgay = item.TuNgay;
                 kt.DenNgay = item.DenNgay;
-                kt.NgayTao = item.NgayTao;
+                kt.NgayTao = item.NgayTao.Value.ToString("dd/MM/yyyy");
                 kt.Loai = item.Loai;
                 kt.NoiDung = item.NoiDung;
                 kt.LyDo = item.LyDo;

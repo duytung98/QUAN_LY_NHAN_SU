@@ -17,7 +17,7 @@ namespace QL_NHAN_SU
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new F_DangNhap());
+            Application.Run(new FormMain());
         }
     }
 }
