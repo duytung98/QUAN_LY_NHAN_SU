@@ -156,13 +156,13 @@ namespace QL_NHAN_SU.ChamCong
                             bcctnv.NgayCong = 1;
                             bcctnv.NgayPhep = 0;
                             bcctnv.CongChuNhat = 0;
-                            bcctnv.CongNgayLe = 0;
+                            bcctnv.CongNgayLe = 1;
                             bcctnv.NghiKhongPhep = 0;
                         }
                         else
                         {
                             bcctnv.NgayPhep = 0;
-                            bcctnv.NgayCong = 0;
+                            bcctnv.NgayCong = 0.5;
                             bcctnv.CongChuNhat = 0;
                             bcctnv.CongNgayLe = 0.5;
                             bcctnv.NghiKhongPhep = 0;
