@@ -34,6 +34,8 @@ namespace QL_NHAN_SU
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.pic_barQR = new System.Windows.Forms.PictureBox();
             this.lbl_NgaySinh = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lbl_dienthoai = new System.Windows.Forms.Label();
@@ -78,17 +80,15 @@ namespace QL_NHAN_SU
             this.label9 = new System.Windows.Forms.Label();
             this.txt_manv = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.pic_barQR = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_barQR)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_hinhanh)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_barQR)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -141,6 +141,25 @@ namespace QL_NHAN_SU
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(394, 263);
             this.panel5.TabIndex = 1;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel7.Controls.Add(this.pic_barQR);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel7.Location = new System.Drawing.Point(0, 202);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(394, 61);
+            this.panel7.TabIndex = 7;
+            // 
+            // pic_barQR
+            // 
+            this.pic_barQR.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pic_barQR.Location = new System.Drawing.Point(82, 8);
+            this.pic_barQR.Name = "pic_barQR";
+            this.pic_barQR.Size = new System.Drawing.Size(200, 50);
+            this.pic_barQR.TabIndex = 0;
+            this.pic_barQR.TabStop = false;
             // 
             // lbl_NgaySinh
             // 
@@ -637,25 +656,6 @@ namespace QL_NHAN_SU
             this.label8.TabIndex = 0;
             this.label8.Text = "Mã nhân viên : ";
             // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel7.Controls.Add(this.pic_barQR);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 202);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(394, 61);
-            this.panel7.TabIndex = 7;
-            // 
-            // pic_barQR
-            // 
-            this.pic_barQR.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pic_barQR.Location = new System.Drawing.Point(82, 8);
-            this.pic_barQR.Name = "pic_barQR";
-            this.pic_barQR.Size = new System.Drawing.Size(200, 50);
-            this.pic_barQR.TabIndex = 0;
-            this.pic_barQR.TabStop = false;
-            // 
             // F_ThongTincaNhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -677,14 +677,14 @@ namespace QL_NHAN_SU
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pic_barQR)).EndInit();
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pic_hinhanh)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pic_barQR)).EndInit();
             this.ResumeLayout(false);
 
         }
