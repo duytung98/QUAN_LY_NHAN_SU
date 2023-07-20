@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
+using ZXing;
+using System.Windows.Media.Imaging;
 
 namespace QL_NHAN_SU
 {
@@ -54,7 +56,9 @@ namespace QL_NHAN_SU
                     txt_chucvu.Text = reader["Ten_ChucVu"].ToString();
                     txt_noilv.Text = reader["Ten_NoiLV"].ToString();
                     loadimg();
+                    loadingBarcode();
                     txt_chucvu.Focus();
+
                 }
             }
             finally
@@ -80,6 +84,36 @@ namespace QL_NHAN_SU
                     }
                 }
             }
+        }
+        void loadingBarcode()
+        {
+            BarcodeWriter writer = new BarcodeWriter() { Format = BarcodeFormat.CODE_93 };
+            writer.Options.Height = 50;
+            writer.Options.Width = 200;
+            pic_barQR.Image = writer.Write(lbl_manv.Text);
+
+            //Image image = null;
+            //BitmapImage bimg = new BitmapImage();
+            //using (var ms = new MemoryStream())
+            //{
+            //    BarcodeWriter writer;
+            //    writer = new BarcodeWriter() { Format = BarcodeFormat.CODE_93 };
+            //    writer.Options.Height = 50;
+            //    writer.Options.Width = 200;
+            //    writer.Options.PureBarcode = true;
+            //    image = writer.Write(lbl_manv.Text);
+            //    image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+            //    ms.Position = 0;
+            //    bimg.BeginInit();
+            //    bimg.CreateOptions = BitmapCreateOptions.PreservePixelFormat;
+            //    bimg.CacheOption = BitmapCacheOption.OnLoad;
+            //    bimg.UriSource = null;
+            //    bimg.StreamSource = ms;
+            //    bimg.EndInit();
+
+
+            //    pic_barQR.source = bimg;
+            
         }
 
         private void F_ThongTincaNhan_FormClosed(object sender, FormClosedEventArgs e)

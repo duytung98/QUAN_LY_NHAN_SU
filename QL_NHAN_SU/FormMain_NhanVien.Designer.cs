@@ -190,6 +190,7 @@ namespace QL_NHAN_SU
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("FormMain_NhanVien.IconOptions.LargeImage")));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "FormMain_NhanVien";
             this.Ribbon = this.ribbon;

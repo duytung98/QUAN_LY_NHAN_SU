@@ -312,5 +312,10 @@ namespace QL_NHAN_SU.LichLamViec
                 e.Handled = true;
             }
         }
+
+        private void sl_MonDay_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -78,6 +78,8 @@ namespace QL_NHAN_SU
             this.label9 = new System.Windows.Forms.Label();
             this.txt_manv = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.pic_barQR = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -85,6 +87,8 @@ namespace QL_NHAN_SU
             ((System.ComponentModel.ISupportInitialize)(this.pic_hinhanh)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_barQR)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -118,12 +122,13 @@ namespace QL_NHAN_SU
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 68);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(396, 679);
+            this.panel2.Size = new System.Drawing.Size(396, 704);
             this.panel2.TabIndex = 1;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.lbl_NgaySinh);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.lbl_dienthoai);
@@ -134,7 +139,7 @@ namespace QL_NHAN_SU
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 439);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(394, 238);
+            this.panel5.Size = new System.Drawing.Size(394, 263);
             this.panel5.TabIndex = 1;
             // 
             // lbl_NgaySinh
@@ -302,13 +307,13 @@ namespace QL_NHAN_SU
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(396, 68);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1283, 679);
+            this.panel3.Size = new System.Drawing.Size(1283, 704);
             this.panel3.TabIndex = 2;
             // 
             // txt_noilv
             // 
             this.txt_noilv.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_noilv.Location = new System.Drawing.Point(77, 630);
+            this.txt_noilv.Location = new System.Drawing.Point(77, 591);
             this.txt_noilv.Name = "txt_noilv";
             this.txt_noilv.ReadOnly = true;
             this.txt_noilv.Size = new System.Drawing.Size(686, 34);
@@ -318,7 +323,7 @@ namespace QL_NHAN_SU
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(77, 591);
+            this.label23.Location = new System.Drawing.Point(77, 552);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(153, 26);
             this.label23.TabIndex = 31;
@@ -328,7 +333,7 @@ namespace QL_NHAN_SU
             // 
             this.txt_chucvu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_chucvu.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_chucvu.Location = new System.Drawing.Point(921, 509);
+            this.txt_chucvu.Location = new System.Drawing.Point(921, 474);
             this.txt_chucvu.Name = "txt_chucvu";
             this.txt_chucvu.ReadOnly = true;
             this.txt_chucvu.Size = new System.Drawing.Size(269, 34);
@@ -339,7 +344,7 @@ namespace QL_NHAN_SU
             this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(921, 470);
+            this.label20.Location = new System.Drawing.Point(921, 435);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(111, 26);
             this.label20.TabIndex = 29;
@@ -349,7 +354,7 @@ namespace QL_NHAN_SU
             // 
             this.txt_bophan.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_bophan.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_bophan.Location = new System.Drawing.Point(494, 509);
+            this.txt_bophan.Location = new System.Drawing.Point(494, 474);
             this.txt_bophan.Name = "txt_bophan";
             this.txt_bophan.ReadOnly = true;
             this.txt_bophan.Size = new System.Drawing.Size(269, 34);
@@ -360,7 +365,7 @@ namespace QL_NHAN_SU
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(494, 470);
+            this.label21.Location = new System.Drawing.Point(494, 435);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(111, 26);
             this.label21.TabIndex = 27;
@@ -369,7 +374,7 @@ namespace QL_NHAN_SU
             // txt_phongban
             // 
             this.txt_phongban.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_phongban.Location = new System.Drawing.Point(77, 509);
+            this.txt_phongban.Location = new System.Drawing.Point(77, 474);
             this.txt_phongban.Name = "txt_phongban";
             this.txt_phongban.ReadOnly = true;
             this.txt_phongban.Size = new System.Drawing.Size(269, 34);
@@ -379,7 +384,7 @@ namespace QL_NHAN_SU
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(77, 470);
+            this.label22.Location = new System.Drawing.Point(77, 435);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(135, 26);
             this.label22.TabIndex = 25;
@@ -389,7 +394,7 @@ namespace QL_NHAN_SU
             // 
             this.txt_trinhdo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_trinhdo.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_trinhdo.Location = new System.Drawing.Point(921, 394);
+            this.txt_trinhdo.Location = new System.Drawing.Point(921, 363);
             this.txt_trinhdo.Name = "txt_trinhdo";
             this.txt_trinhdo.ReadOnly = true;
             this.txt_trinhdo.Size = new System.Drawing.Size(269, 34);
@@ -400,7 +405,7 @@ namespace QL_NHAN_SU
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(921, 355);
+            this.label19.Location = new System.Drawing.Point(921, 324);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(114, 26);
             this.label19.TabIndex = 23;
@@ -410,7 +415,7 @@ namespace QL_NHAN_SU
             // 
             this.txt_email.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_email.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_email.Location = new System.Drawing.Point(494, 394);
+            this.txt_email.Location = new System.Drawing.Point(494, 363);
             this.txt_email.Name = "txt_email";
             this.txt_email.ReadOnly = true;
             this.txt_email.Size = new System.Drawing.Size(269, 34);
@@ -421,7 +426,7 @@ namespace QL_NHAN_SU
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(494, 355);
+            this.label18.Location = new System.Drawing.Point(494, 324);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(87, 26);
             this.label18.TabIndex = 21;
@@ -430,7 +435,7 @@ namespace QL_NHAN_SU
             // txt_dienthoai
             // 
             this.txt_dienthoai.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dienthoai.Location = new System.Drawing.Point(77, 394);
+            this.txt_dienthoai.Location = new System.Drawing.Point(77, 363);
             this.txt_dienthoai.Name = "txt_dienthoai";
             this.txt_dienthoai.ReadOnly = true;
             this.txt_dienthoai.Size = new System.Drawing.Size(269, 34);
@@ -440,7 +445,7 @@ namespace QL_NHAN_SU
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(77, 355);
+            this.label17.Location = new System.Drawing.Point(77, 324);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(132, 26);
             this.label17.TabIndex = 19;
@@ -449,7 +454,7 @@ namespace QL_NHAN_SU
             // txt_tongiao
             // 
             this.txt_tongiao.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tongiao.Location = new System.Drawing.Point(77, 286);
+            this.txt_tongiao.Location = new System.Drawing.Point(77, 257);
             this.txt_tongiao.Name = "txt_tongiao";
             this.txt_tongiao.ReadOnly = true;
             this.txt_tongiao.Size = new System.Drawing.Size(269, 34);
@@ -459,7 +464,7 @@ namespace QL_NHAN_SU
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(77, 247);
+            this.label16.Location = new System.Drawing.Point(77, 218);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(115, 26);
             this.label16.TabIndex = 17;
@@ -469,7 +474,7 @@ namespace QL_NHAN_SU
             // 
             this.txt_diachi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_diachi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_diachi.Location = new System.Drawing.Point(921, 286);
+            this.txt_diachi.Location = new System.Drawing.Point(921, 257);
             this.txt_diachi.Name = "txt_diachi";
             this.txt_diachi.ReadOnly = true;
             this.txt_diachi.Size = new System.Drawing.Size(269, 34);
@@ -480,7 +485,7 @@ namespace QL_NHAN_SU
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(921, 247);
+            this.label15.Location = new System.Drawing.Point(921, 218);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(221, 26);
             this.label15.TabIndex = 15;
@@ -490,7 +495,7 @@ namespace QL_NHAN_SU
             // 
             this.txt_cccd.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_cccd.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cccd.Location = new System.Drawing.Point(494, 286);
+            this.txt_cccd.Location = new System.Drawing.Point(494, 257);
             this.txt_cccd.Name = "txt_cccd";
             this.txt_cccd.ReadOnly = true;
             this.txt_cccd.Size = new System.Drawing.Size(269, 34);
@@ -501,7 +506,7 @@ namespace QL_NHAN_SU
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(494, 247);
+            this.label14.Location = new System.Drawing.Point(494, 218);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(175, 26);
             this.label14.TabIndex = 13;
@@ -511,7 +516,7 @@ namespace QL_NHAN_SU
             // 
             this.txt_dantoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_dantoc.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dantoc.Location = new System.Drawing.Point(921, 175);
+            this.txt_dantoc.Location = new System.Drawing.Point(921, 160);
             this.txt_dantoc.Name = "txt_dantoc";
             this.txt_dantoc.ReadOnly = true;
             this.txt_dantoc.Size = new System.Drawing.Size(269, 34);
@@ -522,7 +527,7 @@ namespace QL_NHAN_SU
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(921, 136);
+            this.label13.Location = new System.Drawing.Point(921, 121);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(105, 26);
             this.label13.TabIndex = 11;
@@ -532,7 +537,7 @@ namespace QL_NHAN_SU
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(494, 175);
+            this.textBox2.Location = new System.Drawing.Point(494, 160);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(269, 34);
@@ -544,7 +549,7 @@ namespace QL_NHAN_SU
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(494, 136);
+            this.label12.Location = new System.Drawing.Point(494, 121);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(126, 26);
             this.label12.TabIndex = 9;
@@ -565,7 +570,7 @@ namespace QL_NHAN_SU
             // txt_gioitinh
             // 
             this.txt_gioitinh.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_gioitinh.Location = new System.Drawing.Point(77, 175);
+            this.txt_gioitinh.Location = new System.Drawing.Point(77, 160);
             this.txt_gioitinh.Name = "txt_gioitinh";
             this.txt_gioitinh.ReadOnly = true;
             this.txt_gioitinh.Size = new System.Drawing.Size(269, 34);
@@ -575,7 +580,7 @@ namespace QL_NHAN_SU
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(77, 136);
+            this.label11.Location = new System.Drawing.Point(77, 121);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(118, 26);
             this.label11.TabIndex = 6;
@@ -632,17 +637,37 @@ namespace QL_NHAN_SU
             this.label8.TabIndex = 0;
             this.label8.Text = "Mã nhân viên : ";
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel7.Controls.Add(this.pic_barQR);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel7.Location = new System.Drawing.Point(0, 202);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(394, 61);
+            this.panel7.TabIndex = 7;
+            // 
+            // pic_barQR
+            // 
+            this.pic_barQR.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pic_barQR.Location = new System.Drawing.Point(82, 8);
+            this.pic_barQR.Name = "pic_barQR";
+            this.pic_barQR.Size = new System.Drawing.Size(200, 50);
+            this.pic_barQR.TabIndex = 0;
+            this.pic_barQR.TabStop = false;
+            // 
             // F_ThongTincaNhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1679, 747);
+            this.ClientSize = new System.Drawing.Size(1679, 772);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "F_ThongTincaNhan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "THÔNG TIN GIÁO VIÊN";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.F_ThongTincaNhan_FormClosed);
@@ -658,6 +683,8 @@ namespace QL_NHAN_SU
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pic_barQR)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -712,5 +739,7 @@ namespace QL_NHAN_SU
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txt_dienthoai;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.PictureBox pic_barQR;
     }
 }

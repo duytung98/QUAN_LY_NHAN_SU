@@ -104,7 +104,7 @@ namespace QL_NHAN_SU.ChamCong
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gc_tangca);
             this.splitContainer1.Size = new System.Drawing.Size(988, 445);
-            this.splitContainer1.SplitterDistance = 142;
+            this.splitContainer1.SplitterDistance = 123;
             this.splitContainer1.TabIndex = 10;
             // 
             // txt_ghichu
@@ -120,7 +120,7 @@ namespace QL_NHAN_SU.ChamCong
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(507, 80);
+            this.label4.Location = new System.Drawing.Point(507, 70);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 27);
@@ -202,7 +202,7 @@ namespace QL_NHAN_SU.ChamCong
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(75, 80);
+            this.label3.Location = new System.Drawing.Point(75, 70);
             this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 27);
@@ -230,7 +230,7 @@ namespace QL_NHAN_SU.ChamCong
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(507, 27);
+            this.label2.Location = new System.Drawing.Point(507, 17);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 27);
@@ -242,7 +242,7 @@ namespace QL_NHAN_SU.ChamCong
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(75, 29);
+            this.label1.Location = new System.Drawing.Point(75, 19);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 27);
@@ -258,7 +258,7 @@ namespace QL_NHAN_SU.ChamCong
             this.gc_tangca.MainView = this.gv_tangca;
             this.gc_tangca.Margin = new System.Windows.Forms.Padding(1);
             this.gc_tangca.Name = "gc_tangca";
-            this.gc_tangca.Size = new System.Drawing.Size(988, 299);
+            this.gc_tangca.Size = new System.Drawing.Size(988, 318);
             this.gc_tangca.TabIndex = 2;
             this.gc_tangca.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv_tangca});

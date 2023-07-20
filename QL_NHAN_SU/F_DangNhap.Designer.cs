@@ -31,20 +31,20 @@ namespace QL_NHAN_SU
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_DangNhap));
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn_dangnhap = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.cb_hienthimk = new System.Windows.Forms.CheckBox();
             this.cb_phanquyen = new System.Windows.Forms.ComboBox();
             this.txt_matkhau = new System.Windows.Forms.TextBox();
             this.txt_taikhoan = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btn_dangnhap = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -70,6 +70,36 @@ namespace QL_NHAN_SU
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(633, 344);
             this.panel4.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.Image = global::QL_NHAN_SU.Properties.Resources.cancel;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(415, 266);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(107, 45);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Thoát";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btn_dangnhap
+            // 
+            this.btn_dangnhap.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_dangnhap.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_dangnhap.Image = global::QL_NHAN_SU.Properties.Resources.enter;
+            this.btn_dangnhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_dangnhap.Location = new System.Drawing.Point(213, 266);
+            this.btn_dangnhap.Name = "btn_dangnhap";
+            this.btn_dangnhap.Size = new System.Drawing.Size(142, 45);
+            this.btn_dangnhap.TabIndex = 5;
+            this.btn_dangnhap.Text = "Đăng nhập";
+            this.btn_dangnhap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_dangnhap.UseVisualStyleBackColor = false;
+            this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
             // 
             // label4
             // 
@@ -130,78 +160,6 @@ namespace QL_NHAN_SU
             this.txt_taikhoan.Size = new System.Drawing.Size(288, 30);
             this.txt_taikhoan.TabIndex = 3;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel2);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1515, 802);
-            this.panel3.TabIndex = 2;
-            // 
-            // panel6
-            // 
-            this.panel6.BackgroundImage = global::QL_NHAN_SU.Properties.Resources._2;
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 717);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1515, 85);
-            this.panel6.TabIndex = 3;
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackgroundImage = global::QL_NHAN_SU.Properties.Resources.header_hpc_20;
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Location = new System.Drawing.Point(0, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1515, 201);
-            this.panel5.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.BackgroundImage = global::QL_NHAN_SU.Properties.Resources.san_truong;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(41, 213);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(771, 495);
-            this.panel2.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Image = global::QL_NHAN_SU.Properties.Resources.cancel;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(415, 266);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 45);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Thoát";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btn_dangnhap
-            // 
-            this.btn_dangnhap.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_dangnhap.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_dangnhap.Image = global::QL_NHAN_SU.Properties.Resources.enter;
-            this.btn_dangnhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_dangnhap.Location = new System.Drawing.Point(213, 266);
-            this.btn_dangnhap.Name = "btn_dangnhap";
-            this.btn_dangnhap.Size = new System.Drawing.Size(142, 45);
-            this.btn_dangnhap.TabIndex = 5;
-            this.btn_dangnhap.Text = "Đăng nhập";
-            this.btn_dangnhap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_dangnhap.UseVisualStyleBackColor = false;
-            this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
-            // 
             // label3
             // 
             this.label3.AllowDrop = true;
@@ -247,6 +205,48 @@ namespace QL_NHAN_SU
             this.label1.Text = "Tài khoản";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel6);
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.panel2);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1515, 802);
+            this.panel3.TabIndex = 2;
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = global::QL_NHAN_SU.Properties.Resources._2;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(0, 717);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1515, 85);
+            this.panel6.TabIndex = 3;
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.BackgroundImage = global::QL_NHAN_SU.Properties.Resources.header_hpc_20;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.Location = new System.Drawing.Point(0, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1515, 201);
+            this.panel5.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.BackgroundImage = global::QL_NHAN_SU.Properties.Resources.san_truong;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(41, 213);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(771, 495);
+            this.panel2.TabIndex = 1;
             // 
             // panel1
             // 

@@ -318,7 +318,7 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gv_lichday);
             this.splitContainer1.Size = new System.Drawing.Size(1611, 488);
-            this.splitContainer1.SplitterDistance = 254;
+            this.splitContainer1.SplitterDistance = 225;
             this.splitContainer1.TabIndex = 9;
             // 
             // date_ketthuc
@@ -327,7 +327,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.date_ketthuc.CustomFormat = "dd/MM/yyyy";
             this.date_ketthuc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_ketthuc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date_ketthuc.Location = new System.Drawing.Point(241, 202);
+            this.date_ketthuc.Location = new System.Drawing.Point(241, 187);
             this.date_ketthuc.Margin = new System.Windows.Forms.Padding(1);
             this.date_ketthuc.Name = "date_ketthuc";
             this.date_ketthuc.Size = new System.Drawing.Size(272, 30);
@@ -339,7 +339,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.date_BatDau.CustomFormat = "dd/MM/yyyy";
             this.date_BatDau.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_BatDau.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date_BatDau.Location = new System.Drawing.Point(1330, 138);
+            this.date_BatDau.Location = new System.Drawing.Point(1330, 123);
             this.date_BatDau.Margin = new System.Windows.Forms.Padding(1);
             this.date_BatDau.Name = "date_BatDau";
             this.date_BatDau.Size = new System.Drawing.Size(273, 30);
@@ -352,7 +352,7 @@ namespace QL_NHAN_SU.LichLamViec
             0,
             0,
             0});
-            this.sp_SoTin.Location = new System.Drawing.Point(803, 144);
+            this.sp_SoTin.Location = new System.Drawing.Point(803, 145);
             this.sp_SoTin.MenuManager = this.barManager1;
             this.sp_SoTin.Name = "sp_SoTin";
             this.sp_SoTin.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -369,7 +369,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(682, 205);
+            this.label11.Location = new System.Drawing.Point(682, 190);
             this.label11.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 22);
@@ -379,7 +379,7 @@ namespace QL_NHAN_SU.LichLamViec
             // sl_caday
             // 
             this.sl_caday.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.sl_caday.Location = new System.Drawing.Point(802, 202);
+            this.sl_caday.Location = new System.Drawing.Point(802, 187);
             this.sl_caday.Margin = new System.Windows.Forms.Padding(0);
             this.sl_caday.MenuManager = this.barManager1;
             this.sl_caday.Name = "sl_caday";
@@ -438,7 +438,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(75, 208);
+            this.label10.Location = new System.Drawing.Point(75, 193);
             this.label10.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(117, 22);
@@ -450,7 +450,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1160, 141);
+            this.label9.Location = new System.Drawing.Point(1160, 126);
             this.label9.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(118, 22);
@@ -462,7 +462,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(691, 144);
+            this.label3.Location = new System.Drawing.Point(691, 129);
             this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 22);
@@ -474,7 +474,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(101, 147);
+            this.label2.Location = new System.Drawing.Point(101, 132);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 22);
@@ -484,7 +484,7 @@ namespace QL_NHAN_SU.LichLamViec
             // sl_phonghoc
             // 
             this.sl_phonghoc.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.sl_phonghoc.Location = new System.Drawing.Point(241, 144);
+            this.sl_phonghoc.Location = new System.Drawing.Point(241, 129);
             this.sl_phonghoc.Margin = new System.Windows.Forms.Padding(0);
             this.sl_phonghoc.MenuManager = this.barManager1;
             this.sl_phonghoc.Name = "sl_phonghoc";
@@ -543,7 +543,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1199, 80);
+            this.label8.Location = new System.Drawing.Point(1199, 65);
             this.label8.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(79, 22);
@@ -553,7 +553,7 @@ namespace QL_NHAN_SU.LichLamViec
             // sl_MonDay
             // 
             this.sl_MonDay.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.sl_MonDay.Location = new System.Drawing.Point(1330, 74);
+            this.sl_MonDay.Location = new System.Drawing.Point(1330, 59);
             this.sl_MonDay.Margin = new System.Windows.Forms.Padding(0);
             this.sl_MonDay.MenuManager = this.barManager1;
             this.sl_MonDay.Name = "sl_MonDay";
@@ -564,6 +564,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.sl_MonDay.Properties.PopupView = this.gridView5;
             this.sl_MonDay.Size = new System.Drawing.Size(272, 28);
             this.sl_MonDay.TabIndex = 93;
+            this.sl_MonDay.EditValueChanged += new System.EventHandler(this.sl_MonDay_EditValueChanged);
             // 
             // gridView5
             // 
@@ -612,7 +613,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(672, 77);
+            this.label6.Location = new System.Drawing.Point(672, 62);
             this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 22);
@@ -622,7 +623,7 @@ namespace QL_NHAN_SU.LichLamViec
             // sl_lophoc
             // 
             this.sl_lophoc.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.sl_lophoc.Location = new System.Drawing.Point(802, 80);
+            this.sl_lophoc.Location = new System.Drawing.Point(802, 65);
             this.sl_lophoc.Margin = new System.Windows.Forms.Padding(0);
             this.sl_lophoc.MenuManager = this.barManager1;
             this.sl_lophoc.Name = "sl_lophoc";
@@ -681,7 +682,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(107, 86);
+            this.label5.Location = new System.Drawing.Point(107, 71);
             this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 22);
@@ -691,7 +692,7 @@ namespace QL_NHAN_SU.LichLamViec
             // sl_KhoaHoc
             // 
             this.sl_KhoaHoc.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.sl_KhoaHoc.Location = new System.Drawing.Point(241, 83);
+            this.sl_KhoaHoc.Location = new System.Drawing.Point(241, 68);
             this.sl_KhoaHoc.Margin = new System.Windows.Forms.Padding(0);
             this.sl_KhoaHoc.MenuManager = this.barManager1;
             this.sl_KhoaHoc.Name = "sl_KhoaHoc";
@@ -750,7 +751,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1226, 19);
+            this.label4.Location = new System.Drawing.Point(1226, 4);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 22);
@@ -760,7 +761,7 @@ namespace QL_NHAN_SU.LichLamViec
             // sl_khoa
             // 
             this.sl_khoa.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.sl_khoa.Location = new System.Drawing.Point(1329, 16);
+            this.sl_khoa.Location = new System.Drawing.Point(1329, 1);
             this.sl_khoa.Margin = new System.Windows.Forms.Padding(0);
             this.sl_khoa.MenuManager = this.barManager1;
             this.sl_khoa.Name = "sl_khoa";
@@ -819,7 +820,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(676, 22);
+            this.label1.Location = new System.Drawing.Point(676, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 22);
@@ -829,7 +830,7 @@ namespace QL_NHAN_SU.LichLamViec
             // sl_NoiLv
             // 
             this.sl_NoiLv.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.sl_NoiLv.Location = new System.Drawing.Point(802, 19);
+            this.sl_NoiLv.Location = new System.Drawing.Point(802, 4);
             this.sl_NoiLv.Margin = new System.Windows.Forms.Padding(0);
             this.sl_NoiLv.MenuManager = this.barManager1;
             this.sl_NoiLv.Name = "sl_NoiLv";
@@ -888,7 +889,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(102, 25);
+            this.label7.Location = new System.Drawing.Point(102, 10);
             this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 22);
@@ -898,7 +899,7 @@ namespace QL_NHAN_SU.LichLamViec
             // sl_NhanVien
             // 
             this.sl_NhanVien.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.sl_NhanVien.Location = new System.Drawing.Point(241, 22);
+            this.sl_NhanVien.Location = new System.Drawing.Point(241, 7);
             this.sl_NhanVien.Margin = new System.Windows.Forms.Padding(0);
             this.sl_NhanVien.MenuManager = this.barManager1;
             this.sl_NhanVien.Name = "sl_NhanVien";
@@ -960,7 +961,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.gv_lichday.MainView = this.gcv_lichday;
             this.gv_lichday.Margin = new System.Windows.Forms.Padding(1);
             this.gv_lichday.Name = "gv_lichday";
-            this.gv_lichday.Size = new System.Drawing.Size(1611, 230);
+            this.gv_lichday.Size = new System.Drawing.Size(1611, 259);
             this.gv_lichday.TabIndex = 2;
             this.gv_lichday.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gcv_lichday});
