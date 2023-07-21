@@ -70,7 +70,7 @@ namespace QL_NHAN_SU
             //sp_hesoluong.Text = "1";
         }
         private void saveData()
-        {
+        { 
             T_DieuChuyen kt;
             if (_them)
             {

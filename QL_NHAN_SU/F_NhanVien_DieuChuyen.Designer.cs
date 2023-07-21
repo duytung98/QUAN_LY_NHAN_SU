@@ -202,7 +202,7 @@ namespace QL_NHAN_SU
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 373);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 495);
             this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlBottom.Size = new System.Drawing.Size(1200, 0);
@@ -214,7 +214,7 @@ namespace QL_NHAN_SU
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 36);
             this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 337);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 459);
             // 
             // barDockControlRight
             // 
@@ -223,7 +223,7 @@ namespace QL_NHAN_SU
             this.barDockControlRight.Location = new System.Drawing.Point(1200, 36);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 337);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 459);
             // 
             // splitContainer1
             // 
@@ -251,7 +251,7 @@ namespace QL_NHAN_SU
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gv_dieuchuyen);
-            this.splitContainer1.Size = new System.Drawing.Size(1200, 337);
+            this.splitContainer1.Size = new System.Drawing.Size(1200, 459);
             this.splitContainer1.SplitterDistance = 236;
             this.splitContainer1.TabIndex = 5;
             // 
@@ -445,7 +445,7 @@ namespace QL_NHAN_SU
             this.gv_dieuchuyen.MainView = this.gcv_dieuchuyen;
             this.gv_dieuchuyen.Margin = new System.Windows.Forms.Padding(1);
             this.gv_dieuchuyen.Name = "gv_dieuchuyen";
-            this.gv_dieuchuyen.Size = new System.Drawing.Size(1200, 97);
+            this.gv_dieuchuyen.Size = new System.Drawing.Size(1200, 219);
             this.gv_dieuchuyen.TabIndex = 1;
             this.gv_dieuchuyen.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gcv_dieuchuyen});
@@ -608,7 +608,7 @@ namespace QL_NHAN_SU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 373);
+            this.ClientSize = new System.Drawing.Size(1200, 495);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);

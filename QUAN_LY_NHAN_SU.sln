@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Businesslayer", "Businessla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QL_NHAN_SU", "QL_NHAN_SU\QL_NHAN_SU.csproj", "{E402E67B-54B4-4CA2-9BCA-3F864114119D}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "QuanLyNhanSu", "QL_NHAN_SU\QuanLyNhanSu\QuanLyNhanSu.vdproj", "{AEDEF9B6-5336-49A6-9326-D1059DA82687}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "QuanLyNhanSu", "QuanLyNhanSu\QuanLyNhanSu.vdproj", "{D6A669D8-85F4-4DA0-AE61-F4C6F3849D2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,8 +29,8 @@ Global
 		{E402E67B-54B4-4CA2-9BCA-3F864114119D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E402E67B-54B4-4CA2-9BCA-3F864114119D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E402E67B-54B4-4CA2-9BCA-3F864114119D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AEDEF9B6-5336-49A6-9326-D1059DA82687}.Debug|Any CPU.ActiveCfg = Debug
-		{AEDEF9B6-5336-49A6-9326-D1059DA82687}.Release|Any CPU.ActiveCfg = Release
+		{D6A669D8-85F4-4DA0-AE61-F4C6F3849D2F}.Debug|Any CPU.ActiveCfg = Debug
+		{D6A669D8-85F4-4DA0-AE61-F4C6F3849D2F}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
