@@ -13,7 +13,7 @@ namespace QL_NHAN_SU
         public SqlConnection conn;
         public void connect()
         {
-            string strCon = @"Data Source=.;Initial Catalog=QUAN_LY_NHAN_SU;Integrated Security=True";
+            string strCon = @"Data Source=acer;Initial Catalog=QUAN_LY_NHAN_SU;User ID=nguyenduytung;Password=18041998";
             try
             {
                 conn = new SqlConnection(strCon);

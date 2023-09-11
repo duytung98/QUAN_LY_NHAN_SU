@@ -5,38 +5,38 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="5d9e83d03d50490c9422ca444e9a8ced" Name="Diagram1" ZoomLevel="51">
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.KhenThuong_KyLuat" Width="1.5" PointX="5.25" PointY="40.875" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.KhenThuong_KyLuat" Width="1.5" PointX="5.25" PointY="45.5" />
         <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_Bang_Luong" Width="1.5" PointX="0.75" PointY="0.75" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_BangCong" Width="1.5" PointX="11.25" PointY="20.25" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_BangCong" Width="1.5" PointX="8.25" PointY="31.25" />
         <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_BangCong_NVien_ChiTiet" Width="1.5" PointX="2.75" PointY="0.75" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_BaoHiem" Width="1.5" PointX="5.25" PointY="45.5" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_BoPhan" Width="1.5" PointX="0.75" PointY="33.75" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_ChucVu" Width="1.5" PointX="0.75" PointY="20.25" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_BaoHiem" Width="1.5" PointX="5.25" PointY="41.125" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_BoPhan" Width="1.5" PointX="0.75" PointY="31.375" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_ChucVu" Width="1.5" PointX="0.75" PointY="29.125" />
         <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_confix" Width="1.5" PointX="4.75" PointY="0.75" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_DanToc" Width="1.5" PointX="0.75" PointY="31.375" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_DieuChuyen" Width="1.5" PointX="5.25" PointY="19" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_DanToc" Width="1.5" PointX="0.75" PointY="20.25" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_DieuChuyen" Width="1.5" PointX="5.25" PointY="31" />
         <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_HopDong" Width="1.5" PointX="5.25" PointY="24.625" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_Khoa" Width="1.5" PointX="6" PointY="37.5" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_KhoaDay" Width="1.5" PointX="6" PointY="9.875" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_Khoa" Width="1.5" PointX="6" PointY="8.875" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_KhoaDay" Width="1.5" PointX="6" PointY="11.875" />
         <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_Ky_Cong" Width="1.5" PointX="6.75" PointY="0.75" />
         <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_KyCong_ChiTiet" Width="1.5" PointX="0.75" PointY="6.75" />
         <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_LichLV" Width="1.5" PointX="8.25" PointY="24" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_LoaiCa" Width="1.5" PointX="6" PointY="12.5" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_LoaiCong" Width="1.5" PointX="9" PointY="16.125" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_LopDay" Width="1.5" PointX="6" PointY="55.25" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_MonDay" Width="1.5" PointX="6" PointY="16.125" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_LoaiCa" Width="1.5" PointX="6" PointY="15.125" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_LoaiCong" Width="1.5" PointX="6" PointY="6.125" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_LopDay" Width="1.5" PointX="6" PointY="38.5" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_MonDay" Width="1.5" PointX="6" PointY="36.125" />
         <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_NhanVien" Width="1.5" PointX="3" PointY="22.875" />
         <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_NhanVien_NangLuong" Width="1.5" PointX="10.5" PointY="24.875" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_NhanVienPhuCap" Width="1.5" PointX="8.25" PointY="31.125" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_NhanVienPhuCap" Width="1.5" PointX="11.25" PointY="20.125" />
         <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_NoiLamViec" Width="1.5" PointX="0.75" PointY="25.625" />
         <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_PhongBan" Width="1.5" PointX="0.75" PointY="22.5" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_PhongHoc" Width="1.5" PointX="6" PointY="35.125" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_PhuCap" Width="1.5" PointX="6" PointY="7.125" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_PhongHoc" Width="1.5" PointX="6" PointY="55.25" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_PhuCap" Width="1.5" PointX="9" PointY="16.125" />
         <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_TangCa" Width="1.5" PointX="8.25" PointY="18.875" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_THOIVIEC" Width="1.5" PointX="5.25" PointY="30.125" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_THOIVIEC" Width="1.5" PointX="5.25" PointY="50.25" />
         <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_TonGiao" Width="1.5" PointX="0.75" PointY="36.125" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_TrinhDo" Width="1.5" PointX="0.75" PointY="29.125" />
-        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_UngLuong" Width="1.5" PointX="5.25" PointY="50" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_TrinhDo" Width="1.5" PointX="0.75" PointY="33.75" />
+        <EntityTypeShape EntityType="QUAN_LY_NHAN_SUModel.T_UngLuong" Width="1.5" PointX="5.25" PointY="18.375" />
         <AssociationConnector Association="QUAN_LY_NHAN_SUModel.FK_KhenThuong_KyLuat_T_NhanVien" />
         <AssociationConnector Association="QUAN_LY_NHAN_SUModel.FK_T_BangCong_T_LoaiCong" />
         <AssociationConnector Association="QUAN_LY_NHAN_SUModel.FK_T_BangCong_T_NhanVien" />

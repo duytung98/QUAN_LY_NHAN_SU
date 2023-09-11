@@ -79,7 +79,7 @@ namespace QL_NHAN_SU
         static SqlConnection con = new SqlConnection();
         public static void taoketnoi()
         {
-            con.ConnectionString = "Data Source=.;Initial Catalog=QUAN_LY_NHAN_SU;Integrated Security=True";
+            con.ConnectionString = "Data Source=acer;Initial Catalog=QUAN_LY_NHAN_SU;User ID =nguyenduytung;Password=18041998";
             try
             {
                 con.Open();
