@@ -80,11 +80,24 @@ namespace QL_NHAN_SU
 
         private void FormMain_NhanVien_FormClosed(object sender, FormClosedEventArgs e)
         {
-            DialogResult kq = MessageBox.Show("Bạn có chắc chắn muốn thoát??", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (kq == DialogResult.Yes)
-            {
-                this.Close();
-            }
+            
+        }
+
+        private void ribbon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void barButtonItem1_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            ChamCong.F_CongChoTungNhanVien f_CongChoTungNhan = new ChamCong.F_CongChoTungNhanVien(lbl_nhanvien.Text);
+            f_CongChoTungNhan.ShowDialog();
+        }
+
+        private void btn_phanhoi_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            F_PhanHoi f_PhanHoi = new F_PhanHoi(lbl_nhanvien.Text);
+            f_PhanHoi.ShowDialog();
         }
     }
 }

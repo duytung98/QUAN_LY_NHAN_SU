@@ -68,6 +68,7 @@ namespace QL_NHAN_SU.Report
             this.lbl_hoten.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lbl_hoten.SerializableRtfString = resources.GetString("lbl_hoten.SerializableRtfString");
             this.lbl_hoten.SizeF = new System.Drawing.SizeF(650F, 835.8333F);
+            this.lbl_hoten.StylePriority.UseFont = false;
             // 
             // ReportHeader
             // 
@@ -181,6 +182,7 @@ namespace QL_NHAN_SU.Report
             this.Detail,
             this.ReportHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.Margins = new System.Drawing.Printing.Margins(127, 72, 100, 100);
             this.Version = "19.2";
             ((System.ComponentModel.ISupportInitialize)(this.lbl_hoten)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();

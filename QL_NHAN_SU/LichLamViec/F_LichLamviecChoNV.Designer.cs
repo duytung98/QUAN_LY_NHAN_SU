@@ -57,6 +57,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 82);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -66,9 +67,10 @@ namespace QL_NHAN_SU.LichLamViec
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label1.Location = new System.Drawing.Point(283, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(297, 55);
+            this.label1.Size = new System.Drawing.Size(237, 43);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lịch làm việc";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
@@ -82,6 +84,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 69);
             this.panel2.TabIndex = 3;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // lblnhanvien
             // 
@@ -92,9 +95,10 @@ namespace QL_NHAN_SU.LichLamViec
             this.lblnhanvien.Appearance.Options.UseForeColor = true;
             this.lblnhanvien.Location = new System.Drawing.Point(661, 24);
             this.lblnhanvien.Name = "lblnhanvien";
-            this.lblnhanvien.Size = new System.Drawing.Size(127, 26);
+            this.lblnhanvien.Size = new System.Drawing.Size(99, 20);
             this.lblnhanvien.TabIndex = 4;
             this.lblnhanvien.Text = "Mã nhân viên";
+            this.lblnhanvien.Click += new System.EventHandler(this.lblnhanvien_Click);
             // 
             // cb_nam
             // 
@@ -121,7 +125,7 @@ namespace QL_NHAN_SU.LichLamViec
             "2040"});
             this.cb_nam.Location = new System.Drawing.Point(399, 20);
             this.cb_nam.Name = "cb_nam";
-            this.cb_nam.Size = new System.Drawing.Size(142, 34);
+            this.cb_nam.Size = new System.Drawing.Size(142, 28);
             this.cb_nam.TabIndex = 3;
             this.cb_nam.SelectedIndexChanged += new System.EventHandler(this.cb_nam_SelectedIndexChanged);
             // 
@@ -131,9 +135,10 @@ namespace QL_NHAN_SU.LichLamViec
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(309, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 26);
+            this.label3.Size = new System.Drawing.Size(49, 22);
             this.label3.TabIndex = 2;
             this.label3.Text = "Năm";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // cb_thang
             // 
@@ -154,7 +159,7 @@ namespace QL_NHAN_SU.LichLamViec
             "12"});
             this.cb_thang.Location = new System.Drawing.Point(154, 20);
             this.cb_thang.Name = "cb_thang";
-            this.cb_thang.Size = new System.Drawing.Size(121, 34);
+            this.cb_thang.Size = new System.Drawing.Size(121, 28);
             this.cb_thang.TabIndex = 1;
             this.cb_thang.SelectedIndexChanged += new System.EventHandler(this.cb_thang_SelectedIndexChanged);
             // 
@@ -164,9 +169,10 @@ namespace QL_NHAN_SU.LichLamViec
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(51, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 26);
+            this.label2.Size = new System.Drawing.Size(63, 22);
             this.label2.TabIndex = 0;
             this.label2.Text = "Tháng";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel3
             // 
@@ -176,6 +182,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(800, 299);
             this.panel3.TabIndex = 4;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // dgv_lichlamviec
             // 
@@ -204,6 +211,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.dgv_lichlamviec.RowTemplate.Height = 24;
             this.dgv_lichlamviec.Size = new System.Drawing.Size(800, 299);
             this.dgv_lichlamviec.TabIndex = 3;
+            this.dgv_lichlamviec.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_lichlamviec_CellContentClick);
             // 
             // F_LichLamviecChoNV
             // 

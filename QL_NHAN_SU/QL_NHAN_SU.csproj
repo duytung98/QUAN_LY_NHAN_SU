@@ -107,6 +107,12 @@
     <Compile Include="ChamCong\F_CapNhatNgayCong.Designer.cs">
       <DependentUpon>F_CapNhatNgayCong.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChamCong\F_CongChoTungNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChamCong\F_CongChoTungNhanVien.Designer.cs">
+      <DependentUpon>F_CongChoTungNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChamCong\F_LoaiCong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +228,12 @@
     </Compile>
     <Compile Include="F_NoiLamViec.Designer.cs">
       <DependentUpon>F_NoiLamViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_PhanHoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_PhanHoi.Designer.cs">
+      <DependentUpon>F_PhanHoi.cs</DependentUpon>
     </Compile>
     <Compile Include="F_PhongBan.cs">
       <SubType>Form</SubType>
@@ -381,6 +393,9 @@
     <EmbeddedResource Include="ChamCong\F_CapNhatNgayCong.resx">
       <DependentUpon>F_CapNhatNgayCong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChamCong\F_CongChoTungNhanVien.resx">
+      <DependentUpon>F_CongChoTungNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChamCong\F_LoaiCong.resx">
       <DependentUpon>F_LoaiCong.cs</DependentUpon>
     </EmbeddedResource>
@@ -437,6 +452,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_NoiLamViec.resx">
       <DependentUpon>F_NoiLamViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_PhanHoi.resx">
+      <DependentUpon>F_PhanHoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_PhongBan.resx">
       <DependentUpon>F_PhongBan.cs</DependentUpon>
@@ -608,6 +626,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-plane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-plane1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

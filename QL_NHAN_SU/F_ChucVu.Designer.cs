@@ -162,7 +162,7 @@ namespace QL_NHAN_SU
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(960, 36);
+            this.barDockControlTop.Size = new System.Drawing.Size(960, 28);
             // 
             // barDockControlBottom
             // 
@@ -177,19 +177,19 @@ namespace QL_NHAN_SU
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 36);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 28);
             this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 427);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 435);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(960, 36);
+            this.barDockControlRight.Location = new System.Drawing.Point(960, 28);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 427);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 435);
             // 
             // btn_in
             // 
@@ -203,7 +203,7 @@ namespace QL_NHAN_SU
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 36);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 28);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -215,18 +215,18 @@ namespace QL_NHAN_SU
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gc_chucvu);
-            this.splitContainer1.Size = new System.Drawing.Size(960, 427);
-            this.splitContainer1.SplitterDistance = 58;
+            this.splitContainer1.Size = new System.Drawing.Size(960, 435);
+            this.splitContainer1.SplitterDistance = 59;
             this.splitContainer1.TabIndex = 4;
             // 
             // txt_chucvu
             // 
             this.txt_chucvu.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_chucvu.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_chucvu.Location = new System.Drawing.Point(142, 14);
-            this.txt_chucvu.Margin = new System.Windows.Forms.Padding(1);
+            this.txt_chucvu.Location = new System.Drawing.Point(118, 21);
+            this.txt_chucvu.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.txt_chucvu.Name = "txt_chucvu";
-            this.txt_chucvu.Size = new System.Drawing.Size(201, 34);
+            this.txt_chucvu.Size = new System.Drawing.Size(221, 29);
             this.txt_chucvu.TabIndex = 5;
             // 
             // label1
@@ -234,23 +234,23 @@ namespace QL_NHAN_SU
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label1.Location = new System.Drawing.Point(25, 24);
+            this.label1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 27);
+            this.label1.Size = new System.Drawing.Size(74, 21);
             this.label1.TabIndex = 4;
             this.label1.Text = "Chức vụ";
             // 
             // gc_chucvu
             // 
             this.gc_chucvu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gc_chucvu.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(1);
+            this.gc_chucvu.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.gc_chucvu.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gc_chucvu.Location = new System.Drawing.Point(0, 0);
             this.gc_chucvu.MainView = this.gcv_chucvu;
-            this.gc_chucvu.Margin = new System.Windows.Forms.Padding(1);
+            this.gc_chucvu.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.gc_chucvu.Name = "gc_chucvu";
-            this.gc_chucvu.Size = new System.Drawing.Size(960, 365);
+            this.gc_chucvu.Size = new System.Drawing.Size(960, 372);
             this.gc_chucvu.TabIndex = 3;
             this.gc_chucvu.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gcv_chucvu});
@@ -306,7 +306,7 @@ namespace QL_NHAN_SU
             // F_ChucVu
             // 
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 463);
             this.Controls.Add(this.splitContainer1);

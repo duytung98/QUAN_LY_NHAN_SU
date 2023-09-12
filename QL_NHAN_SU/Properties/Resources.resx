@@ -136,8 +136,11 @@
   <data name="padlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\padlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="header-hpc-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\header-hpc-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="delete2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,6 +172,9 @@
   <data name="delete1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="paper-plane" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paper-plane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="user-avatar-with-check-mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-avatar-with-check-mark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,10 +187,10 @@
   <data name="mat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="delete2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="header-hpc-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\header-hpc-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="paper-plane1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paper-plane1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -165,35 +165,31 @@ namespace QL_NHAN_SU.ChamCong
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(700, 36);
+            this.barDockControlTop.Size = new System.Drawing.Size(600, 28);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 386);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 314);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(700, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(600, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 36);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 28);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 350);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 286);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(700, 36);
+            this.barDockControlRight.Location = new System.Drawing.Point(600, 28);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 350);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 286);
             // 
             // btn_in
             // 
@@ -207,7 +203,8 @@ namespace QL_NHAN_SU.ChamCong
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 36);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 28);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -221,8 +218,9 @@ namespace QL_NHAN_SU.ChamCong
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gc_calam);
-            this.splitContainer1.Size = new System.Drawing.Size(700, 350);
+            this.splitContainer1.Size = new System.Drawing.Size(600, 286);
             this.splitContainer1.SplitterDistance = 67;
+            this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 6;
             // 
             // sp_hesoca
@@ -232,14 +230,15 @@ namespace QL_NHAN_SU.ChamCong
             0,
             0,
             0});
-            this.sp_hesoca.Location = new System.Drawing.Point(495, 22);
+            this.sp_hesoca.Location = new System.Drawing.Point(424, 18);
+            this.sp_hesoca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sp_hesoca.MenuManager = this.barManager1;
             this.sp_hesoca.Name = "sp_hesoca";
             this.sp_hesoca.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sp_hesoca.Properties.Appearance.Options.UseFont = true;
             this.sp_hesoca.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.sp_hesoca.Size = new System.Drawing.Size(153, 32);
+            this.sp_hesoca.Size = new System.Drawing.Size(131, 26);
             this.sp_hesoca.TabIndex = 5;
             // 
             // label2
@@ -247,10 +246,10 @@ namespace QL_NHAN_SU.ChamCong
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(379, 25);
+            this.label2.Location = new System.Drawing.Point(325, 21);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 27);
+            this.label2.Size = new System.Drawing.Size(76, 21);
             this.label2.TabIndex = 4;
             this.label2.Text = "Hệ số ca";
             // 
@@ -258,10 +257,10 @@ namespace QL_NHAN_SU.ChamCong
             // 
             this.txt_calam.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_calam.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_calam.Location = new System.Drawing.Point(144, 22);
+            this.txt_calam.Location = new System.Drawing.Point(123, 17);
             this.txt_calam.Margin = new System.Windows.Forms.Padding(1);
             this.txt_calam.Name = "txt_calam";
-            this.txt_calam.Size = new System.Drawing.Size(172, 34);
+            this.txt_calam.Size = new System.Drawing.Size(148, 29);
             this.txt_calam.TabIndex = 3;
             // 
             // label1
@@ -269,10 +268,10 @@ namespace QL_NHAN_SU.ChamCong
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 25);
+            this.label1.Location = new System.Drawing.Point(39, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 27);
+            this.label1.Size = new System.Drawing.Size(62, 21);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ca làm";
             // 
@@ -285,7 +284,7 @@ namespace QL_NHAN_SU.ChamCong
             this.gc_calam.MainView = this.gcv_calam;
             this.gc_calam.Margin = new System.Windows.Forms.Padding(1);
             this.gc_calam.Name = "gc_calam";
-            this.gc_calam.Size = new System.Drawing.Size(700, 279);
+            this.gc_calam.Size = new System.Drawing.Size(600, 216);
             this.gc_calam.TabIndex = 2;
             this.gc_calam.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gcv_calam});
@@ -300,8 +299,8 @@ namespace QL_NHAN_SU.ChamCong
             this.id_LC,
             this.Ten_Loaica,
             this.HeSoCa});
-            this.gcv_calam.CustomizationFormBounds = new System.Drawing.Rectangle(678, 477, 314, 325);
-            this.gcv_calam.DetailHeight = 414;
+            this.gcv_calam.CustomizationFormBounds = new System.Drawing.Rectangle(678, 477, 269, 264);
+            this.gcv_calam.DetailHeight = 336;
             this.gcv_calam.GridControl = this.gc_calam;
             this.gcv_calam.Name = "gcv_calam";
             this.gcv_calam.OptionsPrint.EnableAppearanceEvenRow = true;
@@ -317,12 +316,12 @@ namespace QL_NHAN_SU.ChamCong
             this.id_LC.AppearanceHeader.Options.UseFont = true;
             this.id_LC.Caption = "ID loại ca";
             this.id_LC.FieldName = "id_LoaiCa";
-            this.id_LC.MaxWidth = 200;
-            this.id_LC.MinWidth = 200;
+            this.id_LC.MaxWidth = 171;
+            this.id_LC.MinWidth = 171;
             this.id_LC.Name = "id_LC";
             this.id_LC.Visible = true;
             this.id_LC.VisibleIndex = 0;
-            this.id_LC.Width = 200;
+            this.id_LC.Width = 171;
             // 
             // Ten_Loaica
             // 
@@ -332,12 +331,12 @@ namespace QL_NHAN_SU.ChamCong
             this.Ten_Loaica.AppearanceHeader.Options.UseFont = true;
             this.Ten_Loaica.Caption = "Tên loại ca";
             this.Ten_Loaica.FieldName = "TenLoaiCa";
-            this.Ten_Loaica.MaxWidth = 300;
-            this.Ten_Loaica.MinWidth = 300;
+            this.Ten_Loaica.MaxWidth = 257;
+            this.Ten_Loaica.MinWidth = 257;
             this.Ten_Loaica.Name = "Ten_Loaica";
             this.Ten_Loaica.Visible = true;
             this.Ten_Loaica.VisibleIndex = 1;
-            this.Ten_Loaica.Width = 300;
+            this.Ten_Loaica.Width = 257;
             // 
             // HeSoCa
             // 
@@ -345,23 +344,24 @@ namespace QL_NHAN_SU.ChamCong
             this.HeSoCa.AppearanceHeader.Options.UseFont = true;
             this.HeSoCa.Caption = "Hệ số";
             this.HeSoCa.FieldName = "HeSo";
-            this.HeSoCa.MaxWidth = 200;
-            this.HeSoCa.MinWidth = 200;
+            this.HeSoCa.MaxWidth = 171;
+            this.HeSoCa.MinWidth = 171;
             this.HeSoCa.Name = "HeSoCa";
             this.HeSoCa.Visible = true;
             this.HeSoCa.VisibleIndex = 2;
-            this.HeSoCa.Width = 200;
+            this.HeSoCa.Width = 171;
             // 
             // F_CaLam
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 386);
+            this.ClientSize = new System.Drawing.Size(600, 314);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "F_CaLam";
             this.Text = "Ca làm";
             this.Load += new System.EventHandler(this.F_CaLam_Load);

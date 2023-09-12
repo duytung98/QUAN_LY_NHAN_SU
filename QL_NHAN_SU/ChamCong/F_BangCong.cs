@@ -182,5 +182,10 @@ namespace QL_NHAN_SU.ChamCong
                 e.Handled = true;
             }
         }
+
+        private void cb_Khoa_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

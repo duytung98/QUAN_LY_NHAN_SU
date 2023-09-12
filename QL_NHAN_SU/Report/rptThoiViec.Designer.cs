@@ -33,6 +33,7 @@ namespace QL_NHAN_SU.Report
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.xrRichText1 = new DevExpress.XtraReports.UI.XRRichText();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
@@ -41,7 +42,6 @@ namespace QL_NHAN_SU.Report
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrRichText1 = new DevExpress.XtraReports.UI.XRRichText();
             ((System.ComponentModel.ISupportInitialize)(this.xrRichText1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -60,6 +60,16 @@ namespace QL_NHAN_SU.Report
             this.Detail.HeightF = 604.1667F;
             this.Detail.Name = "Detail";
             // 
+            // xrRichText1
+            // 
+            this.xrRichText1.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.xrRichText1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrRichText1.Name = "xrRichText1";
+            this.xrRichText1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrRichText1.SerializableRtfString = resources.GetString("xrRichText1.SerializableRtfString");
+            this.xrRichText1.SizeF = new System.Drawing.SizeF(650F, 604.1667F);
+            this.xrRichText1.StylePriority.UseFont = false;
+            // 
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
@@ -75,7 +85,7 @@ namespace QL_NHAN_SU.Report
             // 
             // xrLabel1
             // 
-            this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
@@ -88,7 +98,7 @@ namespace QL_NHAN_SU.Report
             // 
             // xrLabel2
             // 
-            this.xrLabel2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 34.66667F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
@@ -101,12 +111,12 @@ namespace QL_NHAN_SU.Report
             // 
             // xrLabel3
             // 
-            this.xrLabel3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(0F, 81.33334F);
+            this.xrLabel3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(0F, 81.33335F);
             this.xrLabel3.Multiline = true;
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(375.3333F, 25F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(395.1249F, 25F);
             this.xrLabel3.StylePriority.UseFont = false;
             this.xrLabel3.StylePriority.UseTextAlignment = false;
             this.xrLabel3.Text = "Trường cao đẳng Công nghệ Bách Khoa Hà Nội";
@@ -114,7 +124,7 @@ namespace QL_NHAN_SU.Report
             // 
             // SoQD
             // 
-            this.SoQD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.SoQD.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SoQD.LocationFloat = new DevExpress.Utils.PointFloat(82.00002F, 106.3333F);
             this.SoQD.Multiline = true;
             this.SoQD.Name = "SoQD";
@@ -127,7 +137,7 @@ namespace QL_NHAN_SU.Report
             // 
             // xrLabel4
             // 
-            this.xrLabel4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.xrLabel4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(0F, 106.3333F);
             this.xrLabel4.Multiline = true;
             this.xrLabel4.Name = "xrLabel4";
@@ -140,7 +150,7 @@ namespace QL_NHAN_SU.Report
             // 
             // xrLabel5
             // 
-            this.xrLabel5.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel5.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 140F);
             this.xrLabel5.Multiline = true;
             this.xrLabel5.Name = "xrLabel5";
@@ -153,7 +163,7 @@ namespace QL_NHAN_SU.Report
             // 
             // xrLabel6
             // 
-            this.xrLabel6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel6.Font = new System.Drawing.Font("Arial", 14.25F);
             this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(0F, 204.1667F);
             this.xrLabel6.Multiline = true;
             this.xrLabel6.Name = "xrLabel6";
@@ -164,15 +174,6 @@ namespace QL_NHAN_SU.Report
             this.xrLabel6.Text = "V/v:  Về việc cho thôi việc";
             this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // xrRichText1
-            // 
-            this.xrRichText1.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.xrRichText1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
-            this.xrRichText1.Name = "xrRichText1";
-            this.xrRichText1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrRichText1.SerializableRtfString = resources.GetString("xrRichText1.SerializableRtfString");
-            this.xrRichText1.SizeF = new System.Drawing.SizeF(650F, 604.1667F);
-            // 
             // rptThoiViec
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -181,6 +182,7 @@ namespace QL_NHAN_SU.Report
             this.Detail,
             this.ReportHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.Margins = new System.Drawing.Printing.Margins(134, 66, 100, 100);
             this.Version = "19.2";
             ((System.ComponentModel.ISupportInitialize)(this.xrRichText1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();

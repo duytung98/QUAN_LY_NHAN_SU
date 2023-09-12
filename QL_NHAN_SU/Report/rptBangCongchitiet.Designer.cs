@@ -60,12 +60,12 @@ namespace QL_NHAN_SU.Report
             this.xrTableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
-            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
-            this.lbl_idnv = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
-            this.lbl_ten = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             this.lblmakycong = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.lbl_ten = new DevExpress.XtraReports.UI.XRLabel();
+            this.lbl_idnv = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTable3 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow3 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell13 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -314,49 +314,9 @@ namespace QL_NHAN_SU.Report
             this.ReportHeader.HeightF = 195F;
             this.ReportHeader.Name = "ReportHeader";
             // 
-            // xrLabel3
-            // 
-            this.xrLabel3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(52.83335F, 77.16667F);
-            this.xrLabel3.Multiline = true;
-            this.xrLabel3.Name = "xrLabel3";
-            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.xrLabel3.StylePriority.UseFont = false;
-            this.xrLabel3.Text = "Mã nhân viên";
-            // 
-            // lbl_idnv
-            // 
-            this.lbl_idnv.LocationFloat = new DevExpress.Utils.PointFloat(172.1666F, 77.16667F);
-            this.lbl_idnv.Multiline = true;
-            this.lbl_idnv.Name = "lbl_idnv";
-            this.lbl_idnv.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.lbl_idnv.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.lbl_idnv.Text = "Mã nhân viên";
-            // 
-            // xrLabel2
-            // 
-            this.xrLabel2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(52.83335F, 118.6667F);
-            this.xrLabel2.Multiline = true;
-            this.xrLabel2.Name = "xrLabel2";
-            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.xrLabel2.StylePriority.UseFont = false;
-            this.xrLabel2.Text = "Tên nhân viên";
-            // 
-            // lbl_ten
-            // 
-            this.lbl_ten.LocationFloat = new DevExpress.Utils.PointFloat(172.1666F, 118.6667F);
-            this.lbl_ten.Multiline = true;
-            this.lbl_ten.Name = "lbl_ten";
-            this.lbl_ten.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.lbl_ten.SizeF = new System.Drawing.SizeF(179.1667F, 22.99999F);
-            this.lbl_ten.Text = "Mã nhân viên";
-            // 
             // xrLabel4
             // 
-            this.xrLabel4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(352.4622F, 77.16667F);
             this.xrLabel4.Multiline = true;
             this.xrLabel4.Name = "xrLabel4";
@@ -367,12 +327,58 @@ namespace QL_NHAN_SU.Report
             // 
             // lblmakycong
             // 
+            this.lblmakycong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmakycong.LocationFloat = new DevExpress.Utils.PointFloat(449.1288F, 77.16667F);
             this.lblmakycong.Multiline = true;
             this.lblmakycong.Name = "lblmakycong";
             this.lblmakycong.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.lblmakycong.SizeF = new System.Drawing.SizeF(117.5F, 23F);
+            this.lblmakycong.StylePriority.UseFont = false;
             this.lblmakycong.Text = "Mã nhân viên";
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(52.83335F, 118.6667F);
+            this.xrLabel2.Multiline = true;
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(100F, 23F);
+            this.xrLabel2.StylePriority.UseFont = false;
+            this.xrLabel2.Text = "Tên nhân viên";
+            // 
+            // lbl_ten
+            // 
+            this.lbl_ten.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ten.LocationFloat = new DevExpress.Utils.PointFloat(172.1666F, 118.6667F);
+            this.lbl_ten.Multiline = true;
+            this.lbl_ten.Name = "lbl_ten";
+            this.lbl_ten.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lbl_ten.SizeF = new System.Drawing.SizeF(179.1667F, 22.99999F);
+            this.lbl_ten.StylePriority.UseFont = false;
+            this.lbl_ten.Text = "Mã nhân viên";
+            // 
+            // lbl_idnv
+            // 
+            this.lbl_idnv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_idnv.LocationFloat = new DevExpress.Utils.PointFloat(172.1666F, 77.16667F);
+            this.lbl_idnv.Multiline = true;
+            this.lbl_idnv.Name = "lbl_idnv";
+            this.lbl_idnv.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.lbl_idnv.SizeF = new System.Drawing.SizeF(100F, 23F);
+            this.lbl_idnv.StylePriority.UseFont = false;
+            this.lbl_idnv.Text = "Mã nhân viên";
+            // 
+            // xrLabel3
+            // 
+            this.xrLabel3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(52.83335F, 77.16667F);
+            this.xrLabel3.Multiline = true;
+            this.xrLabel3.Name = "xrLabel3";
+            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(100F, 23F);
+            this.xrLabel3.StylePriority.UseFont = false;
+            this.xrLabel3.Text = "Mã nhân viên";
             // 
             // xrTable3
             // 

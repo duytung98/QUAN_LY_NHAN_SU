@@ -33,6 +33,7 @@ namespace QL_NHAN_SU.Report
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.xrRichText1 = new DevExpress.XtraReports.UI.XRRichText();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
@@ -41,7 +42,6 @@ namespace QL_NHAN_SU.Report
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrRichText1 = new DevExpress.XtraReports.UI.XRRichText();
             ((System.ComponentModel.ISupportInitialize)(this.xrRichText1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -59,6 +59,15 @@ namespace QL_NHAN_SU.Report
             this.xrRichText1});
             this.Detail.HeightF = 680.8333F;
             this.Detail.Name = "Detail";
+            // 
+            // xrRichText1
+            // 
+            this.xrRichText1.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.xrRichText1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrRichText1.Name = "xrRichText1";
+            this.xrRichText1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrRichText1.SerializableRtfString = resources.GetString("xrRichText1.SerializableRtfString");
+            this.xrRichText1.SizeF = new System.Drawing.SizeF(650F, 680.8333F);
             // 
             // ReportHeader
             // 
@@ -164,15 +173,6 @@ namespace QL_NHAN_SU.Report
             this.xrLabel6.Text = "V/v: Về việc điều chuyển nhân sự";
             this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // xrRichText1
-            // 
-            this.xrRichText1.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.xrRichText1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
-            this.xrRichText1.Name = "xrRichText1";
-            this.xrRichText1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrRichText1.SerializableRtfString = resources.GetString("xrRichText1.SerializableRtfString");
-            this.xrRichText1.SizeF = new System.Drawing.SizeF(650F, 680.8333F);
-            // 
             // rptDieuChuyen
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -181,6 +181,7 @@ namespace QL_NHAN_SU.Report
             this.Detail,
             this.ReportHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
+            this.Margins = new System.Drawing.Printing.Margins(126, 73, 100, 100);
             this.Version = "19.2";
             ((System.ComponentModel.ISupportInitialize)(this.xrRichText1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();

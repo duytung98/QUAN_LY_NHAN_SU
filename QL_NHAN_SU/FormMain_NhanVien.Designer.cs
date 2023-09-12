@@ -35,6 +35,8 @@ namespace QL_NHAN_SU
             this.btn_DoiMK = new DevExpress.XtraBars.BarButtonItem();
             this.btn_DangXuat = new DevExpress.XtraBars.BarButtonItem();
             this.btn_lichlamviec = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_phanhoi = new DevExpress.XtraBars.BarButtonItem();
             this.HeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btbThongTin = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -48,22 +50,26 @@ namespace QL_NHAN_SU
             // ribbon
             // 
             this.ribbon.ExpandCollapseItem.Id = 0;
+            this.ribbon.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
             this.ribbon.SearchEditItem,
             this.btn_thongtinnv,
             this.btn_DoiMK,
             this.btn_DangXuat,
-            this.btn_lichlamviec});
+            this.btn_lichlamviec,
+            this.barButtonItem1,
+            this.btn_phanhoi});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.ribbon.MaxItemId = 9;
+            this.ribbon.Margin = new System.Windows.Forms.Padding(4);
+            this.ribbon.MaxItemId = 11;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.HeThong,
             this.btbThongTin});
-            this.ribbon.Size = new System.Drawing.Size(1833, 217);
+            this.ribbon.Size = new System.Drawing.Size(1629, 177);
             this.ribbon.StatusBar = this.ribbonStatusBar;
+            this.ribbon.Click += new System.EventHandler(this.ribbon_Click);
             // 
             // btn_thongtinnv
             // 
@@ -71,9 +77,9 @@ namespace QL_NHAN_SU
             this.btn_thongtinnv.Id = 1;
             this.btn_thongtinnv.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_thongtinnv.ImageOptions.Image")));
             this.btn_thongtinnv.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_thongtinnv.ImageOptions.LargeImage")));
-            this.btn_thongtinnv.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_thongtinnv.ItemAppearance.Hovered.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_thongtinnv.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btn_thongtinnv.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_thongtinnv.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_thongtinnv.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_thongtinnv.Name = "btn_thongtinnv";
             this.btn_thongtinnv.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
@@ -81,13 +87,13 @@ namespace QL_NHAN_SU
             // 
             // btn_DoiMK
             // 
-            this.btn_DoiMK.Caption = "Đổi mật khẩu";
+            this.btn_DoiMK.Caption = "Đổi mật khẩu                  ";
             this.btn_DoiMK.Id = 2;
             this.btn_DoiMK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_DoiMK.ImageOptions.Image")));
             this.btn_DoiMK.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_DoiMK.ImageOptions.LargeImage")));
-            this.btn_DoiMK.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DoiMK.ItemAppearance.Hovered.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DoiMK.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btn_DoiMK.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DoiMK.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DoiMK.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_DoiMK.Name = "btn_DoiMK";
             this.btn_DoiMK.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
@@ -95,12 +101,12 @@ namespace QL_NHAN_SU
             // 
             // btn_DangXuat
             // 
-            this.btn_DangXuat.Caption = "Đăng xuất";
+            this.btn_DangXuat.Caption = "Đăng xuất ";
             this.btn_DangXuat.Id = 3;
             this.btn_DangXuat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_DangXuat.ImageOptions.SvgImage")));
-            this.btn_DangXuat.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DangXuat.ItemAppearance.Hovered.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DangXuat.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btn_DangXuat.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DangXuat.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DangXuat.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_DangXuat.Name = "btn_DangXuat";
             this.btn_DangXuat.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
@@ -112,17 +118,43 @@ namespace QL_NHAN_SU
             this.btn_lichlamviec.Id = 4;
             this.btn_lichlamviec.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_lichlamviec.ImageOptions.Image")));
             this.btn_lichlamviec.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_lichlamviec.ImageOptions.LargeImage")));
-            this.btn_lichlamviec.ItemAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_lichlamviec.ItemAppearance.Hovered.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_lichlamviec.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btn_lichlamviec.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_lichlamviec.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_lichlamviec.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_lichlamviec.Name = "btn_lichlamviec";
             this.btn_lichlamviec.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btn_lichlamviec.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_lichlamviec_ItemClick);
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Ngày công";
+            this.barButtonItem1.Id = 9;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.ItemAppearance.Hovered.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barButtonItem1.ItemAppearance.Hovered.Options.UseFont = true;
+            this.barButtonItem1.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barButtonItem1.ItemAppearance.Normal.Options.UseFont = true;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
+            // btn_phanhoi
+            // 
+            this.btn_phanhoi.Caption = "Phản hồi";
+            this.btn_phanhoi.Id = 10;
+            this.btn_phanhoi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_phanhoi.ImageOptions.Image")));
+            this.btn_phanhoi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_phanhoi.ImageOptions.LargeImage")));
+            this.btn_phanhoi.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_phanhoi.ItemAppearance.Normal.Options.UseFont = true;
+            this.btn_phanhoi.Name = "btn_phanhoi";
+            this.btn_phanhoi.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btn_phanhoi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_phanhoi_ItemClick);
+            // 
             // HeThong
             // 
-            this.HeThong.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HeThong.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HeThong.Appearance.Options.UseFont = true;
             this.HeThong.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1});
@@ -139,11 +171,11 @@ namespace QL_NHAN_SU
             // 
             // btbThongTin
             // 
-            this.btbThongTin.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btbThongTin.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btbThongTin.Appearance.Options.UseFont = true;
             this.btbThongTin.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup2});
-            this.btbThongTin.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btbThongTin.ImageOptions.SvgImage")));
+            this.btbThongTin.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btbThongTin.ImageOptions.Image")));
             this.btbThongTin.Name = "btbThongTin";
             this.btbThongTin.Text = "Thông tin";
             // 
@@ -151,15 +183,17 @@ namespace QL_NHAN_SU
             // 
             this.ribbonPageGroup2.ItemLinks.Add(this.btn_thongtinnv);
             this.ribbonPageGroup2.ItemLinks.Add(this.btn_lichlamviec, true);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem1, true);
+            this.ribbonPageGroup2.ItemLinks.Add(this.btn_phanhoi, true);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 497);
-            this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 531);
+            this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1833, 30);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1629, 24);
             // 
             // ribbonPage4
             // 
@@ -168,30 +202,29 @@ namespace QL_NHAN_SU
             // 
             // lbl_nhanvien
             // 
-            this.lbl_nhanvien.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lbl_nhanvien.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
             this.lbl_nhanvien.Appearance.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nhanvien.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lbl_nhanvien.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
             this.lbl_nhanvien.Appearance.Options.UseBackColor = true;
             this.lbl_nhanvien.Appearance.Options.UseFont = true;
             this.lbl_nhanvien.Appearance.Options.UseForeColor = true;
-            this.lbl_nhanvien.Location = new System.Drawing.Point(1699, 57);
+            this.lbl_nhanvien.Location = new System.Drawing.Point(1208, 26);
             this.lbl_nhanvien.Name = "lbl_nhanvien";
-            this.lbl_nhanvien.Size = new System.Drawing.Size(96, 26);
+            this.lbl_nhanvien.Size = new System.Drawing.Size(0, 20);
             this.lbl_nhanvien.TabIndex = 8;
-            this.lbl_nhanvien.Text = "Nhân viên";
             // 
             // FormMain_NhanVien
             // 
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1833, 527);
+            this.ClientSize = new System.Drawing.Size(1629, 555);
             this.Controls.Add(this.lbl_nhanvien);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
-            this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("FormMain_NhanVien.IconOptions.LargeImage")));
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain_NhanVien";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
@@ -219,5 +252,7 @@ namespace QL_NHAN_SU
         private DevExpress.XtraBars.BarButtonItem btn_DangXuat;
         private DevExpress.XtraBars.BarButtonItem btn_lichlamviec;
         private DevExpress.XtraEditors.LabelControl lbl_nhanvien;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem btn_phanhoi;
     }
 }

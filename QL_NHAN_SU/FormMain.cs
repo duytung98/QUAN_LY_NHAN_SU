@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Businesslayer;
+using DevExpress.XtraSplashScreen;
 using QL_NHAN_SU.Report;
 
 namespace QL_NHAN_SU
@@ -68,6 +70,7 @@ namespace QL_NHAN_SU
             ribbonControl1.SelectedPage = NhanSu;
             loadSinhNhat();
             loattangLuong();
+            loadphanhoi();
         }
         void loadSinhNhat()
         {
@@ -80,6 +83,17 @@ namespace QL_NHAN_SU
             list_Lenluong.DataSource = _HDLD.getTangLuong();
             list_Lenluong.DisplayMember = "HoTen";
             list_Lenluong.ValueMember = "id_NhanVien";
+        }
+        void loadphanhoi()
+        {
+            ConnecDaTa c = new ConnecDaTa();
+            c.connect();
+            DataSet data = new DataSet();
+            string query = "select T_PhanHoi.id_NhanVien,HoTen,NoiDungPhanHoi,ThoiGianPhanHoi from T_PhanHoi,T_NhanVien where T_PhanHoi.id_NhanVien = T_NhanVien.id_NhanVien and DAY(ThoiGianPhanHoi) =DAY(GETDATE())and month(ThoiGianPhanHoi) =month(GETDATE())and year(ThoiGianPhanHoi) =year(GETDATE())";
+            SqlDataAdapter sqlData = new SqlDataAdapter(query, c.conn);
+            sqlData.Fill(data);
+            list_phanhoi.DataSource = data.Tables[0];
+            c.disconnect();
         }
 
         private void btn_trinhdo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -109,7 +123,9 @@ namespace QL_NHAN_SU
 
         private void NhanVien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            SplashScreenManager.ShowForm(typeof(F_Wartifom), true, true);
             openForm(typeof(F_Nhan_Vien));
+            SplashScreenManager.CloseForm();
         }
 
         private void HopDong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -264,6 +280,19 @@ namespace QL_NHAN_SU
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
 
+        }
+
+        private void list_phanhoi_CustomItemTemplate(object sender, DevExpress.XtraEditors.CustomItemTemplateEventArgs e)
+        {
+            
+        }
+
+        private void list_phanhoi_CustomizeItem(object sender, DevExpress.XtraEditors.CustomizeTemplatedItemEventArgs e)
+        {
+            if (e.TemplatedItem.Elements[1].Text.Substring(0, 2) == DateTime.Now.Day.ToString())
+            {
+                e.TemplatedItem.AppearanceItem.Normal.ForeColor = Color.Red;
+            }
         }
     }
 }

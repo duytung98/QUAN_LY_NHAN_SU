@@ -167,7 +167,7 @@ namespace QL_NHAN_SU
 
         private void btn_luu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (sl_HopDong.Text == "" || sp_HSLCU.Text == ""||sp_HSLMoi.Text == "" || txt_ghichu.Text == "")
+            if (sl_HopDong.Text == "" || sp_HSLCU.Text == ""||sp_HSLMoi.Text == "" )
             {
                 MessageBox.Show("Bạn chưa đủ nhập thông tin!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
             }

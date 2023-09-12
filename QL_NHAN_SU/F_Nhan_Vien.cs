@@ -15,6 +15,7 @@ using QL_NHAN_SU.Report;
 using Businesslayer.DTO;
 using DevExpress.XtraReports.UI;
 using System.Text.RegularExpressions;
+using DevExpress.XtraSplashScreen;
 
 namespace QL_NHAN_SU
 {

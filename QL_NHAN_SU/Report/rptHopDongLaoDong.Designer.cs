@@ -137,11 +137,11 @@ namespace QL_NHAN_SU.Report
             // xrLabel2
             // 
             this.xrLabel2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(50.83333F, 34.66667F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 34.66667F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.SizeF = new System.Drawing.SizeF(599.5001F, 36.66667F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(707F, 36.66667F);
             this.xrLabel2.StylePriority.UseFont = false;
             this.xrLabel2.StylePriority.UseTextAlignment = false;
             this.xrLabel2.Text = "Độc lập - Tự do - Hạnh phúc ";
@@ -150,11 +150,11 @@ namespace QL_NHAN_SU.Report
             // xrLabel1
             // 
             this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(50.83333F, 0F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(599.5001F, 34.66667F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(707F, 34.66667F);
             this.xrLabel1.StylePriority.UseFont = false;
             this.xrLabel1.StylePriority.UseTextAlignment = false;
             this.xrLabel1.Text = "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM";
@@ -168,7 +168,7 @@ namespace QL_NHAN_SU.Report
             this.Detail,
             this.ReportHeader});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(43, 100, 80, 100);
+            this.Margins = new System.Drawing.Printing.Margins(90, 52, 80, 100);
             this.Version = "19.2";
             ((System.ComponentModel.ISupportInitialize)(this.xrRichText1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();

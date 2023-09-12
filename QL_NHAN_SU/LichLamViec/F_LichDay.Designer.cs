@@ -170,6 +170,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.bar2.DockCol = 0;
             this.bar2.DockRow = 0;
             this.bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.bar2.FloatLocation = new System.Drawing.Point(250, 125);
             this.bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_them),
             new DevExpress.XtraBars.LinkPersistInfo(this.btn_sua, true),
@@ -252,7 +253,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(1611, 36);
+            this.barDockControlTop.Size = new System.Drawing.Size(1611, 28);
             // 
             // barDockControlBottom
             // 
@@ -267,25 +268,25 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 36);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 28);
             this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 488);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 496);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1611, 36);
+            this.barDockControlRight.Location = new System.Drawing.Point(1611, 28);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 488);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 496);
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 36);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 28);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -317,7 +318,7 @@ namespace QL_NHAN_SU.LichLamViec
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gv_lichday);
-            this.splitContainer1.Size = new System.Drawing.Size(1611, 488);
+            this.splitContainer1.Size = new System.Drawing.Size(1611, 496);
             this.splitContainer1.SplitterDistance = 225;
             this.splitContainer1.TabIndex = 9;
             // 
@@ -330,7 +331,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.date_ketthuc.Location = new System.Drawing.Point(241, 187);
             this.date_ketthuc.Margin = new System.Windows.Forms.Padding(1);
             this.date_ketthuc.Name = "date_ketthuc";
-            this.date_ketthuc.Size = new System.Drawing.Size(272, 30);
+            this.date_ketthuc.Size = new System.Drawing.Size(272, 26);
             this.date_ketthuc.TabIndex = 104;
             // 
             // date_BatDau
@@ -342,7 +343,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.date_BatDau.Location = new System.Drawing.Point(1330, 123);
             this.date_BatDau.Margin = new System.Windows.Forms.Padding(1);
             this.date_BatDau.Name = "date_BatDau";
-            this.date_BatDau.Size = new System.Drawing.Size(273, 30);
+            this.date_BatDau.Size = new System.Drawing.Size(273, 26);
             this.date_BatDau.TabIndex = 103;
             // 
             // sp_SoTin
@@ -361,7 +362,7 @@ namespace QL_NHAN_SU.LichLamViec
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.sp_SoTin.Properties.IsFloatValue = false;
             this.sp_SoTin.Properties.Mask.EditMask = "N00";
-            this.sp_SoTin.Size = new System.Drawing.Size(272, 28);
+            this.sp_SoTin.Size = new System.Drawing.Size(272, 26);
             this.sp_SoTin.TabIndex = 102;
             // 
             // label11
@@ -372,7 +373,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.label11.Location = new System.Drawing.Point(682, 190);
             this.label11.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 22);
+            this.label11.Size = new System.Drawing.Size(53, 19);
             this.label11.TabIndex = 101;
             this.label11.Text = "Ca dạy";
             // 
@@ -388,7 +389,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.sl_caday.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.sl_caday.Properties.PopupView = this.gridView7;
-            this.sl_caday.Size = new System.Drawing.Size(272, 28);
+            this.sl_caday.Size = new System.Drawing.Size(272, 26);
             this.sl_caday.TabIndex = 100;
             // 
             // gridView7
@@ -438,10 +439,10 @@ namespace QL_NHAN_SU.LichLamViec
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(75, 193);
+            this.label10.Location = new System.Drawing.Point(110, 193);
             this.label10.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 22);
+            this.label10.Size = new System.Drawing.Size(89, 19);
             this.label10.TabIndex = 99;
             this.label10.Text = "Thời gian KT";
             // 
@@ -450,10 +451,10 @@ namespace QL_NHAN_SU.LichLamViec
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1160, 126);
+            this.label9.Location = new System.Drawing.Point(1206, 123);
             this.label9.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(118, 22);
+            this.label9.Size = new System.Drawing.Size(89, 19);
             this.label9.TabIndex = 98;
             this.label9.Text = "Thời gian BĐ";
             // 
@@ -462,10 +463,10 @@ namespace QL_NHAN_SU.LichLamViec
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(691, 129);
+            this.label3.Location = new System.Drawing.Point(682, 129);
             this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 22);
+            this.label3.Size = new System.Drawing.Size(44, 19);
             this.label3.TabIndex = 97;
             this.label3.Text = "Số tín";
             // 
@@ -474,10 +475,10 @@ namespace QL_NHAN_SU.LichLamViec
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(101, 132);
+            this.label2.Location = new System.Drawing.Point(110, 132);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 22);
+            this.label2.Size = new System.Drawing.Size(73, 19);
             this.label2.TabIndex = 96;
             this.label2.Text = "Phòng học";
             // 
@@ -493,7 +494,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.sl_phonghoc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.sl_phonghoc.Properties.PopupView = this.gridView6;
-            this.sl_phonghoc.Size = new System.Drawing.Size(273, 28);
+            this.sl_phonghoc.Size = new System.Drawing.Size(273, 26);
             this.sl_phonghoc.TabIndex = 95;
             // 
             // gridView6
@@ -543,10 +544,10 @@ namespace QL_NHAN_SU.LichLamViec
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1199, 65);
+            this.label8.Location = new System.Drawing.Point(1206, 62);
             this.label8.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 22);
+            this.label8.Size = new System.Drawing.Size(64, 19);
             this.label8.TabIndex = 94;
             this.label8.Text = "Môn dạy";
             // 
@@ -562,7 +563,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.sl_MonDay.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.sl_MonDay.Properties.PopupView = this.gridView5;
-            this.sl_MonDay.Size = new System.Drawing.Size(272, 28);
+            this.sl_MonDay.Size = new System.Drawing.Size(272, 26);
             this.sl_MonDay.TabIndex = 93;
             this.sl_MonDay.EditValueChanged += new System.EventHandler(this.sl_MonDay_EditValueChanged);
             // 
@@ -613,10 +614,10 @@ namespace QL_NHAN_SU.LichLamViec
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(672, 62);
+            this.label6.Location = new System.Drawing.Point(682, 62);
             this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 22);
+            this.label6.Size = new System.Drawing.Size(60, 19);
             this.label6.TabIndex = 92;
             this.label6.Text = "Lớp học";
             // 
@@ -632,7 +633,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.sl_lophoc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.sl_lophoc.Properties.PopupView = this.gridView4;
-            this.sl_lophoc.Size = new System.Drawing.Size(273, 28);
+            this.sl_lophoc.Size = new System.Drawing.Size(273, 26);
             this.sl_lophoc.TabIndex = 91;
             // 
             // gridView4
@@ -682,10 +683,10 @@ namespace QL_NHAN_SU.LichLamViec
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(107, 71);
+            this.label5.Location = new System.Drawing.Point(110, 71);
             this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 22);
+            this.label5.Size = new System.Drawing.Size(69, 19);
             this.label5.TabIndex = 90;
             this.label5.Text = "Khóa học";
             // 
@@ -701,7 +702,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.sl_KhoaHoc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.sl_KhoaHoc.Properties.PopupView = this.gridView3;
-            this.sl_KhoaHoc.Size = new System.Drawing.Size(272, 28);
+            this.sl_KhoaHoc.Size = new System.Drawing.Size(272, 26);
             this.sl_KhoaHoc.TabIndex = 89;
             // 
             // gridView3
@@ -751,10 +752,10 @@ namespace QL_NHAN_SU.LichLamViec
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1226, 4);
+            this.label4.Location = new System.Drawing.Point(1206, 1);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 22);
+            this.label4.Size = new System.Drawing.Size(43, 19);
             this.label4.TabIndex = 88;
             this.label4.Text = "Khoa";
             // 
@@ -770,7 +771,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.sl_khoa.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.sl_khoa.Properties.PopupView = this.gridView2;
-            this.sl_khoa.Size = new System.Drawing.Size(273, 28);
+            this.sl_khoa.Size = new System.Drawing.Size(273, 26);
             this.sl_khoa.TabIndex = 87;
             // 
             // gridView2
@@ -820,10 +821,10 @@ namespace QL_NHAN_SU.LichLamViec
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(676, 7);
+            this.label1.Location = new System.Drawing.Point(682, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 22);
+            this.label1.Size = new System.Drawing.Size(58, 19);
             this.label1.TabIndex = 86;
             this.label1.Text = "CS Dạy";
             // 
@@ -839,7 +840,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.sl_NoiLv.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.sl_NoiLv.Properties.PopupView = this.gridView1;
-            this.sl_NoiLv.Size = new System.Drawing.Size(272, 28);
+            this.sl_NoiLv.Size = new System.Drawing.Size(272, 26);
             this.sl_NoiLv.TabIndex = 85;
             // 
             // gridView1
@@ -889,10 +890,10 @@ namespace QL_NHAN_SU.LichLamViec
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(102, 10);
+            this.label7.Location = new System.Drawing.Point(110, 10);
             this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 22);
+            this.label7.Size = new System.Drawing.Size(70, 19);
             this.label7.TabIndex = 82;
             this.label7.Text = "Nhân viên";
             // 
@@ -908,7 +909,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.sl_NhanVien.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.sl_NhanVien.Properties.PopupView = this.searchLookUpEdit1View;
-            this.sl_NhanVien.Size = new System.Drawing.Size(273, 28);
+            this.sl_NhanVien.Size = new System.Drawing.Size(273, 26);
             this.sl_NhanVien.TabIndex = 81;
             // 
             // searchLookUpEdit1View
@@ -961,7 +962,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.gv_lichday.MainView = this.gcv_lichday;
             this.gv_lichday.Margin = new System.Windows.Forms.Padding(1);
             this.gv_lichday.Name = "gv_lichday";
-            this.gv_lichday.Size = new System.Drawing.Size(1611, 259);
+            this.gv_lichday.Size = new System.Drawing.Size(1611, 267);
             this.gv_lichday.TabIndex = 2;
             this.gv_lichday.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gcv_lichday});

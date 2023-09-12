@@ -21,6 +21,7 @@ namespace QL_NHAN_SU
         {
             InitializeComponent();
 
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -63,14 +64,14 @@ namespace QL_NHAN_SU
             {
                 MessageBox.Show("Vui lòng nhập đủ thông tin đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            //else if(txt_taikhoan.Text== "Admin" && txt_matkhau.Text == "duytung98" && cb_phanquyen.Text == "Quản lý")
+            //else if(txt_taikhoan.Text== "admin" && txt_matkhau.Text == "duytung98" && cb_phanquyen.Text == "Quản lý")
             //{
             //    this.Hide();
             //    FormMain f_Main = new FormMain(txt_taikhoan.Text);
             //    f_Main.ShowDialog();
             //    f_Main = null;
             //    txt_matkhau.Text = "";
-            //    this.Show();
+            //    this.Show();s
             //}
             else if (txt_taikhoan.Text.Length > 10)
             {
@@ -121,6 +122,55 @@ namespace QL_NHAN_SU
             if(kq == DialogResult.Yes)
             {
                 this.Close();
+            }
+        }
+
+        private void btn_dangnhap_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_dangnhap_KeyDown(object sender, KeyEventArgs e)
+        {
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void F_DangNhap_Load(object sender, EventArgs e)
+        {
+            cb_phanquyen.Text = "Quản lý";
+            txt_taikhoan.Focus();
+        }
+
+        private void txt_taikhoan_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                txt_matkhau.Focus();
+            }
+        }
+
+        private void txt_matkhau_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btn_dangnhap.PerformClick();
+            }
+        }
+
+        private void cb_phanquyen_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txt_taikhoan.Focus();
             }
         }
     }
