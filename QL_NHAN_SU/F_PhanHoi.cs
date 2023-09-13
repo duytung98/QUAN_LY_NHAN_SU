@@ -47,6 +47,7 @@ namespace QL_NHAN_SU
                 string query = "insert into T_PhanHoi values('" + lblnhanvien.Text + "',N'" + txt_phanhoi.Text + "',GETDATE())";
                 bool kq = c.exeSQL(query);
                 MessageBox.Show("Gửi thành công!!", "Thông báo", MessageBoxButtons.OK);
+                txt_phanhoi.Text = "";
             }
             
             c.disconnect();
