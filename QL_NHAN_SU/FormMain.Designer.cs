@@ -31,10 +31,6 @@ namespace QL_NHAN_SU
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            DevExpress.XtraEditors.TableLayout.ItemTemplateBase itemTemplateBase3 = new DevExpress.XtraEditors.TableLayout.ItemTemplateBase();
-            DevExpress.XtraEditors.TableLayout.TableColumnDefinition tableColumnDefinition3 = new DevExpress.XtraEditors.TableLayout.TableColumnDefinition();
-            DevExpress.XtraEditors.TableLayout.TemplatedItemElement templatedItemElement7 = new DevExpress.XtraEditors.TableLayout.TemplatedItemElement();
-            DevExpress.XtraEditors.TableLayout.TemplatedItemElement templatedItemElement8 = new DevExpress.XtraEditors.TableLayout.TemplatedItemElement();
             DevExpress.XtraEditors.TableLayout.ItemTemplateBase itemTemplateBase1 = new DevExpress.XtraEditors.TableLayout.ItemTemplateBase();
             DevExpress.XtraEditors.TableLayout.TableColumnDefinition tableColumnDefinition1 = new DevExpress.XtraEditors.TableLayout.TableColumnDefinition();
             DevExpress.XtraEditors.TableLayout.TemplatedItemElement templatedItemElement1 = new DevExpress.XtraEditors.TableLayout.TemplatedItemElement();
@@ -45,6 +41,10 @@ namespace QL_NHAN_SU
             DevExpress.XtraEditors.TableLayout.TemplatedItemElement templatedItemElement4 = new DevExpress.XtraEditors.TableLayout.TemplatedItemElement();
             DevExpress.XtraEditors.TableLayout.TemplatedItemElement templatedItemElement5 = new DevExpress.XtraEditors.TableLayout.TemplatedItemElement();
             DevExpress.XtraEditors.TableLayout.TemplatedItemElement templatedItemElement6 = new DevExpress.XtraEditors.TableLayout.TemplatedItemElement();
+            DevExpress.XtraEditors.TableLayout.ItemTemplateBase itemTemplateBase3 = new DevExpress.XtraEditors.TableLayout.ItemTemplateBase();
+            DevExpress.XtraEditors.TableLayout.TableColumnDefinition tableColumnDefinition3 = new DevExpress.XtraEditors.TableLayout.TableColumnDefinition();
+            DevExpress.XtraEditors.TableLayout.TemplatedItemElement templatedItemElement7 = new DevExpress.XtraEditors.TableLayout.TemplatedItemElement();
+            DevExpress.XtraEditors.TableLayout.TemplatedItemElement templatedItemElement8 = new DevExpress.XtraEditors.TableLayout.TemplatedItemElement();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.ThongTin = new DevExpress.XtraBars.BarButtonItem();
             this.DoiMatKhau = new DevExpress.XtraBars.BarButtonItem();
@@ -80,11 +80,13 @@ namespace QL_NHAN_SU
             this.btn_KhoaHoc = new DevExpress.XtraBars.BarButtonItem();
             this.btn_BangCongchitiet = new DevExpress.XtraBars.BarButtonItem();
             this.btn_BaoHiem = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_phanhoi = new DevExpress.XtraBars.BarButtonItem();
             this.HeThong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.NhanSu = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.Chamcong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.LichLV = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -94,14 +96,14 @@ namespace QL_NHAN_SU
             this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.list_Lenluong = new DevExpress.XtraEditors.ListBoxControl();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.list_SinhNhat = new DevExpress.XtraEditors.ListBoxControl();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.list_phanhoi = new DevExpress.XtraEditors.ListBoxControl();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.list_Lenluong = new DevExpress.XtraEditors.ListBoxControl();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.galleryDropDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
@@ -109,16 +111,16 @@ namespace QL_NHAN_SU
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
             this.dockPanel1.SuspendLayout();
             this.dockPanel1_Container.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
-            this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.list_Lenluong)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.list_SinhNhat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.list_phanhoi)).BeginInit();
-            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.list_Lenluong)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -161,17 +163,18 @@ namespace QL_NHAN_SU
             this.btn_lich,
             this.btn_KhoaHoc,
             this.btn_BangCongchitiet,
-            this.btn_BaoHiem});
+            this.btn_BaoHiem,
+            this.btn_phanhoi});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(8);
-            this.ribbonControl1.MaxItemId = 34;
+            this.ribbonControl1.MaxItemId = 35;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.HeThong,
             this.NhanSu,
             this.Chamcong,
             this.LichLV});
-            this.ribbonControl1.Size = new System.Drawing.Size(1182, 177);
+            this.ribbonControl1.Size = new System.Drawing.Size(1182, 209);
             this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // ThongTin
@@ -512,10 +515,11 @@ namespace QL_NHAN_SU
             // 
             this.btn_KhoaHoc.Caption = "Khóa học";
             this.btn_KhoaHoc.Id = 31;
-            this.btn_KhoaHoc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_KhoaHoc.ImageOptions.SvgImage")));
+            this.btn_KhoaHoc.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_KhoaHoc.ImageOptions.Image")));
             this.btn_KhoaHoc.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_KhoaHoc.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_KhoaHoc.Name = "btn_KhoaHoc";
+            this.btn_KhoaHoc.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btn_KhoaHoc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_KhoaHoc_ItemClick);
             // 
             // btn_BangCongchitiet
@@ -541,6 +545,17 @@ namespace QL_NHAN_SU
             this.btn_BaoHiem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btn_BaoHiem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_BaoHiem_ItemClick);
             // 
+            // btn_phanhoi
+            // 
+            this.btn_phanhoi.Caption = "Phản hồi";
+            this.btn_phanhoi.Id = 34;
+            this.btn_phanhoi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_phanhoi.ImageOptions.Image")));
+            this.btn_phanhoi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_phanhoi.ImageOptions.LargeImage")));
+            this.btn_phanhoi.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_phanhoi.ItemAppearance.Normal.Options.UseFont = true;
+            this.btn_phanhoi.Name = "btn_phanhoi";
+            this.btn_phanhoi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_phanhoi_ItemClick);
+            // 
             // HeThong
             // 
             this.HeThong.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -565,7 +580,8 @@ namespace QL_NHAN_SU
             this.NhanSu.Appearance.Options.UseFont = true;
             this.NhanSu.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup2,
-            this.ribbonPageGroup5});
+            this.ribbonPageGroup5,
+            this.ribbonPageGroup6});
             this.NhanSu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("NhanSu.ImageOptions.Image")));
             this.NhanSu.Name = "NhanSu";
             this.NhanSu.Text = "Nhân sự";
@@ -593,6 +609,12 @@ namespace QL_NHAN_SU
             this.ribbonPageGroup5.ItemLinks.Add(this.ThoiViec, true);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "Nghiệp vụ";
+            // 
+            // ribbonPageGroup6
+            // 
+            this.ribbonPageGroup6.ItemLinks.Add(this.btn_phanhoi);
+            this.ribbonPageGroup6.Name = "ribbonPageGroup6";
+            this.ribbonPageGroup6.Text = "Phản hồi";
             // 
             // Chamcong
             // 
@@ -671,11 +693,11 @@ namespace QL_NHAN_SU
             this.dockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Right;
             this.dockPanel1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dockPanel1.ID = new System.Guid("b41fd969-ecf5-4adb-8de6-50cc344296cc");
-            this.dockPanel1.Location = new System.Drawing.Point(982, 177);
+            this.dockPanel1.Location = new System.Drawing.Point(982, 209);
             this.dockPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dockPanel1.Name = "dockPanel1";
             this.dockPanel1.OriginalSize = new System.Drawing.Size(200, 200);
-            this.dockPanel1.Size = new System.Drawing.Size(200, 560);
+            this.dockPanel1.Size = new System.Drawing.Size(200, 528);
             this.dockPanel1.Text = "Thông báo";
             // 
             // dockPanel1_Container
@@ -683,49 +705,20 @@ namespace QL_NHAN_SU
             this.dockPanel1_Container.Controls.Add(this.panel1);
             this.dockPanel1_Container.Controls.Add(this.groupControl3);
             this.dockPanel1_Container.Controls.Add(this.groupControl2);
-            this.dockPanel1_Container.Location = new System.Drawing.Point(4, 26);
+            this.dockPanel1_Container.Location = new System.Drawing.Point(6, 32);
             this.dockPanel1_Container.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(193, 531);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(190, 492);
             this.dockPanel1_Container.TabIndex = 0;
             // 
-            // groupControl2
+            // panel1
             // 
-            this.groupControl2.Controls.Add(this.list_Lenluong);
-            this.groupControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl2.Location = new System.Drawing.Point(0, 398);
-            this.groupControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(193, 133);
-            this.groupControl2.TabIndex = 1;
-            this.groupControl2.Text = "Lên lương";
-            // 
-            // list_Lenluong
-            // 
-            this.list_Lenluong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.list_Lenluong.ItemHeight = 73;
-            this.list_Lenluong.Location = new System.Drawing.Point(2, 23);
-            this.list_Lenluong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.list_Lenluong.Name = "list_Lenluong";
-            this.list_Lenluong.Size = new System.Drawing.Size(189, 108);
-            this.list_Lenluong.TabIndex = 0;
-            itemTemplateBase3.Columns.Add(tableColumnDefinition3);
-            templatedItemElement7.FieldName = "HoTen";
-            templatedItemElement7.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            templatedItemElement7.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            templatedItemElement7.Text = "HoTen";
-            templatedItemElement7.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
-            templatedItemElement8.AnchorElementIndex = 0;
-            templatedItemElement8.FieldName = "NgayBatDau";
-            templatedItemElement8.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            templatedItemElement8.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            templatedItemElement8.Text = "NgayBatDau";
-            templatedItemElement8.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
-            itemTemplateBase3.Elements.Add(templatedItemElement7);
-            itemTemplateBase3.Elements.Add(templatedItemElement8);
-            itemTemplateBase3.Name = "LenLuong_nv";
-            this.list_Lenluong.Templates.Add(itemTemplateBase3);
-            this.list_Lenluong.CustomizeItem += new DevExpress.XtraEditors.CustomizeTemplatedItemEventHandler(this.list_Lenluong_CustomizeItem);
+            this.panel1.Controls.Add(this.groupControl1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 303);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(190, 56);
+            this.panel1.TabIndex = 7;
             // 
             // groupControl1
             // 
@@ -734,7 +727,7 @@ namespace QL_NHAN_SU
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(193, 95);
+            this.groupControl1.Size = new System.Drawing.Size(190, 56);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Sinh nhật";
             // 
@@ -742,10 +735,10 @@ namespace QL_NHAN_SU
             // 
             this.list_SinhNhat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.list_SinhNhat.ItemHeight = 68;
-            this.list_SinhNhat.Location = new System.Drawing.Point(2, 23);
+            this.list_SinhNhat.Location = new System.Drawing.Point(2, 28);
             this.list_SinhNhat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.list_SinhNhat.Name = "list_SinhNhat";
-            this.list_SinhNhat.Size = new System.Drawing.Size(189, 70);
+            this.list_SinhNhat.Size = new System.Drawing.Size(186, 26);
             this.list_SinhNhat.TabIndex = 0;
             itemTemplateBase1.Columns.Add(tableColumnDefinition1);
             templatedItemElement1.FieldName = "HoTen";
@@ -766,17 +759,6 @@ namespace QL_NHAN_SU
             this.list_SinhNhat.SelectedIndexChanged += new System.EventHandler(this.list_SinhNhat_SelectedIndexChanged);
             this.list_SinhNhat.CustomizeItem += new DevExpress.XtraEditors.CustomizeTemplatedItemEventHandler(this.list_SinhNhat_CustomizeItem);
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Gainsboro;
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(1170, 251);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 23);
-            this.label1.TabIndex = 3;
-            // 
             // groupControl3
             // 
             this.groupControl3.Controls.Add(this.list_phanhoi);
@@ -784,7 +766,7 @@ namespace QL_NHAN_SU
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
             this.groupControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(193, 303);
+            this.groupControl3.Size = new System.Drawing.Size(190, 303);
             this.groupControl3.TabIndex = 6;
             this.groupControl3.Text = "Phản hồi";
             // 
@@ -792,10 +774,10 @@ namespace QL_NHAN_SU
             // 
             this.list_phanhoi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.list_phanhoi.ItemHeight = 76;
-            this.list_phanhoi.Location = new System.Drawing.Point(2, 23);
+            this.list_phanhoi.Location = new System.Drawing.Point(2, 28);
             this.list_phanhoi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.list_phanhoi.Name = "list_phanhoi";
-            this.list_phanhoi.Size = new System.Drawing.Size(189, 278);
+            this.list_phanhoi.Size = new System.Drawing.Size(186, 273);
             this.list_phanhoi.TabIndex = 0;
             itemTemplateBase2.Columns.Add(tableColumnDefinition2);
             templatedItemElement3.FieldName = "id_NhanVien";
@@ -829,20 +811,61 @@ namespace QL_NHAN_SU
             this.list_phanhoi.CustomItemTemplate += new DevExpress.XtraEditors.CustomItemTemplateEventHandler(this.list_phanhoi_CustomItemTemplate);
             this.list_phanhoi.CustomizeItem += new DevExpress.XtraEditors.CustomizeTemplatedItemEventHandler(this.list_phanhoi_CustomizeItem);
             // 
-            // panel1
+            // groupControl2
             // 
-            this.panel1.Controls.Add(this.groupControl1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 303);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(193, 95);
-            this.panel1.TabIndex = 7;
+            this.groupControl2.Controls.Add(this.list_Lenluong);
+            this.groupControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupControl2.Location = new System.Drawing.Point(0, 359);
+            this.groupControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Size = new System.Drawing.Size(190, 133);
+            this.groupControl2.TabIndex = 1;
+            this.groupControl2.Text = "Lên lương";
+            // 
+            // list_Lenluong
+            // 
+            this.list_Lenluong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.list_Lenluong.ItemHeight = 73;
+            this.list_Lenluong.Location = new System.Drawing.Point(2, 28);
+            this.list_Lenluong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.list_Lenluong.Name = "list_Lenluong";
+            this.list_Lenluong.Size = new System.Drawing.Size(186, 103);
+            this.list_Lenluong.TabIndex = 0;
+            itemTemplateBase3.Columns.Add(tableColumnDefinition3);
+            templatedItemElement7.FieldName = "HoTen";
+            templatedItemElement7.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            templatedItemElement7.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            templatedItemElement7.Text = "HoTen";
+            templatedItemElement7.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
+            templatedItemElement8.AnchorElementIndex = 0;
+            templatedItemElement8.FieldName = "NgayBatDau";
+            templatedItemElement8.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            templatedItemElement8.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            templatedItemElement8.Text = "NgayBatDau";
+            templatedItemElement8.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
+            itemTemplateBase3.Elements.Add(templatedItemElement7);
+            itemTemplateBase3.Elements.Add(templatedItemElement8);
+            itemTemplateBase3.Name = "LenLuong_nv";
+            this.list_Lenluong.Templates.Add(itemTemplateBase3);
+            this.list_Lenluong.CustomizeItem += new DevExpress.XtraEditors.CustomizeTemplatedItemEventHandler(this.list_Lenluong_CustomizeItem);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 1.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(109)))), ((int)(((byte)(156)))));
+            this.label1.Location = new System.Drawing.Point(1025, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 4);
+            this.label1.TabIndex = 3;
             // 
             // FormMain
             // 
             this.ActiveGlowColor = System.Drawing.Color.White;
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 737);
             this.Controls.Add(this.label1);
@@ -867,16 +890,16 @@ namespace QL_NHAN_SU
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
             this.dockPanel1.ResumeLayout(false);
             this.dockPanel1_Container.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
-            this.groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.list_Lenluong)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.list_SinhNhat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.list_phanhoi)).EndInit();
-            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.list_Lenluong)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -941,6 +964,8 @@ namespace QL_NHAN_SU
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraEditors.ListBoxControl list_phanhoi;
+        private DevExpress.XtraBars.BarButtonItem btn_phanhoi;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
     }
 }
 

@@ -235,6 +235,12 @@
     <Compile Include="F_PhanHoi.Designer.cs">
       <DependentUpon>F_PhanHoi.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_PhanHoiQuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_PhanHoiQuanLy.Designer.cs">
+      <DependentUpon>F_PhanHoiQuanLy.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_PhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -309,6 +315,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QUAN_LY_NHAN_SUDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUAN_LY_NHAN_SUDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Report\F_bangcongnhanvienchitiet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -456,6 +467,9 @@
     <EmbeddedResource Include="F_PhanHoi.resx">
       <DependentUpon>F_PhanHoi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F_PhanHoiQuanLy.resx">
+      <DependentUpon>F_PhanHoiQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_PhongBan.resx">
       <DependentUpon>F_PhongBan.cs</DependentUpon>
     </EmbeddedResource>
@@ -562,6 +576,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="QUAN_LY_NHAN_SUDataSet.xsc">
+      <DependentUpon>QUAN_LY_NHAN_SUDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QUAN_LY_NHAN_SUDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUAN_LY_NHAN_SUDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUAN_LY_NHAN_SUDataSet.xss">
+      <DependentUpon>QUAN_LY_NHAN_SUDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\header-logo-hpc-9-3.png" />
   </ItemGroup>
   <ItemGroup>

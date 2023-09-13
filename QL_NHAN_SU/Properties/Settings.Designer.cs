@@ -22,5 +22,16 @@ namespace QL_NHAN_SU.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=acer;Initial Catalog=QUAN_LY_NHAN_SU;Persist Security Info=True;User " +
+            "ID=nguyenduytung;Password=18041998")]
+        public string QUAN_LY_NHAN_SUConnectionString {
+            get {
+                return ((string)(this["QUAN_LY_NHAN_SUConnectionString"]));
+            }
+        }
     }
 }

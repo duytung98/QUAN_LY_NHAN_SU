@@ -294,5 +294,11 @@ namespace QL_NHAN_SU
                 e.TemplatedItem.AppearanceItem.Normal.ForeColor = Color.Red;
             }
         }
+
+        private void btn_phanhoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            F_PhanHoiQuanLy f_PhanHoiQuanLy = new F_PhanHoiQuanLy(label1.Text);
+            f_PhanHoiQuanLy.ShowDialog();
+        }
     }
 }

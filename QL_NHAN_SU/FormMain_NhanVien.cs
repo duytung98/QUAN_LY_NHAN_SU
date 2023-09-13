@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -65,6 +66,18 @@ namespace QL_NHAN_SU
         private void FormMain_NhanVien_Load(object sender, EventArgs e)
         {
             ribbon.SelectedPage = btbThongTin;
+            loadphanhoi();
+        }
+        void loadphanhoi()
+        {
+            ConnecDaTa c = new ConnecDaTa();
+            c.connect();
+            DataSet data = new DataSet();
+            string query = "select T_PhanhoiQL1.id_NhanVien,HoTen,NoiDung,ThoiGianGui  from T_PhanhoiQL1,T_NhanVien  where T_PhanhoiQL1.id_NhanVien = T_NhanVien.id_NhanVien and id_Nguoinhan = '"+lbl_nhanvien.Text+"' and DAY(ThoiGianGui) =DAY(GETDATE())and month(ThoiGianGui) =month(GETDATE())and year(ThoiGianGui) =year(GETDATE())";
+            SqlDataAdapter sqlData = new SqlDataAdapter(query, c.conn);
+            sqlData.Fill(data);
+            list_phanhoi.DataSource = data.Tables[0];
+            c.disconnect();
         }
 
         private void txt_manv_TextChanged(object sender, EventArgs e)
@@ -98,6 +111,14 @@ namespace QL_NHAN_SU
         {
             F_PhanHoi f_PhanHoi = new F_PhanHoi(lbl_nhanvien.Text);
             f_PhanHoi.ShowDialog();
+        }
+
+        private void list_phanhoi_CustomizeItem(object sender, DevExpress.XtraEditors.CustomizeTemplatedItemEventArgs e)
+        {
+            if (e.TemplatedItem.Elements[1].Text.Substring(0, 2) == DateTime.Now.Day.ToString())
+            {
+                e.TemplatedItem.AppearanceItem.Normal.ForeColor = Color.Red;
+            }
         }
     }
 }
