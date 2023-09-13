@@ -31,12 +31,12 @@ namespace QL_NHAN_SU
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_PhanHoi));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblnhanvien = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txt_phanhoi = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.lblnhanvien = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -53,6 +53,15 @@ namespace QL_NHAN_SU
             this.panel1.Size = new System.Drawing.Size(628, 50);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // lblnhanvien
+            // 
+            this.lblnhanvien.AutoSize = true;
+            this.lblnhanvien.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblnhanvien.Location = new System.Drawing.Point(556, 21);
+            this.lblnhanvien.Name = "lblnhanvien";
+            this.lblnhanvien.Size = new System.Drawing.Size(0, 13);
+            this.lblnhanvien.TabIndex = 1;
             // 
             // label1
             // 
@@ -75,6 +84,22 @@ namespace QL_NHAN_SU
             this.panel2.Size = new System.Drawing.Size(628, 57);
             this.panel2.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.ForestGreen;
+            this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::QL_NHAN_SU.Properties.Resources.paper_plane1;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(476, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 39);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Gửi";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.txt_phanhoi);
@@ -92,32 +117,8 @@ namespace QL_NHAN_SU
             this.txt_phanhoi.Name = "txt_phanhoi";
             this.txt_phanhoi.Size = new System.Drawing.Size(628, 167);
             this.txt_phanhoi.TabIndex = 1;
+            this.txt_phanhoi.Tag = "";
             this.txt_phanhoi.Text = "";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.ForestGreen;
-            this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::QL_NHAN_SU.Properties.Resources.paper_plane1;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(476, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 39);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Gửi";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // lblnhanvien
-            // 
-            this.lblnhanvien.AutoSize = true;
-            this.lblnhanvien.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.lblnhanvien.Location = new System.Drawing.Point(556, 21);
-            this.lblnhanvien.Name = "lblnhanvien";
-            this.lblnhanvien.Size = new System.Drawing.Size(0, 13);
-            this.lblnhanvien.TabIndex = 1;
             // 
             // F_PhanHoi
             // 
