@@ -715,9 +715,9 @@ namespace QL_NHAN_SU
             // 
             this.panel1.Controls.Add(this.groupControl1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 303);
+            this.panel1.Location = new System.Drawing.Point(0, 295);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(190, 56);
+            this.panel1.Size = new System.Drawing.Size(190, 64);
             this.panel1.TabIndex = 7;
             // 
             // groupControl1
@@ -727,7 +727,7 @@ namespace QL_NHAN_SU
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(190, 56);
+            this.groupControl1.Size = new System.Drawing.Size(190, 64);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Sinh nhật";
             // 
@@ -738,7 +738,7 @@ namespace QL_NHAN_SU
             this.list_SinhNhat.Location = new System.Drawing.Point(2, 28);
             this.list_SinhNhat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.list_SinhNhat.Name = "list_SinhNhat";
-            this.list_SinhNhat.Size = new System.Drawing.Size(186, 26);
+            this.list_SinhNhat.Size = new System.Drawing.Size(186, 34);
             this.list_SinhNhat.TabIndex = 0;
             itemTemplateBase1.Columns.Add(tableColumnDefinition1);
             templatedItemElement1.FieldName = "HoTen";
@@ -766,7 +766,7 @@ namespace QL_NHAN_SU
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
             this.groupControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(190, 303);
+            this.groupControl3.Size = new System.Drawing.Size(190, 295);
             this.groupControl3.TabIndex = 6;
             this.groupControl3.Text = "Phản hồi";
             // 
@@ -777,7 +777,7 @@ namespace QL_NHAN_SU
             this.list_phanhoi.Location = new System.Drawing.Point(2, 28);
             this.list_phanhoi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.list_phanhoi.Name = "list_phanhoi";
-            this.list_phanhoi.Size = new System.Drawing.Size(186, 273);
+            this.list_phanhoi.Size = new System.Drawing.Size(186, 265);
             this.list_phanhoi.TabIndex = 0;
             itemTemplateBase2.Columns.Add(tableColumnDefinition2);
             templatedItemElement3.FieldName = "id_NhanVien";
@@ -791,6 +791,8 @@ namespace QL_NHAN_SU
             templatedItemElement4.Text = "HoTen";
             templatedItemElement4.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopRight;
             templatedItemElement5.AnchorElementIndex = 0;
+            templatedItemElement5.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            templatedItemElement5.Appearance.Normal.Options.UseFont = true;
             templatedItemElement5.FieldName = "NoiDungPhanHoi";
             templatedItemElement5.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
             templatedItemElement5.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
