@@ -791,7 +791,7 @@ namespace QL_NHAN_SU
             templatedItemElement4.Text = "HoTen";
             templatedItemElement4.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopRight;
             templatedItemElement5.AnchorElementIndex = 0;
-            templatedItemElement5.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            templatedItemElement5.Appearance.Normal.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             templatedItemElement5.Appearance.Normal.Options.UseFont = true;
             templatedItemElement5.FieldName = "NoiDungPhanHoi";
             templatedItemElement5.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
@@ -810,6 +810,7 @@ namespace QL_NHAN_SU
             itemTemplateBase2.Elements.Add(templatedItemElement6);
             itemTemplateBase2.Name = "SinhNhatnv";
             this.list_phanhoi.Templates.Add(itemTemplateBase2);
+            this.list_phanhoi.SelectedIndexChanged += new System.EventHandler(this.list_phanhoi_SelectedIndexChanged);
             this.list_phanhoi.CustomItemTemplate += new DevExpress.XtraEditors.CustomItemTemplateEventHandler(this.list_phanhoi_CustomItemTemplate);
             this.list_phanhoi.CustomizeItem += new DevExpress.XtraEditors.CustomizeTemplatedItemEventHandler(this.list_phanhoi_CustomizeItem);
             // 

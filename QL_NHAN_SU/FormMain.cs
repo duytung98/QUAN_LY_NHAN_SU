@@ -300,5 +300,10 @@ namespace QL_NHAN_SU
             F_PhanHoiQuanLy f_PhanHoiQuanLy = new F_PhanHoiQuanLy(label1.Text);
             f_PhanHoiQuanLy.ShowDialog();
         }
+
+        private void list_phanhoi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
