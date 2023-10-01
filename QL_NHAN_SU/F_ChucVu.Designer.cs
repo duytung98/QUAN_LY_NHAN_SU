@@ -82,9 +82,9 @@ namespace QL_NHAN_SU
             // 
             // bar2
             // 
-            this.bar2.BarAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bar2.BarAppearance.Hovered.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Hovered.Options.UseFont = true;
-            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Normal.Options.UseFont = true;
             this.bar2.BarName = "Main menu";
             this.bar2.DockCol = 0;
@@ -133,6 +133,10 @@ namespace QL_NHAN_SU
             this.btn_luu.Caption = "Lưu";
             this.btn_luu.Id = 3;
             this.btn_luu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_luu.ImageOptions.SvgImage")));
+            this.btn_luu.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_luu.ItemAppearance.Normal.Options.UseFont = true;
+            this.btn_luu.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_luu.ItemInMenuAppearance.Normal.Options.UseFont = true;
             this.btn_luu.Name = "btn_luu";
             this.btn_luu.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btn_luu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_luu_ItemClick);
@@ -161,35 +165,35 @@ namespace QL_NHAN_SU
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(960, 28);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.barDockControlTop.Size = new System.Drawing.Size(864, 29);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 463);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 532);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(960, 0);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.barDockControlBottom.Size = new System.Drawing.Size(864, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 28);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 29);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 435);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 503);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(960, 28);
+            this.barDockControlRight.Location = new System.Drawing.Point(864, 29);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 435);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 503);
             // 
             // btn_in
             // 
@@ -203,7 +207,7 @@ namespace QL_NHAN_SU
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 28);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 29);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -215,42 +219,43 @@ namespace QL_NHAN_SU
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gc_chucvu);
-            this.splitContainer1.Size = new System.Drawing.Size(960, 435);
-            this.splitContainer1.SplitterDistance = 59;
+            this.splitContainer1.Size = new System.Drawing.Size(864, 503);
+            this.splitContainer1.SplitterDistance = 68;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 4;
             // 
             // txt_chucvu
             // 
             this.txt_chucvu.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_chucvu.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_chucvu.Location = new System.Drawing.Point(118, 21);
-            this.txt_chucvu.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.txt_chucvu.Location = new System.Drawing.Point(92, 29);
+            this.txt_chucvu.Margin = new System.Windows.Forms.Padding(0);
             this.txt_chucvu.Name = "txt_chucvu";
-            this.txt_chucvu.Size = new System.Drawing.Size(221, 29);
+            this.txt_chucvu.Size = new System.Drawing.Size(183, 29);
             this.txt_chucvu.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 24);
-            this.label1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(9, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 21);
+            this.label1.Size = new System.Drawing.Size(81, 22);
             this.label1.TabIndex = 4;
             this.label1.Text = "Chức vụ";
             // 
             // gc_chucvu
             // 
             this.gc_chucvu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gc_chucvu.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.gc_chucvu.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gc_chucvu.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(0);
+            this.gc_chucvu.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gc_chucvu.Location = new System.Drawing.Point(0, 0);
             this.gc_chucvu.MainView = this.gcv_chucvu;
-            this.gc_chucvu.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.gc_chucvu.Margin = new System.Windows.Forms.Padding(0);
             this.gc_chucvu.Name = "gc_chucvu";
-            this.gc_chucvu.Size = new System.Drawing.Size(960, 372);
+            this.gc_chucvu.Size = new System.Drawing.Size(864, 430);
             this.gc_chucvu.TabIndex = 3;
             this.gc_chucvu.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gcv_chucvu});
@@ -264,8 +269,8 @@ namespace QL_NHAN_SU
             this.gcv_chucvu.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.id_ChucVu,
             this.Ten_ChucVu});
-            this.gcv_chucvu.CustomizationFormBounds = new System.Drawing.Rectangle(678, 477, 314, 325);
-            this.gcv_chucvu.DetailHeight = 414;
+            this.gcv_chucvu.CustomizationFormBounds = new System.Drawing.Rectangle(678, 103, 283, 374);
+            this.gcv_chucvu.DetailHeight = 476;
             this.gcv_chucvu.GridControl = this.gc_chucvu;
             this.gcv_chucvu.Name = "gcv_chucvu";
             this.gcv_chucvu.OptionsPrint.EnableAppearanceEvenRow = true;
@@ -277,45 +282,45 @@ namespace QL_NHAN_SU
             // 
             this.id_ChucVu.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_ChucVu.AppearanceCell.Options.UseFont = true;
-            this.id_ChucVu.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_ChucVu.AppearanceHeader.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_ChucVu.AppearanceHeader.Options.UseFont = true;
             this.id_ChucVu.Caption = "ID Chức vụ";
             this.id_ChucVu.FieldName = "id_ChucVu";
-            this.id_ChucVu.MaxWidth = 236;
-            this.id_ChucVu.MinWidth = 59;
+            this.id_ChucVu.MaxWidth = 212;
+            this.id_ChucVu.MinWidth = 53;
             this.id_ChucVu.Name = "id_ChucVu";
             this.id_ChucVu.Visible = true;
             this.id_ChucVu.VisibleIndex = 0;
-            this.id_ChucVu.Width = 236;
+            this.id_ChucVu.Width = 212;
             // 
             // Ten_ChucVu
             // 
             this.Ten_ChucVu.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ten_ChucVu.AppearanceCell.Options.UseFont = true;
-            this.Ten_ChucVu.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ten_ChucVu.AppearanceHeader.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ten_ChucVu.AppearanceHeader.Options.UseFont = true;
             this.Ten_ChucVu.Caption = "Tên Chức vụ";
             this.Ten_ChucVu.FieldName = "Ten_ChucVu";
-            this.Ten_ChucVu.MaxWidth = 236;
-            this.Ten_ChucVu.MinWidth = 118;
+            this.Ten_ChucVu.MaxWidth = 212;
+            this.Ten_ChucVu.MinWidth = 106;
             this.Ten_ChucVu.Name = "Ten_ChucVu";
             this.Ten_ChucVu.Visible = true;
             this.Ten_ChucVu.VisibleIndex = 1;
-            this.Ten_ChucVu.Width = 118;
+            this.Ten_ChucVu.Width = 106;
             // 
             // F_ChucVu
             // 
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 463);
+            this.ClientSize = new System.Drawing.Size(864, 532);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "F_ChucVu";
             this.Text = "Chức vụ";
             this.Load += new System.EventHandler(this.F_ChucVu_Load);

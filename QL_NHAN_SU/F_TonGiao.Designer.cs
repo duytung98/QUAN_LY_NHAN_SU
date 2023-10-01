@@ -69,11 +69,11 @@ namespace QL_NHAN_SU
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 38);
+            this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(10, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 21);
+            this.label1.Size = new System.Drawing.Size(146, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên tôn giáo";
             // 
@@ -92,7 +92,7 @@ namespace QL_NHAN_SU
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 28);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 36);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -108,19 +108,19 @@ namespace QL_NHAN_SU
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gridSplitContainer1);
-            this.splitContainer1.Size = new System.Drawing.Size(931, 600);
-            this.splitContainer1.SplitterDistance = 76;
+            this.splitContainer1.Size = new System.Drawing.Size(931, 592);
+            this.splitContainer1.SplitterDistance = 74;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 4;
             // 
             // txt_tongiao
             // 
             this.txt_tongiao.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_tongiao.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tongiao.Location = new System.Drawing.Point(115, 34);
+            this.txt_tongiao.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tongiao.Location = new System.Drawing.Point(158, 27);
             this.txt_tongiao.Margin = new System.Windows.Forms.Padding(1);
             this.txt_tongiao.Name = "txt_tongiao";
-            this.txt_tongiao.Size = new System.Drawing.Size(209, 29);
+            this.txt_tongiao.Size = new System.Drawing.Size(205, 34);
             this.txt_tongiao.TabIndex = 1;
             this.txt_tongiao.TextChanged += new System.EventHandler(this.txt_tongiao_TextChanged);
             // 
@@ -132,7 +132,7 @@ namespace QL_NHAN_SU
             this.gridSplitContainer1.Margin = new System.Windows.Forms.Padding(1);
             this.gridSplitContainer1.Name = "gridSplitContainer1";
             this.gridSplitContainer1.Panel1.Controls.Add(this.gc_tongiao);
-            this.gridSplitContainer1.Size = new System.Drawing.Size(931, 519);
+            this.gridSplitContainer1.Size = new System.Drawing.Size(931, 513);
             this.gridSplitContainer1.TabIndex = 0;
             // 
             // gc_tongiao
@@ -144,7 +144,7 @@ namespace QL_NHAN_SU
             this.gc_tongiao.MainView = this.gcv_tongiao;
             this.gc_tongiao.Margin = new System.Windows.Forms.Padding(1);
             this.gc_tongiao.Name = "gc_tongiao";
-            this.gc_tongiao.Size = new System.Drawing.Size(931, 519);
+            this.gc_tongiao.Size = new System.Drawing.Size(931, 513);
             this.gc_tongiao.TabIndex = 0;
             this.gc_tongiao.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gcv_tongiao});
@@ -171,7 +171,7 @@ namespace QL_NHAN_SU
             // 
             this.id_TonGiao.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_TonGiao.AppearanceCell.Options.UseFont = true;
-            this.id_TonGiao.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_TonGiao.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_TonGiao.AppearanceHeader.Options.UseFont = true;
             this.id_TonGiao.Caption = "ID tôn giáo";
             this.id_TonGiao.FieldName = "id_TonGiao";
@@ -186,7 +186,7 @@ namespace QL_NHAN_SU
             // 
             this.TonGiao.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TonGiao.AppearanceCell.Options.UseFont = true;
-            this.TonGiao.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TonGiao.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TonGiao.AppearanceHeader.Options.UseFont = true;
             this.TonGiao.Caption = "Tên tôn giáo";
             this.TonGiao.FieldName = "TonGiao";
@@ -223,7 +223,7 @@ namespace QL_NHAN_SU
             // 
             this.bar2.BarAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Hovered.Options.UseFont = true;
-            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Normal.Options.UseFont = true;
             this.bar2.BarName = "Main menu";
             this.bar2.DockCol = 0;
@@ -313,7 +313,7 @@ namespace QL_NHAN_SU
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(931, 28);
+            this.barDockControlTop.Size = new System.Drawing.Size(931, 36);
             // 
             // barDockControlBottom
             // 
@@ -328,19 +328,19 @@ namespace QL_NHAN_SU
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 28);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 36);
             this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 600);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 592);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(931, 28);
+            this.barDockControlRight.Location = new System.Drawing.Point(931, 36);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 600);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 592);
             // 
             // btn_in
             // 
@@ -353,7 +353,7 @@ namespace QL_NHAN_SU
             // F_TonGiao
             // 
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 648);
             this.Controls.Add(this.splitContainer1);

@@ -84,7 +84,7 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             this.bar2.BarAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Hovered.Options.UseFont = true;
-            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Normal.Options.UseFont = true;
             this.bar2.BarName = "Main menu";
             this.bar2.DockCol = 0;
@@ -221,7 +221,7 @@ namespace QL_NHAN_SU.LichLamViec
             // txt_PhongHoc
             // 
             this.txt_PhongHoc.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_PhongHoc.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_PhongHoc.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_PhongHoc.Location = new System.Drawing.Point(221, 27);
             this.txt_PhongHoc.Margin = new System.Windows.Forms.Padding(1);
             this.txt_PhongHoc.Name = "txt_PhongHoc";
@@ -232,11 +232,11 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(77, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 27);
+            this.label1.Size = new System.Drawing.Size(129, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "Phòng học";
             // 
@@ -274,9 +274,9 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             // id_PhongHoc
             // 
-            this.id_PhongHoc.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_PhongHoc.AppearanceCell.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_PhongHoc.AppearanceCell.Options.UseFont = true;
-            this.id_PhongHoc.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_PhongHoc.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_PhongHoc.AppearanceHeader.Options.UseFont = true;
             this.id_PhongHoc.Caption = "ID Phòng học";
             this.id_PhongHoc.FieldName = "id_PhongHoc";
@@ -289,9 +289,9 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             // Ten_PhongHoc
             // 
-            this.Ten_PhongHoc.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ten_PhongHoc.AppearanceCell.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ten_PhongHoc.AppearanceCell.Options.UseFont = true;
-            this.Ten_PhongHoc.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ten_PhongHoc.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ten_PhongHoc.AppearanceHeader.Options.UseFont = true;
             this.Ten_PhongHoc.Caption = "Tên phòng học";
             this.Ten_PhongHoc.FieldName = "Ten_PhongHoc";

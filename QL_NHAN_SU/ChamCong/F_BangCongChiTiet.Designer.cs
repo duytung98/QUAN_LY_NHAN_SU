@@ -173,7 +173,7 @@ namespace QL_NHAN_SU.ChamCong
             // 
             this.bar2.BarAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Hovered.Options.UseFont = true;
-            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Normal.Options.UseFont = true;
             this.bar2.BarName = "Main menu";
             this.bar2.DockCol = 0;
@@ -328,10 +328,10 @@ namespace QL_NHAN_SU.ChamCong
             // cb_trangthai
             // 
             this.cb_trangthai.AutoSize = true;
-            this.cb_trangthai.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_trangthai.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_trangthai.Location = new System.Drawing.Point(685, 36);
             this.cb_trangthai.Name = "cb_trangthai";
-            this.cb_trangthai.Size = new System.Drawing.Size(111, 26);
+            this.cb_trangthai.Size = new System.Drawing.Size(119, 27);
             this.cb_trangthai.TabIndex = 9;
             this.cb_trangthai.Text = "Trạng thái";
             this.cb_trangthai.UseVisualStyleBackColor = true;
@@ -339,17 +339,17 @@ namespace QL_NHAN_SU.ChamCong
             // cb_Khoa
             // 
             this.cb_Khoa.AutoSize = true;
-            this.cb_Khoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Khoa.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_Khoa.Location = new System.Drawing.Point(854, 38);
             this.cb_Khoa.Name = "cb_Khoa";
-            this.cb_Khoa.Size = new System.Drawing.Size(74, 26);
+            this.cb_Khoa.Size = new System.Drawing.Size(77, 27);
             this.cb_Khoa.TabIndex = 8;
             this.cb_Khoa.Text = "Khóa";
             this.cb_Khoa.UseVisualStyleBackColor = true;
             // 
             // cb_Thang
             // 
-            this.cb_Thang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Thang.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_Thang.FormattingEnabled = true;
             this.cb_Thang.Items.AddRange(new object[] {
             "1",
@@ -366,12 +366,12 @@ namespace QL_NHAN_SU.ChamCong
             "12"});
             this.cb_Thang.Location = new System.Drawing.Point(493, 34);
             this.cb_Thang.Name = "cb_Thang";
-            this.cb_Thang.Size = new System.Drawing.Size(121, 30);
+            this.cb_Thang.Size = new System.Drawing.Size(121, 31);
             this.cb_Thang.TabIndex = 7;
             // 
             // cb_Nam
             // 
-            this.cb_Nam.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Nam.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_Nam.FormattingEnabled = true;
             this.cb_Nam.Items.AddRange(new object[] {
             "2023",
@@ -387,18 +387,18 @@ namespace QL_NHAN_SU.ChamCong
             "2033"});
             this.cb_Nam.Location = new System.Drawing.Point(224, 36);
             this.cb_Nam.Name = "cb_Nam";
-            this.cb_Nam.Size = new System.Drawing.Size(121, 30);
+            this.cb_Nam.Size = new System.Drawing.Size(121, 31);
             this.cb_Nam.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(406, 37);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 22);
+            this.label2.Size = new System.Drawing.Size(64, 23);
             this.label2.TabIndex = 4;
             this.label2.Text = "Tháng";
             // 
@@ -406,11 +406,11 @@ namespace QL_NHAN_SU.ChamCong
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(155, 39);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 22);
+            this.label1.Size = new System.Drawing.Size(50, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "Năm";
             // 

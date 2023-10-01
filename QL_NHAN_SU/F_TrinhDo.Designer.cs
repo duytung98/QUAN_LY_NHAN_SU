@@ -88,7 +88,7 @@ namespace QL_NHAN_SU
             // 
             this.bar2.BarAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Hovered.Options.UseFont = true;
-            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Normal.Options.UseFont = true;
             this.bar2.BarName = "Main menu";
             this.bar2.DockCol = 0;
@@ -226,8 +226,8 @@ namespace QL_NHAN_SU
             // txt_trinhdo
             // 
             this.txt_trinhdo.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_trinhdo.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_trinhdo.Location = new System.Drawing.Point(229, 10);
+            this.txt_trinhdo.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_trinhdo.Location = new System.Drawing.Point(160, 10);
             this.txt_trinhdo.Margin = new System.Windows.Forms.Padding(1);
             this.txt_trinhdo.Name = "txt_trinhdo";
             this.txt_trinhdo.Size = new System.Drawing.Size(253, 34);
@@ -237,11 +237,11 @@ namespace QL_NHAN_SU
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(103, 13);
+            this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(37, 13);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 27);
+            this.label1.Size = new System.Drawing.Size(100, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "Trình độ";
             // 
@@ -279,9 +279,9 @@ namespace QL_NHAN_SU
             // 
             // id_TrinhDo
             // 
-            this.id_TrinhDo.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_TrinhDo.AppearanceCell.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_TrinhDo.AppearanceCell.Options.UseFont = true;
-            this.id_TrinhDo.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_TrinhDo.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_TrinhDo.AppearanceHeader.Options.UseFont = true;
             this.id_TrinhDo.Caption = "ID trình độ";
             this.id_TrinhDo.FieldName = "id_TrinhDo";
@@ -296,7 +296,7 @@ namespace QL_NHAN_SU
             // 
             this.Ten_TrinhDo.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ten_TrinhDo.AppearanceCell.Options.UseFont = true;
-            this.Ten_TrinhDo.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ten_TrinhDo.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ten_TrinhDo.AppearanceHeader.Options.UseFont = true;
             this.Ten_TrinhDo.Caption = "Tên trình độ";
             this.Ten_TrinhDo.FieldName = "Ten_TrinhDo";

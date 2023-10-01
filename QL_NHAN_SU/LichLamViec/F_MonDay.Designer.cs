@@ -84,7 +84,7 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             this.bar2.BarAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Hovered.Options.UseFont = true;
-            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Normal.Options.UseFont = true;
             this.bar2.BarName = "Main menu";
             this.bar2.DockCol = 0;
@@ -221,7 +221,7 @@ namespace QL_NHAN_SU.LichLamViec
             // txt_MonDay
             // 
             this.txt_MonDay.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_MonDay.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MonDay.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MonDay.Location = new System.Drawing.Point(198, 29);
             this.txt_MonDay.Margin = new System.Windows.Forms.Padding(1);
             this.txt_MonDay.Name = "txt_MonDay";
@@ -232,11 +232,11 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(77, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 27);
+            this.label1.Size = new System.Drawing.Size(104, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "Môn dạy";
             // 
@@ -244,7 +244,7 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             this.gc_monday.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_monday.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(1);
-            this.gc_monday.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gc_monday.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gc_monday.Location = new System.Drawing.Point(0, 0);
             this.gc_monday.MainView = this.gcv_monday;
             this.gc_monday.Margin = new System.Windows.Forms.Padding(1);
@@ -274,9 +274,9 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             // id_MonDay
             // 
-            this.id_MonDay.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_MonDay.AppearanceCell.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_MonDay.AppearanceCell.Options.UseFont = true;
-            this.id_MonDay.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_MonDay.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_MonDay.AppearanceHeader.Options.UseFont = true;
             this.id_MonDay.Caption = "ID Môn dạy";
             this.id_MonDay.FieldName = "id_MonDay";

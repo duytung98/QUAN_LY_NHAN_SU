@@ -488,7 +488,7 @@ namespace QL_NHAN_SU.Report
             this.ReportHeader,
             this.ReportFooter});
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(100, 100, 58, 100);
+            this.Margins = new System.Drawing.Printing.Margins(122, 78, 58, 100);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;

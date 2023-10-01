@@ -108,7 +108,7 @@ namespace QL_NHAN_SU
             // 
             this.bar2.BarAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Hovered.Options.UseFont = true;
-            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Normal.Options.UseFont = true;
             this.bar2.BarName = "Main menu";
             this.bar2.DockCol = 0;
@@ -195,37 +195,41 @@ namespace QL_NHAN_SU
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1029, 28);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlTop.Size = new System.Drawing.Size(1200, 36);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 402);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 495);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1029, 0);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1200, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 28);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 36);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 374);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 459);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1029, 28);
+            this.barDockControlRight.Location = new System.Drawing.Point(1200, 36);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 374);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 459);
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 28);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 36);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -248,31 +252,30 @@ namespace QL_NHAN_SU
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gv_dieuchuyen);
-            this.splitContainer1.Size = new System.Drawing.Size(1029, 374);
+            this.splitContainer1.Size = new System.Drawing.Size(1200, 459);
             this.splitContainer1.SplitterDistance = 236;
-            this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 5;
             // 
             // cb_DVDen
             // 
             this.cb_DVDen.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cb_DVDen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_DVDen.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_DVDen.FormattingEnabled = true;
-            this.cb_DVDen.Location = new System.Drawing.Point(558, 75);
+            this.cb_DVDen.Location = new System.Drawing.Point(651, 65);
             this.cb_DVDen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_DVDen.Name = "cb_DVDen";
-            this.cb_DVDen.Size = new System.Drawing.Size(146, 27);
+            this.cb_DVDen.Size = new System.Drawing.Size(170, 31);
             this.cb_DVDen.TabIndex = 74;
             // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(460, 77);
+            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(537, 68);
             this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 21);
+            this.label5.Size = new System.Drawing.Size(104, 23);
             this.label5.TabIndex = 73;
             this.label5.Text = "Đơn vị đến";
             // 
@@ -280,67 +283,67 @@ namespace QL_NHAN_SU
             // 
             this.date_Ngay.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.date_Ngay.CustomFormat = "dd/MM/yyyy";
-            this.date_Ngay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_Ngay.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_Ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date_Ngay.Location = new System.Drawing.Point(247, 74);
+            this.date_Ngay.Location = new System.Drawing.Point(288, 64);
             this.date_Ngay.Margin = new System.Windows.Forms.Padding(1);
             this.date_Ngay.Name = "date_Ngay";
-            this.date_Ngay.Size = new System.Drawing.Size(196, 26);
+            this.date_Ngay.Size = new System.Drawing.Size(228, 30);
             this.date_Ngay.TabIndex = 71;
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(132, 78);
+            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(154, 69);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 19);
+            this.label4.Size = new System.Drawing.Size(91, 23);
             this.label4.TabIndex = 72;
             this.label4.Text = "Ngày QĐ";
             // 
             // txt_ghichu
             // 
             this.txt_ghichu.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_ghichu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ghichu.Location = new System.Drawing.Point(247, 173);
+            this.txt_ghichu.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ghichu.Location = new System.Drawing.Point(288, 186);
             this.txt_ghichu.Margin = new System.Windows.Forms.Padding(1);
             this.txt_ghichu.Name = "txt_ghichu";
-            this.txt_ghichu.Size = new System.Drawing.Size(457, 26);
+            this.txt_ghichu.Size = new System.Drawing.Size(532, 30);
             this.txt_ghichu.TabIndex = 70;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(146, 177);
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(168, 191);
             this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 19);
+            this.label3.Size = new System.Drawing.Size(77, 23);
             this.label3.TabIndex = 69;
             this.label3.Text = "Ghi chú";
             // 
             // txt_lido
             // 
             this.txt_lido.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_lido.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_lido.Location = new System.Drawing.Point(247, 140);
+            this.txt_lido.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_lido.Location = new System.Drawing.Point(288, 145);
             this.txt_lido.Margin = new System.Windows.Forms.Padding(1);
             this.txt_lido.Name = "txt_lido";
-            this.txt_lido.Size = new System.Drawing.Size(457, 26);
+            this.txt_lido.Size = new System.Drawing.Size(532, 30);
             this.txt_lido.TabIndex = 68;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(156, 144);
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(186, 150);
             this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 19);
+            this.label2.Size = new System.Drawing.Size(59, 23);
             this.label2.TabIndex = 67;
             this.label2.Text = "Lý do";
             // 
@@ -348,27 +351,27 @@ namespace QL_NHAN_SU
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(131, 111);
+            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(151, 110);
             this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 19);
+            this.label7.Size = new System.Drawing.Size(94, 23);
             this.label7.TabIndex = 66;
             this.label7.Text = "Nhân viên";
             // 
             // sl_NhanVien
             // 
             this.sl_NhanVien.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.sl_NhanVien.Location = new System.Drawing.Point(248, 107);
+            this.sl_NhanVien.Location = new System.Drawing.Point(289, 105);
             this.sl_NhanVien.Margin = new System.Windows.Forms.Padding(0);
             this.sl_NhanVien.MenuManager = this.barManager1;
             this.sl_NhanVien.Name = "sl_NhanVien";
-            this.sl_NhanVien.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sl_NhanVien.Properties.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sl_NhanVien.Properties.Appearance.Options.UseFont = true;
             this.sl_NhanVien.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.sl_NhanVien.Properties.PopupView = this.searchLookUpEdit1View;
-            this.sl_NhanVien.Size = new System.Drawing.Size(456, 26);
+            this.sl_NhanVien.Size = new System.Drawing.Size(532, 30);
             this.sl_NhanVien.TabIndex = 56;
             // 
             // searchLookUpEdit1View
@@ -376,7 +379,7 @@ namespace QL_NHAN_SU
             this.searchLookUpEdit1View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.cl_NhanVien,
             this.cl_TenNV});
-            this.searchLookUpEdit1View.DetailHeight = 50;
+            this.searchLookUpEdit1View.DetailHeight = 62;
             this.searchLookUpEdit1View.FixedLineWidth = 1;
             this.searchLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.searchLookUpEdit1View.Name = "searchLookUpEdit1View";
@@ -391,11 +394,12 @@ namespace QL_NHAN_SU
             this.cl_NhanVien.AppearanceHeader.Options.UseFont = true;
             this.cl_NhanVien.Caption = "Mã nhân viên";
             this.cl_NhanVien.FieldName = "id_NhanVien";
-            this.cl_NhanVien.MaxWidth = 75;
-            this.cl_NhanVien.MinWidth = 75;
+            this.cl_NhanVien.MaxWidth = 87;
+            this.cl_NhanVien.MinWidth = 87;
             this.cl_NhanVien.Name = "cl_NhanVien";
             this.cl_NhanVien.Visible = true;
             this.cl_NhanVien.VisibleIndex = 0;
+            this.cl_NhanVien.Width = 87;
             // 
             // cl_TenNV
             // 
@@ -405,33 +409,33 @@ namespace QL_NHAN_SU
             this.cl_TenNV.AppearanceHeader.Options.UseFont = true;
             this.cl_TenNV.Caption = "Tên nhân viên";
             this.cl_TenNV.FieldName = "HoTen";
-            this.cl_TenNV.MaxWidth = 124;
-            this.cl_TenNV.MinWidth = 124;
+            this.cl_TenNV.MaxWidth = 145;
+            this.cl_TenNV.MinWidth = 145;
             this.cl_TenNV.Name = "cl_TenNV";
             this.cl_TenNV.Visible = true;
             this.cl_TenNV.VisibleIndex = 1;
-            this.cl_TenNV.Width = 124;
+            this.cl_TenNV.Width = 145;
             // 
             // txt_SQD
             // 
             this.txt_SQD.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_SQD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_SQD.Location = new System.Drawing.Point(247, 41);
+            this.txt_SQD.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_SQD.Location = new System.Drawing.Point(288, 23);
             this.txt_SQD.Margin = new System.Windows.Forms.Padding(1);
             this.txt_SQD.Name = "txt_SQD";
             this.txt_SQD.ReadOnly = true;
-            this.txt_SQD.Size = new System.Drawing.Size(196, 26);
+            this.txt_SQD.Size = new System.Drawing.Size(228, 30);
             this.txt_SQD.TabIndex = 52;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(148, 45);
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(175, 28);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 19);
+            this.label1.Size = new System.Drawing.Size(70, 23);
             this.label1.TabIndex = 48;
             this.label1.Text = "Số QĐ";
             // 
@@ -443,7 +447,7 @@ namespace QL_NHAN_SU
             this.gv_dieuchuyen.MainView = this.gcv_dieuchuyen;
             this.gv_dieuchuyen.Margin = new System.Windows.Forms.Padding(1);
             this.gv_dieuchuyen.Name = "gv_dieuchuyen";
-            this.gv_dieuchuyen.Size = new System.Drawing.Size(1029, 135);
+            this.gv_dieuchuyen.Size = new System.Drawing.Size(1200, 219);
             this.gv_dieuchuyen.TabIndex = 1;
             this.gv_dieuchuyen.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gcv_dieuchuyen});
@@ -462,7 +466,6 @@ namespace QL_NHAN_SU
             this.HoTen,
             this.LiDo,
             this.Ghichu});
-            this.gcv_dieuchuyen.DetailHeight = 284;
             this.gcv_dieuchuyen.GridControl = this.gv_dieuchuyen;
             this.gcv_dieuchuyen.Name = "gcv_dieuchuyen";
             this.gcv_dieuchuyen.OptionsView.ShowGroupPanel = false;
@@ -471,143 +474,169 @@ namespace QL_NHAN_SU
             // 
             // DELETEO_BY
             // 
+            this.DELETEO_BY.AppearanceCell.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DELETEO_BY.AppearanceCell.Options.UseFont = true;
+            this.DELETEO_BY.AppearanceHeader.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DELETEO_BY.AppearanceHeader.Options.UseFont = true;
             this.DELETEO_BY.Caption = "DEL";
             this.DELETEO_BY.FieldName = "DELETEO_BY";
-            this.DELETEO_BY.MaxWidth = 34;
-            this.DELETEO_BY.MinWidth = 34;
+            this.DELETEO_BY.MaxWidth = 40;
+            this.DELETEO_BY.MinWidth = 40;
             this.DELETEO_BY.Name = "DELETEO_BY";
             this.DELETEO_BY.Visible = true;
             this.DELETEO_BY.VisibleIndex = 0;
-            this.DELETEO_BY.Width = 34;
+            this.DELETEO_BY.Width = 40;
             // 
             // So_QD
             // 
-            this.So_QD.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.So_QD.AppearanceCell.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.So_QD.AppearanceCell.Options.UseFont = true;
+            this.So_QD.AppearanceHeader.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.So_QD.AppearanceHeader.Options.UseFont = true;
             this.So_QD.Caption = "Số quyết định";
             this.So_QD.FieldName = "SoDieuChuyen";
-            this.So_QD.MaxWidth = 129;
-            this.So_QD.MinWidth = 129;
+            this.So_QD.MaxWidth = 150;
+            this.So_QD.MinWidth = 150;
             this.So_QD.Name = "So_QD";
             this.So_QD.Visible = true;
             this.So_QD.VisibleIndex = 1;
-            this.So_QD.Width = 129;
+            this.So_QD.Width = 150;
             // 
             // NgayTao
             // 
-            this.NgayTao.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NgayTao.AppearanceCell.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NgayTao.AppearanceCell.Options.UseFont = true;
-            this.NgayTao.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NgayTao.AppearanceHeader.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NgayTao.AppearanceHeader.Options.UseFont = true;
             this.NgayTao.Caption = "Ngày điều chuyển";
             this.NgayTao.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.NgayTao.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.NgayTao.FieldName = "Ngay";
-            this.NgayTao.MaxWidth = 146;
-            this.NgayTao.MinWidth = 146;
+            this.NgayTao.MaxWidth = 170;
+            this.NgayTao.MinWidth = 170;
             this.NgayTao.Name = "NgayTao";
             this.NgayTao.Visible = true;
             this.NgayTao.VisibleIndex = 2;
-            this.NgayTao.Width = 146;
+            this.NgayTao.Width = 170;
             // 
             // MaPB
             // 
+            this.MaPB.AppearanceCell.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaPB.AppearanceCell.Options.UseFont = true;
+            this.MaPB.AppearanceHeader.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaPB.AppearanceHeader.Options.UseFont = true;
             this.MaPB.Caption = "Mã phòng ban";
             this.MaPB.FieldName = "id_PhongBan";
-            this.MaPB.MinWidth = 21;
+            this.MaPB.MinWidth = 24;
             this.MaPB.Name = "MaPB";
-            this.MaPB.Width = 81;
+            this.MaPB.Width = 94;
             // 
             // Donvi
             // 
-            this.Donvi.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Donvi.AppearanceCell.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Donvi.AppearanceCell.Options.UseFont = true;
+            this.Donvi.AppearanceHeader.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Donvi.AppearanceHeader.Options.UseFont = true;
             this.Donvi.Caption = "Đơn vị hiện tại";
             this.Donvi.FieldName = "Ten_PhongBan";
-            this.Donvi.MaxWidth = 171;
-            this.Donvi.MinWidth = 171;
+            this.Donvi.MaxWidth = 199;
+            this.Donvi.MinWidth = 199;
             this.Donvi.Name = "Donvi";
             this.Donvi.Visible = true;
             this.Donvi.VisibleIndex = 3;
-            this.Donvi.Width = 171;
+            this.Donvi.Width = 199;
             // 
             // mpv2
             // 
+            this.mpv2.AppearanceCell.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mpv2.AppearanceCell.Options.UseFont = true;
+            this.mpv2.AppearanceHeader.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mpv2.AppearanceHeader.Options.UseFont = true;
             this.mpv2.Caption = "Mapb2";
             this.mpv2.FieldName = "id_PhongBan2";
-            this.mpv2.MinWidth = 21;
+            this.mpv2.MinWidth = 24;
             this.mpv2.Name = "mpv2";
-            this.mpv2.Width = 81;
+            this.mpv2.Width = 94;
             // 
             // Dvchuyenden
             // 
-            this.Dvchuyenden.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dvchuyenden.AppearanceCell.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dvchuyenden.AppearanceCell.Options.UseFont = true;
+            this.Dvchuyenden.AppearanceHeader.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dvchuyenden.AppearanceHeader.Options.UseFont = true;
             this.Dvchuyenden.Caption = "Đơn vị chuyển đến";
             this.Dvchuyenden.FieldName = "Ten_PhongBan2";
-            this.Dvchuyenden.MaxWidth = 171;
-            this.Dvchuyenden.MinWidth = 171;
+            this.Dvchuyenden.MaxWidth = 199;
+            this.Dvchuyenden.MinWidth = 199;
             this.Dvchuyenden.Name = "Dvchuyenden";
             this.Dvchuyenden.Visible = true;
             this.Dvchuyenden.VisibleIndex = 4;
-            this.Dvchuyenden.Width = 171;
+            this.Dvchuyenden.Width = 199;
             // 
             // id_NhanVien
             // 
-            this.id_NhanVien.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_NhanVien.AppearanceCell.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_NhanVien.AppearanceCell.Options.UseFont = true;
+            this.id_NhanVien.AppearanceHeader.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_NhanVien.AppearanceHeader.Options.UseFont = true;
             this.id_NhanVien.Caption = "Mã nhân viên";
             this.id_NhanVien.FieldName = "id_NhanVien";
-            this.id_NhanVien.MaxWidth = 171;
-            this.id_NhanVien.MinWidth = 171;
+            this.id_NhanVien.MaxWidth = 199;
+            this.id_NhanVien.MinWidth = 199;
             this.id_NhanVien.Name = "id_NhanVien";
             this.id_NhanVien.Visible = true;
             this.id_NhanVien.VisibleIndex = 5;
-            this.id_NhanVien.Width = 171;
+            this.id_NhanVien.Width = 199;
             // 
             // HoTen
             // 
-            this.HoTen.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HoTen.AppearanceCell.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HoTen.AppearanceCell.Options.UseFont = true;
+            this.HoTen.AppearanceHeader.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HoTen.AppearanceHeader.Options.UseFont = true;
             this.HoTen.Caption = "Họ tên";
             this.HoTen.FieldName = "HoTen";
-            this.HoTen.MaxWidth = 343;
-            this.HoTen.MinWidth = 343;
+            this.HoTen.MaxWidth = 400;
+            this.HoTen.MinWidth = 400;
             this.HoTen.Name = "HoTen";
             this.HoTen.Visible = true;
             this.HoTen.VisibleIndex = 6;
-            this.HoTen.Width = 343;
+            this.HoTen.Width = 400;
             // 
             // LiDo
             // 
-            this.LiDo.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LiDo.AppearanceCell.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LiDo.AppearanceCell.Options.UseFont = true;
+            this.LiDo.AppearanceHeader.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LiDo.AppearanceHeader.Options.UseFont = true;
             this.LiDo.Caption = "Lý do";
             this.LiDo.FieldName = "LiDo";
-            this.LiDo.MaxWidth = 257;
-            this.LiDo.MinWidth = 257;
+            this.LiDo.MaxWidth = 300;
+            this.LiDo.MinWidth = 300;
             this.LiDo.Name = "LiDo";
             this.LiDo.Visible = true;
             this.LiDo.VisibleIndex = 7;
-            this.LiDo.Width = 257;
+            this.LiDo.Width = 300;
             // 
             // Ghichu
             // 
-            this.Ghichu.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ghichu.AppearanceCell.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ghichu.AppearanceCell.Options.UseFont = true;
+            this.Ghichu.AppearanceHeader.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ghichu.AppearanceHeader.Options.UseFont = true;
             this.Ghichu.Caption = "Ghi chú";
             this.Ghichu.FieldName = "Ghichu";
-            this.Ghichu.MinWidth = 21;
+            this.Ghichu.MinWidth = 24;
             this.Ghichu.Name = "Ghichu";
             this.Ghichu.Visible = true;
             this.Ghichu.VisibleIndex = 8;
-            this.Ghichu.Width = 81;
+            this.Ghichu.Width = 94;
             // 
             // F_NhanVien_DieuChuyen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 402);
+            this.ClientSize = new System.Drawing.Size(1200, 495);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);

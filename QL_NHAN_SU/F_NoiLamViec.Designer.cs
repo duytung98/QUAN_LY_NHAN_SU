@@ -101,7 +101,7 @@ namespace QL_NHAN_SU
             // 
             this.bar2.BarAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Hovered.Options.UseFont = true;
-            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Normal.Options.UseFont = true;
             this.bar2.BarName = "Main menu";
             this.bar2.DockCol = 0;
@@ -180,7 +180,7 @@ namespace QL_NHAN_SU
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(1247, 28);
+            this.barDockControlTop.Size = new System.Drawing.Size(1247, 36);
             // 
             // barDockControlBottom
             // 
@@ -195,19 +195,19 @@ namespace QL_NHAN_SU
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 28);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 36);
             this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 581);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 573);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1247, 28);
+            this.barDockControlRight.Location = new System.Drawing.Point(1247, 36);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 581);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 573);
             // 
             // btn_in
             // 
@@ -222,7 +222,7 @@ namespace QL_NHAN_SU
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 28);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 36);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -241,7 +241,7 @@ namespace QL_NHAN_SU
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gridControl1);
             this.splitContainer1.Panel2.Controls.Add(this.gc_noilv);
-            this.splitContainer1.Size = new System.Drawing.Size(1247, 581);
+            this.splitContainer1.Size = new System.Drawing.Size(1247, 573);
             this.splitContainer1.SplitterDistance = 210;
             this.splitContainer1.TabIndex = 4;
             this.splitContainer1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitContainer1_SplitterMoved);
@@ -249,21 +249,21 @@ namespace QL_NHAN_SU
             // cb_noilv
             // 
             this.cb_noilv.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cb_noilv.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_noilv.Location = new System.Drawing.Point(600, 20);
-            this.cb_noilv.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.cb_noilv.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_noilv.Location = new System.Drawing.Point(575, 25);
+            this.cb_noilv.Margin = new System.Windows.Forms.Padding(0);
             this.cb_noilv.Name = "cb_noilv";
-            this.cb_noilv.Size = new System.Drawing.Size(194, 29);
+            this.cb_noilv.Size = new System.Drawing.Size(304, 34);
             this.cb_noilv.TabIndex = 10;
             // 
             // txt_diachi
             // 
             this.txt_diachi.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_diachi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_diachi.Location = new System.Drawing.Point(600, 61);
-            this.txt_diachi.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.txt_diachi.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_diachi.Location = new System.Drawing.Point(575, 68);
+            this.txt_diachi.Margin = new System.Windows.Forms.Padding(0);
             this.txt_diachi.Name = "txt_diachi";
-            this.txt_diachi.Size = new System.Drawing.Size(194, 29);
+            this.txt_diachi.Size = new System.Drawing.Size(304, 34);
             this.txt_diachi.TabIndex = 9;
             this.txt_diachi.TextChanged += new System.EventHandler(this.txt_diachi_TextChanged);
             // 
@@ -271,55 +271,55 @@ namespace QL_NHAN_SU
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(483, 64);
-            this.label4.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.label4.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(406, 71);
+            this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 21);
+            this.label4.Size = new System.Drawing.Size(85, 27);
             this.label4.TabIndex = 8;
             this.label4.Text = "Địa chỉ";
             // 
             // txt_dienthoai
             // 
             this.txt_dienthoai.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_dienthoai.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dienthoai.Location = new System.Drawing.Point(600, 102);
-            this.txt_dienthoai.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.txt_dienthoai.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dienthoai.Location = new System.Drawing.Point(575, 111);
+            this.txt_dienthoai.Margin = new System.Windows.Forms.Padding(0);
             this.txt_dienthoai.Name = "txt_dienthoai";
-            this.txt_dienthoai.Size = new System.Drawing.Size(194, 29);
+            this.txt_dienthoai.Size = new System.Drawing.Size(304, 34);
             this.txt_dienthoai.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(483, 105);
-            this.label3.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.label3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(406, 114);
+            this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 21);
+            this.label3.Size = new System.Drawing.Size(120, 27);
             this.label3.TabIndex = 6;
             this.label3.Text = "Điện thoai";
             // 
             // txt_email
             // 
             this.txt_email.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_email.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_email.Location = new System.Drawing.Point(600, 143);
-            this.txt_email.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.txt_email.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_email.Location = new System.Drawing.Point(575, 152);
+            this.txt_email.Margin = new System.Windows.Forms.Padding(0);
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(194, 29);
+            this.txt_email.Size = new System.Drawing.Size(304, 34);
             this.txt_email.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(483, 146);
-            this.label2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.label2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(406, 157);
+            this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 21);
+            this.label2.Size = new System.Drawing.Size(72, 27);
             this.label2.TabIndex = 4;
             this.label2.Text = "Email";
             // 
@@ -327,24 +327,24 @@ namespace QL_NHAN_SU
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(483, 23);
-            this.label1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(406, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 21);
+            this.label1.Size = new System.Drawing.Size(144, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nơi làm việc";
             // 
             // gridControl1
             // 
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(0);
             this.gridControl1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gv_noilv;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(0);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1247, 367);
+            this.gridControl1.Size = new System.Drawing.Size(1247, 359);
             this.gridControl1.TabIndex = 5;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv_noilv});
@@ -371,7 +371,9 @@ namespace QL_NHAN_SU
             // 
             // id
             // 
-            this.id.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id.AppearanceCell.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id.AppearanceCell.Options.UseFont = true;
+            this.id.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id.AppearanceHeader.Options.UseFont = true;
             this.id.Caption = "Mã nơi làm việc";
             this.id.FieldName = "id_NoiLV";
@@ -384,7 +386,9 @@ namespace QL_NHAN_SU
             // 
             // Ten_NLV
             // 
-            this.Ten_NLV.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ten_NLV.AppearanceCell.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ten_NLV.AppearanceCell.Options.UseFont = true;
+            this.Ten_NLV.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ten_NLV.AppearanceHeader.Options.UseFont = true;
             this.Ten_NLV.Caption = "Nơi làm việc";
             this.Ten_NLV.FieldName = "Ten_NoiLV";
@@ -397,7 +401,9 @@ namespace QL_NHAN_SU
             // 
             // DiaChi1
             // 
-            this.DiaChi1.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DiaChi1.AppearanceCell.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DiaChi1.AppearanceCell.Options.UseFont = true;
+            this.DiaChi1.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DiaChi1.AppearanceHeader.Options.UseFont = true;
             this.DiaChi1.Caption = "Địa chỉ";
             this.DiaChi1.FieldName = "DiaChi";
@@ -410,7 +416,9 @@ namespace QL_NHAN_SU
             // 
             // DT
             // 
-            this.DT.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DT.AppearanceCell.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DT.AppearanceCell.Options.UseFont = true;
+            this.DT.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DT.AppearanceHeader.Options.UseFont = true;
             this.DT.Caption = "Điện thoại";
             this.DT.FieldName = "DienThoai";
@@ -424,13 +432,13 @@ namespace QL_NHAN_SU
             // gc_noilv
             // 
             this.gc_noilv.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gc_noilv.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.gc_noilv.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(0);
             this.gc_noilv.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gc_noilv.Location = new System.Drawing.Point(0, 0);
             this.gc_noilv.MainView = this.gcv_noilv;
-            this.gc_noilv.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.gc_noilv.Margin = new System.Windows.Forms.Padding(0);
             this.gc_noilv.Name = "gc_noilv";
-            this.gc_noilv.Size = new System.Drawing.Size(1247, 367);
+            this.gc_noilv.Size = new System.Drawing.Size(1247, 359);
             this.gc_noilv.TabIndex = 4;
             this.gc_noilv.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gcv_noilv});
@@ -522,7 +530,7 @@ namespace QL_NHAN_SU
             // F_NoiLamViec
             // 
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1247, 609);
             this.Controls.Add(this.splitContainer1);

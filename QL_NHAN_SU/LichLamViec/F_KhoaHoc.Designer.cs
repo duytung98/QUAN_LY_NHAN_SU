@@ -84,7 +84,7 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             this.bar2.BarAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Hovered.Options.UseFont = true;
-            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Normal.Options.UseFont = true;
             this.bar2.BarName = "Main menu";
             this.bar2.DockCol = 0;
@@ -162,7 +162,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(891, 28);
+            this.barDockControlTop.Size = new System.Drawing.Size(891, 36);
             // 
             // barDockControlBottom
             // 
@@ -177,19 +177,19 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 28);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 36);
             this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 403);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 395);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(891, 28);
+            this.barDockControlRight.Location = new System.Drawing.Point(891, 36);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 403);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 395);
             // 
             // btn_in
             // 
@@ -202,7 +202,7 @@ namespace QL_NHAN_SU.LichLamViec
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 28);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 36);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -214,29 +214,29 @@ namespace QL_NHAN_SU.LichLamViec
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gc_khoaday);
-            this.splitContainer1.Size = new System.Drawing.Size(891, 403);
-            this.splitContainer1.SplitterDistance = 76;
+            this.splitContainer1.Size = new System.Drawing.Size(891, 395);
+            this.splitContainer1.SplitterDistance = 74;
             this.splitContainer1.TabIndex = 6;
             // 
             // txt_khoahoc
             // 
             this.txt_khoahoc.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_khoahoc.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_khoahoc.Location = new System.Drawing.Point(218, 27);
+            this.txt_khoahoc.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_khoahoc.Location = new System.Drawing.Point(218, 26);
             this.txt_khoahoc.Margin = new System.Windows.Forms.Padding(1);
             this.txt_khoahoc.Name = "txt_khoahoc";
-            this.txt_khoahoc.Size = new System.Drawing.Size(310, 29);
+            this.txt_khoahoc.Size = new System.Drawing.Size(310, 34);
             this.txt_khoahoc.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(77, 30);
+            this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(77, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 21);
+            this.label1.Size = new System.Drawing.Size(114, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "Khóa dạy";
             // 
@@ -249,7 +249,7 @@ namespace QL_NHAN_SU.LichLamViec
             this.gc_khoaday.MainView = this.gcv_khoaday;
             this.gc_khoaday.Margin = new System.Windows.Forms.Padding(1);
             this.gc_khoaday.Name = "gc_khoaday";
-            this.gc_khoaday.Size = new System.Drawing.Size(891, 323);
+            this.gc_khoaday.Size = new System.Drawing.Size(891, 317);
             this.gc_khoaday.TabIndex = 2;
             this.gc_khoaday.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gcv_khoaday});
@@ -274,9 +274,9 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             // id_Khoahoc
             // 
-            this.id_Khoahoc.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_Khoahoc.AppearanceCell.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_Khoahoc.AppearanceCell.Options.UseFont = true;
-            this.id_Khoahoc.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_Khoahoc.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_Khoahoc.AppearanceHeader.Options.UseFont = true;
             this.id_Khoahoc.Caption = "ID Khóa học";
             this.id_Khoahoc.FieldName = "id_KhoaDay";
@@ -289,9 +289,9 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             // Ten_KhoaDay
             // 
-            this.Ten_KhoaDay.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ten_KhoaDay.AppearanceCell.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ten_KhoaDay.AppearanceCell.Options.UseFont = true;
-            this.Ten_KhoaDay.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ten_KhoaDay.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ten_KhoaDay.AppearanceHeader.Options.UseFont = true;
             this.Ten_KhoaDay.Caption = "Tên khóa dạy";
             this.Ten_KhoaDay.FieldName = "Ten_KhoaDay";

@@ -84,7 +84,7 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             this.bar2.BarAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Hovered.Options.UseFont = true;
-            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Normal.Options.UseFont = true;
             this.bar2.BarName = "Main menu";
             this.bar2.DockCol = 0;
@@ -221,7 +221,7 @@ namespace QL_NHAN_SU.LichLamViec
             // txt_lop
             // 
             this.txt_lop.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_lop.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_lop.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_lop.Location = new System.Drawing.Point(195, 25);
             this.txt_lop.Margin = new System.Windows.Forms.Padding(1);
             this.txt_lop.Name = "txt_lop";
@@ -232,11 +232,11 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(77, 28);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 27);
+            this.label1.Size = new System.Drawing.Size(101, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "Lớp dạy";
             // 
@@ -275,9 +275,9 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             // id_Lopday
             // 
-            this.id_Lopday.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_Lopday.AppearanceCell.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_Lopday.AppearanceCell.Options.UseFont = true;
-            this.id_Lopday.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_Lopday.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_Lopday.AppearanceHeader.Options.UseFont = true;
             this.id_Lopday.Caption = "ID Lớp";
             this.id_Lopday.FieldName = "id_LopDay";
@@ -290,9 +290,9 @@ namespace QL_NHAN_SU.LichLamViec
             // 
             // Ten_Lop
             // 
-            this.Ten_Lop.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ten_Lop.AppearanceCell.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ten_Lop.AppearanceCell.Options.UseFont = true;
-            this.Ten_Lop.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ten_Lop.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ten_Lop.AppearanceHeader.Options.UseFont = true;
             this.Ten_Lop.Caption = "Tên lớp";
             this.Ten_Lop.FieldName = "Ten_LopDay";

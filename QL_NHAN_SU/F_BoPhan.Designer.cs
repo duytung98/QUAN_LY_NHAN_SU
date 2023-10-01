@@ -84,7 +84,7 @@ namespace QL_NHAN_SU
             // 
             this.bar2.BarAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Hovered.Options.UseFont = true;
-            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Normal.Options.UseFont = true;
             this.bar2.BarName = "Main menu";
             this.bar2.DockCol = 0;
@@ -162,7 +162,7 @@ namespace QL_NHAN_SU
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(907, 28);
+            this.barDockControlTop.Size = new System.Drawing.Size(907, 29);
             // 
             // barDockControlBottom
             // 
@@ -177,19 +177,19 @@ namespace QL_NHAN_SU
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 28);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 29);
             this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 394);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 393);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(907, 28);
+            this.barDockControlRight.Location = new System.Drawing.Point(907, 29);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 394);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 393);
             // 
             // btn_in
             // 
@@ -203,7 +203,7 @@ namespace QL_NHAN_SU
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 28);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 29);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -215,40 +215,40 @@ namespace QL_NHAN_SU
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gc_bophan);
-            this.splitContainer1.Size = new System.Drawing.Size(907, 394);
-            this.splitContainer1.SplitterDistance = 60;
+            this.splitContainer1.Size = new System.Drawing.Size(907, 393);
+            this.splitContainer1.SplitterDistance = 59;
             this.splitContainer1.TabIndex = 4;
             // 
             // txt_bophan
             // 
             this.txt_bophan.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt_bophan.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_bophan.Location = new System.Drawing.Point(111, 24);
-            this.txt_bophan.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.txt_bophan.Location = new System.Drawing.Point(113, 22);
+            this.txt_bophan.Margin = new System.Windows.Forms.Padding(0);
             this.txt_bophan.Name = "txt_bophan";
-            this.txt_bophan.Size = new System.Drawing.Size(209, 29);
+            this.txt_bophan.Size = new System.Drawing.Size(191, 29);
             this.txt_bophan.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(24, 27);
-            this.label1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(21, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 21);
+            this.label1.Size = new System.Drawing.Size(80, 22);
             this.label1.TabIndex = 2;
             this.label1.Text = "Bộ phận";
             // 
             // gc_bophan
             // 
             this.gc_bophan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gc_bophan.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.gc_bophan.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(0);
             this.gc_bophan.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gc_bophan.Location = new System.Drawing.Point(0, 0);
             this.gc_bophan.MainView = this.gcv_bophan;
-            this.gc_bophan.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.gc_bophan.Margin = new System.Windows.Forms.Padding(0);
             this.gc_bophan.Name = "gc_bophan";
             this.gc_bophan.Size = new System.Drawing.Size(907, 330);
             this.gc_bophan.TabIndex = 3;
@@ -277,7 +277,7 @@ namespace QL_NHAN_SU
             // 
             this.id_BoPhan.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_BoPhan.AppearanceCell.Options.UseFont = true;
-            this.id_BoPhan.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_BoPhan.AppearanceHeader.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_BoPhan.AppearanceHeader.Options.UseFont = true;
             this.id_BoPhan.Caption = "ID Bộ phận";
             this.id_BoPhan.FieldName = "id_BoPhan";
@@ -292,7 +292,7 @@ namespace QL_NHAN_SU
             // 
             this.Ten_BoPhan.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ten_BoPhan.AppearanceCell.Options.UseFont = true;
-            this.Ten_BoPhan.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ten_BoPhan.AppearanceHeader.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ten_BoPhan.AppearanceHeader.Options.UseFont = true;
             this.Ten_BoPhan.Caption = "Tên bộ phận";
             this.Ten_BoPhan.FieldName = "Ten_BoPhan";

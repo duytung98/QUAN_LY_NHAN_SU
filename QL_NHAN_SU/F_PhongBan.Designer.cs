@@ -84,7 +84,7 @@ namespace QL_NHAN_SU
             // 
             this.bar2.BarAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Hovered.Options.UseFont = true;
-            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Normal.Options.UseFont = true;
             this.bar2.BarName = "Main menu";
             this.bar2.DockCol = 0;
@@ -162,7 +162,7 @@ namespace QL_NHAN_SU
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(1215, 28);
+            this.barDockControlTop.Size = new System.Drawing.Size(1215, 36);
             // 
             // barDockControlBottom
             // 
@@ -177,19 +177,19 @@ namespace QL_NHAN_SU
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 28);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 36);
             this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 446);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 438);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1215, 28);
+            this.barDockControlRight.Location = new System.Drawing.Point(1215, 36);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 446);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 438);
             // 
             // btn_in
             // 
@@ -203,7 +203,7 @@ namespace QL_NHAN_SU
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 28);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 36);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -215,29 +215,29 @@ namespace QL_NHAN_SU
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gc_phongban);
-            this.splitContainer1.Size = new System.Drawing.Size(1215, 446);
-            this.splitContainer1.SplitterDistance = 64;
+            this.splitContainer1.Size = new System.Drawing.Size(1215, 438);
+            this.splitContainer1.SplitterDistance = 62;
             this.splitContainer1.TabIndex = 4;
             // 
             // txt_phongban
             // 
             this.txt_phongban.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_phongban.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_phongban.Location = new System.Drawing.Point(159, 23);
+            this.txt_phongban.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_phongban.Location = new System.Drawing.Point(190, 20);
             this.txt_phongban.Margin = new System.Windows.Forms.Padding(0);
             this.txt_phongban.Name = "txt_phongban";
-            this.txt_phongban.Size = new System.Drawing.Size(248, 29);
+            this.txt_phongban.Size = new System.Drawing.Size(226, 34);
             this.txt_phongban.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 27);
+            this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(47, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 21);
+            this.label1.Size = new System.Drawing.Size(131, 27);
             this.label1.TabIndex = 2;
             this.label1.Text = "Phòng ban";
             // 
@@ -250,7 +250,7 @@ namespace QL_NHAN_SU
             this.gc_phongban.MainView = this.gcv_phongban;
             this.gc_phongban.Margin = new System.Windows.Forms.Padding(0);
             this.gc_phongban.Name = "gc_phongban";
-            this.gc_phongban.Size = new System.Drawing.Size(1215, 378);
+            this.gc_phongban.Size = new System.Drawing.Size(1215, 372);
             this.gc_phongban.TabIndex = 2;
             this.gc_phongban.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gcv_phongban});
@@ -275,9 +275,9 @@ namespace QL_NHAN_SU
             // 
             // id_PhongBan
             // 
-            this.id_PhongBan.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_PhongBan.AppearanceCell.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_PhongBan.AppearanceCell.Options.UseFont = true;
-            this.id_PhongBan.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_PhongBan.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_PhongBan.AppearanceHeader.Options.UseFont = true;
             this.id_PhongBan.Caption = "ID Phòng ban";
             this.id_PhongBan.FieldName = "id_PhongBan";
@@ -290,9 +290,9 @@ namespace QL_NHAN_SU
             // 
             // Ten_PhongBan
             // 
-            this.Ten_PhongBan.AppearanceCell.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ten_PhongBan.AppearanceCell.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ten_PhongBan.AppearanceCell.Options.UseFont = true;
-            this.Ten_PhongBan.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ten_PhongBan.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ten_PhongBan.AppearanceHeader.Options.UseFont = true;
             this.Ten_PhongBan.Caption = "Tên Phòng ban";
             this.Ten_PhongBan.FieldName = "Ten_PhongBan";
@@ -306,7 +306,7 @@ namespace QL_NHAN_SU
             // F_PhongBan
             // 
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1215, 474);
             this.Controls.Add(this.splitContainer1);

@@ -43,6 +43,8 @@ namespace QL_NHAN_SU.Report
             // 
             // panelControl1
             // 
+            this.panelControl1.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelControl1.Appearance.Options.UseFont = true;
             this.panelControl1.Controls.Add(this.btn_dong);
             this.panelControl1.Controls.Add(this.btn_in);
             this.panelControl1.Controls.Add(this.cb_nhanvien);
@@ -56,7 +58,7 @@ namespace QL_NHAN_SU.Report
             // 
             // btn_dong
             // 
-            this.btn_dong.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dong.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_dong.Appearance.Options.UseFont = true;
             this.btn_dong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_dong.ImageOptions.Image")));
             this.btn_dong.Location = new System.Drawing.Point(291, 96);
@@ -68,7 +70,7 @@ namespace QL_NHAN_SU.Report
             // 
             // btn_in
             // 
-            this.btn_in.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_in.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_in.Appearance.Options.UseFont = true;
             this.btn_in.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_in.ImageOptions.Image")));
             this.btn_in.Location = new System.Drawing.Point(141, 96);
@@ -80,26 +82,26 @@ namespace QL_NHAN_SU.Report
             // 
             // cb_nhanvien
             // 
-            this.cb_nhanvien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_nhanvien.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_nhanvien.FormattingEnabled = true;
             this.cb_nhanvien.Location = new System.Drawing.Point(158, 47);
             this.cb_nhanvien.Name = "cb_nhanvien";
-            this.cb_nhanvien.Size = new System.Drawing.Size(195, 30);
+            this.cb_nhanvien.Size = new System.Drawing.Size(195, 31);
             this.cb_nhanvien.TabIndex = 3;
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(50, 50);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(80, 22);
+            this.labelControl2.Size = new System.Drawing.Size(84, 23);
             this.labelControl2.TabIndex = 2;
             this.labelControl2.Text = "Nhân viên";
             // 
             // cb_kycong
             // 
-            this.cb_kycong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_kycong.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_kycong.FormattingEnabled = true;
             this.cb_kycong.Items.AddRange(new object[] {
             "1",
@@ -116,16 +118,16 @@ namespace QL_NHAN_SU.Report
             "12"});
             this.cb_kycong.Location = new System.Drawing.Point(158, 10);
             this.cb_kycong.Name = "cb_kycong";
-            this.cb_kycong.Size = new System.Drawing.Size(195, 30);
+            this.cb_kycong.Size = new System.Drawing.Size(195, 31);
             this.cb_kycong.TabIndex = 1;
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(53, 13);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(65, 22);
+            this.labelControl1.Size = new System.Drawing.Size(71, 23);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Kỳ công";
             // 

@@ -67,8 +67,9 @@ namespace QL_NHAN_SU
             // 
             // ribbon
             // 
+            this.ribbon.AutoSizeItems = true;
             this.ribbon.ExpandCollapseItem.Id = 0;
-            this.ribbon.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbon.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
             this.ribbon.SearchEditItem,
@@ -85,7 +86,7 @@ namespace QL_NHAN_SU
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.HeThong,
             this.btbThongTin});
-            this.ribbon.Size = new System.Drawing.Size(1629, 209);
+            this.ribbon.Size = new System.Drawing.Size(1554, 177);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             this.ribbon.Click += new System.EventHandler(this.ribbon_Click);
             // 
@@ -99,6 +100,8 @@ namespace QL_NHAN_SU
             this.btn_thongtinnv.ItemAppearance.Hovered.Options.UseFont = true;
             this.btn_thongtinnv.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_thongtinnv.ItemAppearance.Normal.Options.UseFont = true;
+            this.btn_thongtinnv.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_thongtinnv.ItemInMenuAppearance.Normal.Options.UseFont = true;
             this.btn_thongtinnv.Name = "btn_thongtinnv";
             this.btn_thongtinnv.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btn_thongtinnv.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_thongtinnv_ItemClick);
@@ -111,7 +114,7 @@ namespace QL_NHAN_SU
             this.btn_DoiMK.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_DoiMK.ImageOptions.LargeImage")));
             this.btn_DoiMK.ItemAppearance.Hovered.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DoiMK.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btn_DoiMK.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DoiMK.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DoiMK.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_DoiMK.Name = "btn_DoiMK";
             this.btn_DoiMK.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
@@ -124,7 +127,7 @@ namespace QL_NHAN_SU
             this.btn_DangXuat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_DangXuat.ImageOptions.SvgImage")));
             this.btn_DangXuat.ItemAppearance.Hovered.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DangXuat.ItemAppearance.Hovered.Options.UseFont = true;
-            this.btn_DangXuat.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DangXuat.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DangXuat.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_DangXuat.Name = "btn_DangXuat";
             this.btn_DangXuat.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
@@ -146,14 +149,16 @@ namespace QL_NHAN_SU
             // 
             // barButtonItem1
             // 
-            this.barButtonItem1.Caption = "Ngày công";
+            this.barButtonItem1.Caption = "Ngày công   ";
             this.barButtonItem1.Id = 9;
             this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
             this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
             this.barButtonItem1.ItemAppearance.Hovered.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem1.ItemAppearance.Hovered.Options.UseFont = true;
-            this.barButtonItem1.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barButtonItem1.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem1.ItemAppearance.Normal.Options.UseFont = true;
+            this.barButtonItem1.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.barButtonItem1.ItemInMenuAppearance.Normal.Options.UseFont = true;
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
@@ -164,7 +169,7 @@ namespace QL_NHAN_SU
             this.btn_phanhoi.Id = 10;
             this.btn_phanhoi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_phanhoi.ImageOptions.Image")));
             this.btn_phanhoi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_phanhoi.ImageOptions.LargeImage")));
-            this.btn_phanhoi.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_phanhoi.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_phanhoi.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_phanhoi.Name = "btn_phanhoi";
             this.btn_phanhoi.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
@@ -207,11 +212,11 @@ namespace QL_NHAN_SU
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 525);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 531);
             this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1629, 30);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1554, 24);
             // 
             // ribbonPage4
             // 
@@ -255,18 +260,18 @@ namespace QL_NHAN_SU
             this.dockPanel1.Controls.Add(this.dockPanel1_Container);
             this.dockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Right;
             this.dockPanel1.ID = new System.Guid("d7726626-6273-49a9-8227-11f94b2b5467");
-            this.dockPanel1.Location = new System.Drawing.Point(1397, 209);
+            this.dockPanel1.Location = new System.Drawing.Point(1322, 177);
             this.dockPanel1.Name = "dockPanel1";
             this.dockPanel1.OriginalSize = new System.Drawing.Size(232, 200);
-            this.dockPanel1.Size = new System.Drawing.Size(232, 316);
+            this.dockPanel1.Size = new System.Drawing.Size(232, 354);
             this.dockPanel1.Text = "Thông báo";
             // 
             // dockPanel1_Container
             // 
             this.dockPanel1_Container.Controls.Add(this.groupControl1);
-            this.dockPanel1_Container.Location = new System.Drawing.Point(6, 32);
+            this.dockPanel1_Container.Location = new System.Drawing.Point(4, 26);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(222, 280);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(225, 325);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // groupControl1
@@ -275,7 +280,7 @@ namespace QL_NHAN_SU
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(222, 280);
+            this.groupControl1.Size = new System.Drawing.Size(225, 325);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Phản hồi từ quản lý";
             // 
@@ -283,9 +288,9 @@ namespace QL_NHAN_SU
             // 
             this.list_phanhoi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.list_phanhoi.ItemHeight = 112;
-            this.list_phanhoi.Location = new System.Drawing.Point(2, 28);
+            this.list_phanhoi.Location = new System.Drawing.Point(2, 23);
             this.list_phanhoi.Name = "list_phanhoi";
-            this.list_phanhoi.Size = new System.Drawing.Size(218, 250);
+            this.list_phanhoi.Size = new System.Drawing.Size(221, 300);
             this.list_phanhoi.TabIndex = 0;
             templatedItemElement1.FieldName = "id_NhanVien";
             templatedItemElement1.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
@@ -323,9 +328,9 @@ namespace QL_NHAN_SU
             // FormMain_NhanVien
             // 
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1629, 555);
+            this.ClientSize = new System.Drawing.Size(1554, 555);
             this.Controls.Add(this.lbl_nhanvien);
             this.Controls.Add(this.dockPanel1);
             this.Controls.Add(this.ribbonStatusBar);

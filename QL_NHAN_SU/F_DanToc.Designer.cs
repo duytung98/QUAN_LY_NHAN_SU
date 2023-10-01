@@ -87,7 +87,7 @@ namespace QL_NHAN_SU
             // 
             this.bar2.BarAppearance.Hovered.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Hovered.Options.UseFont = true;
-            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bar2.BarAppearance.Normal.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bar2.BarAppearance.Normal.Options.UseFont = true;
             this.bar2.BarName = "Main menu";
             this.bar2.DockCol = 0;
@@ -176,31 +176,35 @@ namespace QL_NHAN_SU
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(988, 28);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.barDockControlTop.Size = new System.Drawing.Size(1208, 29);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 655);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 762);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(988, 20);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1208, 20);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 28);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 29);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 627);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 733);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(988, 28);
+            this.barDockControlRight.Location = new System.Drawing.Point(1208, 29);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 627);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 733);
             // 
             // btn_in
             // 
@@ -214,7 +218,8 @@ namespace QL_NHAN_SU
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 28);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 29);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -227,8 +232,8 @@ namespace QL_NHAN_SU
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gc_DanhSach);
-            this.splitContainer1.Size = new System.Drawing.Size(988, 627);
-            this.splitContainer1.SplitterDistance = 52;
+            this.splitContainer1.Size = new System.Drawing.Size(1208, 733);
+            this.splitContainer1.SplitterDistance = 60;
             this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 4;
             this.splitContainer1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitContainer1_SplitterMoved);
@@ -236,22 +241,22 @@ namespace QL_NHAN_SU
             // txt_dantoc
             // 
             this.txt_dantoc.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_dantoc.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dantoc.Location = new System.Drawing.Point(125, 13);
+            this.txt_dantoc.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dantoc.Location = new System.Drawing.Point(154, 22);
             this.txt_dantoc.Margin = new System.Windows.Forms.Padding(1);
             this.txt_dantoc.Name = "txt_dantoc";
-            this.txt_dantoc.Size = new System.Drawing.Size(216, 29);
+            this.txt_dantoc.Size = new System.Drawing.Size(203, 29);
             this.txt_dantoc.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 17);
+            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(24, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 21);
+            this.label1.Size = new System.Drawing.Size(110, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên dân tộc";
             // 
@@ -259,13 +264,13 @@ namespace QL_NHAN_SU
             // 
             this.gc_DanhSach.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_DanhSach.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(1);
-            this.gc_DanhSach.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gc_DanhSach.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gc_DanhSach.Location = new System.Drawing.Point(0, 0);
             this.gc_DanhSach.MainView = this.gvDanhSach;
             this.gc_DanhSach.Margin = new System.Windows.Forms.Padding(1);
             this.gc_DanhSach.MenuManager = this.barManager1;
             this.gc_DanhSach.Name = "gc_DanhSach";
-            this.gc_DanhSach.Size = new System.Drawing.Size(988, 572);
+            this.gc_DanhSach.Size = new System.Drawing.Size(1208, 670);
             this.gc_DanhSach.TabIndex = 0;
             this.gc_DanhSach.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvDanhSach});
@@ -278,7 +283,8 @@ namespace QL_NHAN_SU
             this.gvDanhSach.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.id_DanToc,
             this.DanToc});
-            this.gvDanhSach.CustomizationFormBounds = new System.Drawing.Rectangle(735, 228, 314, 325);
+            this.gvDanhSach.CustomizationFormBounds = new System.Drawing.Rectangle(735, 228, 384, 376);
+            this.gvDanhSach.DetailHeight = 405;
             this.gvDanhSach.GridControl = this.gc_DanhSach;
             this.gvDanhSach.Name = "gvDanhSach";
             this.gvDanhSach.OptionsView.ShowFooter = true;
@@ -287,47 +293,47 @@ namespace QL_NHAN_SU
             // 
             // id_DanToc
             // 
-            this.id_DanToc.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_DanToc.AppearanceHeader.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_DanToc.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
             this.id_DanToc.AppearanceHeader.Options.UseFont = true;
             this.id_DanToc.AppearanceHeader.Options.UseForeColor = true;
             this.id_DanToc.Caption = "ID dân tộc";
             this.id_DanToc.FieldName = "id_DanToc";
-            this.id_DanToc.MaxWidth = 100;
-            this.id_DanToc.MinWidth = 100;
+            this.id_DanToc.MaxWidth = 122;
+            this.id_DanToc.MinWidth = 122;
             this.id_DanToc.Name = "id_DanToc";
             this.id_DanToc.Visible = true;
             this.id_DanToc.VisibleIndex = 0;
-            this.id_DanToc.Width = 100;
+            this.id_DanToc.Width = 122;
             // 
             // DanToc
             // 
-            this.DanToc.AppearanceHeader.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DanToc.AppearanceHeader.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DanToc.AppearanceHeader.ForeColor = System.Drawing.Color.Black;
             this.DanToc.AppearanceHeader.Options.UseFont = true;
             this.DanToc.AppearanceHeader.Options.UseForeColor = true;
             this.DanToc.Caption = "Tên dân tộc";
             this.DanToc.FieldName = "DanToc";
-            this.DanToc.MaxWidth = 200;
-            this.DanToc.MinWidth = 200;
+            this.DanToc.MaxWidth = 244;
+            this.DanToc.MinWidth = 244;
             this.DanToc.Name = "DanToc";
             this.DanToc.Visible = true;
             this.DanToc.VisibleIndex = 1;
-            this.DanToc.Width = 200;
+            this.DanToc.Width = 244;
             // 
             // F_DanToc
             // 
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(988, 675);
+            this.ClientSize = new System.Drawing.Size(1208, 782);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "F_DanToc";
             this.Text = "Dân tộc";
             this.Load += new System.EventHandler(this.F_DanToc_Load);
